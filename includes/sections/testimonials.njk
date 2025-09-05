@@ -1,0 +1,17 @@
+<section id="testimonials" class="section testimonials animate-on-scroll">
+  <div class="container">
+    <h2>{{ section_data.title or "Testimonios de nuestros clientes" }}</h2>
+    <div class="grid grid--3">
+      {% for item in section.items or [
+        {name:"Juan P.", text:"Excelente servicio, muy recomendable."},
+        {name:"María L.", text:"Superó mis expectativas."},
+        {name:"Carlos R.", text:"Profesionales y rápidos."}
+      ] %}
+        <div class="card testimonial-card animate-on-scroll" style="--delay: {{ loop.index0 * 0.1 }}s">
+          <p class="testimonial-text">"{{ item.text }}"</p>
+          <h4 class="testimonial-name">{{ item.name }}</h4>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

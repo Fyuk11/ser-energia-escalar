@@ -1,0 +1,16 @@
+/* section-divider.css */
+.section-divider { position: relative; width: 100%; overflow: hidden; line-height: 0; margin: 0; padding: 0; }
+
+.section-divider svg { display: block; width: 100%; height: 80px; }
+
+.section-divider path {
+  animation: wave 6s ease-in-out infinite;
+  fill: #e26363ff;
+}
+
+@keyframes wave {
+  0%, 100% { d: path("M0,50 C480,150 960,-50 1440,50 L1440,100 L0,100 Z"); }
+  50% { d: path("M0,50 C480,-50 960,150 1440,50 L1440,100 L0,100 Z"); }
+}
+
+.section-divider.invert svg { transform: rotateX(180deg); }

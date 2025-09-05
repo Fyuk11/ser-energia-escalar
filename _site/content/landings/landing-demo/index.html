@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Landing Demo Cliente</title>
+  <meta name="description" content="Esta es una landing de prueba para mostrar secciones dinámicas.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Landing Demo Cliente">
+  <meta property="og:description" content="Esta es una landing de prueba para mostrar secciones dinámicas.">
+  
+  
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Landing Demo Cliente">
+  <meta name="twitter:description" content="Esta es una landing de prueba para mostrar secciones dinámicas.">
+  
+
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- Font Awesome 6.5.2 -->
+<!-- ✅ Font Awesome desde CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+
+
+</head>
+<body>
+  
+    <nav class="nav">
+  <div class="nav__inner container">
+    <a class="nav__brand" href="/">Landing Demo</a>
+
+    <!-- Burger toggle (mobile) -->
+    <button class="nav__toggle" aria-label="Abrir menú">
+      <span></span>
+    </button>
+
+    <ul class="nav__menu" id="navMenu">
+      
+        
+          <li>
+            <a 
+              href="#hero" 
+              
+            >
+              Inicio
+            </a>
+          </li>
+        
+          <li>
+            <a 
+              href="#benefits" 
+              
+            >
+              Beneficios
+            </a>
+          </li>
+        
+          <li>
+            <a 
+              href="#testimonials" 
+              
+            >
+              Testimonios
+            </a>
+          </li>
+        
+          <li>
+            <a 
+              href="#contact" 
+              
+            >
+              Contacto
+            </a>
+          </li>
+        
+          <li>
+            <a 
+              href="https://wa.me/5491121652703" 
+              target="_blank" rel="noopener"
+            >
+              WhatsApp
+            </a>
+          </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+  
+
+  <main id="main" tabindex="-1">
+    
+
+
+
+  
+    
+    
+    
+     
+     <section class="hero" id="hero">
+  <video class="hero-video hero-desktop" autoplay muted loop playsinline>
+    <source src="/assets/videos/hero.webm" type="video/webm">
+    <source src="/assets/videos/hero.mp4" type="video/mp4">
+  </video>
+  <video class="hero-video hero-mobile" autoplay muted loop playsinline>
+    <source src="/assets/videos/hero-mobile.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+  <div class="hero-fallback"></div>
+
+  <div class="hero-content container">
+    <h1>Bienvenido a nuestra Landing</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    
+      
+        <a href="#contact" class="btn-primary">Contáctanos</a>
+      
+    
+  </div>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <section id="benefits" class="section benefits">
+  <div class="benefits-bg"></div> <!-- Fondo decorativo -->
+  <div class="container">
+    <h2>Nuestros Beneficios</h2>
+    <div class="grid grid--3">
+      
+        <div class="card benefit-card animate-on-scroll" style="--delay: 0s;">
+          <img src="/assets/images/placeholder.jpg" alt="Rápido" class="benefit-icon"/>
+          <h3>Rápido</h3>
+          <p>Resolvemos todo en tiempo récord.</p>
+        </div>
+      
+        <div class="card benefit-card animate-on-scroll" style="--delay: 0.2s;">
+          <img src="/assets/images/placeholder.jpg" alt="Seguro" class="benefit-icon"/>
+          <h3>Seguro</h3>
+          <p>Tus datos siempre protegidos.</p>
+        </div>
+      
+        <div class="card benefit-card animate-on-scroll" style="--delay: 0.4s;">
+          <img src="/assets/images/placeholder.jpg" alt="Fácil" class="benefit-icon"/>
+          <h3>Fácil</h3>
+          <p>Interfaz simple y clara.</p>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <section class="section-divider invert">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <defs>
+      
+        <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          
+            <stop offset="0%" stop-color="#ff4a57" stop-opacity="0.6" />
+          
+            <stop offset="100%" stop-color="#ff8a72" stop-opacity="0.6" />
+          
+        </linearGradient>
+      
+    </defs>
+
+    <path d="M0,50 C480,150 960,-50 1440,50 L1440,100 L0,100 Z" fill="url(#dividerGradient)"></path>
+  </svg>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <section id="about" class="section about animate-on-scroll">
+  <div class="container about__grid">
+    
+    <div class="about__content">
+      <h2>Conocé más sobre nuestra marca</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel libero ut erat volutpat ullamcorper. Integer viverra justo ac est fermentum, sed pharetra mauris dapibus.</p>
+      
+        <p>Este es un segundo párrafo que explica más sobre nuestra marca.</p>
+      
+    </div>
+
+    <div class="about__slideshow">
+      <div class="slideshow">
+        
+          <div class="slide active">
+            <img src="/assets/images/slide1.webp" alt="Imagen sobre la marca">
+          </div>
+        
+          <div class="slide">
+            <img src="/assets/images/slide2.webp" alt="Imagen sobre la marca">
+          </div>
+        
+          <div class="slide">
+            <img src="/assets/images/slide3.webp" alt="Imagen sobre la marca">
+          </div>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <section id="testimonials" class="section testimonials animate-on-scroll">
+  <div class="container">
+    <h2>Testimonios de nuestros clientes</h2>
+    <div class="grid grid--3">
+      
+        <div class="card testimonial-card animate-on-scroll" style="--delay: 0s">
+          <p class="testimonial-text">"Excelente servicio, muy recomendable."</p>
+          <h4 class="testimonial-name">Juan P.</h4>
+        </div>
+      
+        <div class="card testimonial-card animate-on-scroll" style="--delay: 0.1s">
+          <p class="testimonial-text">"Superó mis expectativas."</p>
+          <h4 class="testimonial-name">María L.</h4>
+        </div>
+      
+        <div class="card testimonial-card animate-on-scroll" style="--delay: 0.2s">
+          <p class="testimonial-text">"Profesionales y rápidos."</p>
+          <h4 class="testimonial-name">Carlos R.</h4>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <section class="cta-video" id="cta-video">
+  <video class="cta-video-bg" autoplay muted loop playsinline>
+    <source src="/assets/videos/hero.mp4" type="video/mp4">
+    <source src="/assets/videos/hero.webm" type="video/webm">
+  </video>
+  <div class="cta-overlay"></div>
+  <div class="cta-content container text-center">
+    <h2>¿Querés comenzar ya?</h2>
+    <p>Revisa nuestros beneficios y contáctanos sin compromiso.</p>
+    
+      
+        <a href="#contact" class="btn-primary">Contactanos</a>
+      
+    
+  </div>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <section id="contact" class="section contact animate-on-scroll">
+  <div class="container contact__grid">
+    
+    <div class="contact__info">
+      <h2>¿Querés empezar?</h2>
+      <p>Completa el formulario y nos pondremos en contacto.</p>
+      <ul class="contact__details">
+        <li><strong>Email:</strong> <a href="mailto:traduccioncreativadigital@gmail.com">traduccioncreativadigital@gmail.com</a></li>
+        <li><strong>Teléfono:</strong> <a href="tel:+541121652703">+54 11 2165-2703</a></li>
+      </ul>
+    </div>
+
+    <div class="contact__form">
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+    
+
+  
+    
+    
+    
+     
+     <footer id="footer" class="footer">
+  <div class="container footer__grid">
+    
+    <div class="footer__copy">
+      <p>© 2025 Landing Demo. Todos los derechos reservados.</p>
+      <span class="footer__email">traduccioncreativadigital@gmail.com</span>
+    </div>
+
+    <ul class="footer__menu">
+      
+        <li><a href="#hero">Inicio</a></li>
+      
+        <li><a href="#benefits">Beneficios</a></li>
+      
+        <li><a href="#testimonials">Testimonios</a></li>
+      
+        <li><a href="#contact">Contacto</a></li>
+      
+    </ul>
+
+    <div class="footer__social">
+      
+        
+          <a href="https://instagram.com/demo" target="_blank" rel="noopener" class="btn-social instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        
+        
+      
+        
+        
+          <a href="https://wa.me/5491121652703" target="_blank" rel="noopener" class="btn-social whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        
+      
+    </div>
+
+  </div>
+</footer>
+
+
+    
+
+  
+
+
+  </main>
+
+  <!-- Scripts -->
+<!-- Ahora -->
+<script type="module" src="/assets/js/main.js" defer></script>
+</body>
+</html>

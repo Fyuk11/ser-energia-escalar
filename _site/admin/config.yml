@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "landings"
+    label: "Landings"
+    folder: "content/landings"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción (SEO)", name: "description", widget: "string" }
+      - { label: "Canonical URL", name: "seo.canonical", widget: "string", required: false }
+      - { label: "Open Graph Title", name: "seo.og_title", widget: "string", required: false }
+      - { label: "Open Graph Description", name: "seo.og_description", widget: "string", required: false }
+      - { label: "Open Graph Image", name: "seo.og_image", widget: "image", required: false }
+      - { label: "Twitter Title", name: "seo.twitter_title", widget: "string", required: false }
+      - { label: "Twitter Description", name: "seo.twitter_description", widget: "string", required: false }
+      - label: "Secciones"
+        name: "sections"
+        widget: "list"
+        fields:
+          - { label: "Tipo de sección", name: "type", widget: "select", options: ["hero","benefits","testimonials","cta","footer"], required: true }
+          - { label: "Título de sección", name: "title", widget: "string", required: false }
+          - { label: "Subtítulo / texto", name: "subtitle", widget: "text", required: false }
+          - { label: "Imagen / Background", name: "background", widget: "image", required: false }
+
+          # Items (benefits/testimonials)
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Nombre / Título", name: "name", widget: "string", required: false }
+              - { label: "Texto / descripción", name: "text", widget: "text", required: false }
+              - { label: "Icono (opcional)", name: "icon", widget: "image", required: false }
+
+          # CTA
+          - label: "CTAs"
+            name: "ctas"
+            widget: "list"
+            fields:
+              - { label: "Texto botón", name: "text", widget: "string", required: true }
+              - { label: "URL", name: "url", widget: "string", required: true }
+
+          # Links footer
+          - label: "Links (footer)"
+            name: "links"
+            widget: "list"
+            fields:
+              - { label: "Texto link", name: "text", widget: "string", required: true }
+              - { label: "URL", name: "url", widget: "string", required: true }

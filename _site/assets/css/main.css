@@ -1,0 +1,16 @@
+/* main.css */
+@import "reset.css";        /* RESET / BASE */
+@import "container.css";    /* CONTAINER */
+@import "nav.css";          /* NAV y burger */
+@import "hero.css";         /* HERO */
+@import "benefits.css";     /* BENEFITS */
+@import "section-divider.css"; /* SECTION DIVIDER */
+@import "about.css";        /* ABOUT */
+@import "testimonials.css"; /* TESTIMONIALS */
+@import "cta-video.css";    /* CTA VIDEO */
+@import "contact.css";      /* CONTACT */
+@import "footer.css";       /* FOOTER */
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"; /* Font Awesome */
+
+
+/* Si querés, media queries también pueden ir en cada sección, o en un archivo global responsive.css */

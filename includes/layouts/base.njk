@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ landing.title or "Landing Demo" }}</title>
+  <meta name="description" content="{{ landing.description or "" }}">
+  <meta name="robots" content="{{ landing.seo?.robots or 'index,follow' }}">
+  <link rel="canonical" href="{{ landing.seo?.canonical or url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ landing.seo?.og_title or landing.title }}">
+  <meta property="og:description" content="{{ landing.seo?.og_description or landing.description }}">
+  {% if landing.seo?.og_image %}
+  <meta property="og:image" content="{{ landing.seo.og_image }}">
+  {% endif %}
+  {% if landing.seo?.og_url %}
+  <meta property="og:url" content="{{ landing.seo.og_url }}">
+  {% endif %}
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ landing.seo?.twitter_title or landing.title }}">
+  <meta name="twitter:description" content="{{ landing.seo?.twitter_description or landing.description }}">
+  {% if landing.seo?.twitter_image %}
+  <meta name="twitter:image" content="{{ landing.seo.twitter_image }}">
+  {% endif %}
+
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- Font Awesome 6.5.2 -->
+<!-- ✅ Font Awesome desde CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+
+
+</head>
+<body>
+  {% if not nav_override %}
+    {% include "partials/nav.njk" %}
+  {% endif %}
+
+  <main id="main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+
+  <!-- Scripts -->
+<!-- Ahora -->
+<script type="module" src="/assets/js/main.js" defer></script>
+</body>
+</html>

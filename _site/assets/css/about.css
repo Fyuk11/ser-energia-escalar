@@ -1,0 +1,94 @@
+/* =======================
+   About Section
+======================= */
+.about {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about__content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about__content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Slideshow */
+.about__slideshow {
+  position: relative;
+  overflow: hidden;        /* importante para slideshow absoluto */
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;           /* altura fija para el contenedor */
+  background: transparent;  /* sin fondo */
+  box-shadow: none;        /* opcional: quita el borde extra */
+}
+
+
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* mantiene la proporción sin cortar */
+  display: block;
+  border-radius: 12px;
+  margin: 0 auto; /* centra la imagen */
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about__content {
+    order: 2;
+  }
+  .about__slideshow {
+    order: 1;
+    height: 250px;
+  }
+}
+
+/* 🖥️ Monitores grandes */
+@media (min-width: 1200px) {
+  .about {
+    padding: 100px 40px;
+  }
+}

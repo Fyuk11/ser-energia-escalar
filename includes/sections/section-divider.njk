@@ -1,0 +1,21 @@
+<section class="section-divider {% if section_data.invert %}invert{% endif %}">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <defs>
+      {% if section.gradient %}
+        <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          {% for stop in section.gradient %}
+            <stop offset="{{ stop.offset }}" stop-color="{{ stop.color }}" stop-opacity="{{ stop.opacity or 1 }}" />
+          {% endfor %}
+        </linearGradient>
+      {% else %}
+        <!-- fallback a fill sólido -->
+        <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="{{ section.fill or '#fff' }}" />
+          <stop offset="100%" stop-color="{{ section.fill or '#fff' }}" />
+        </linearGradient>
+      {% endif %}
+    </defs>
+
+    <path d="M0,50 C480,150 960,-50 1440,50 L1440,100 L0,100 Z" fill="url(#dividerGradient)"></path>
+  </svg>
+</section>

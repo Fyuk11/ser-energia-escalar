@@ -1,0 +1,19 @@
+<section id="benefits" class="section benefits">
+  <div class="benefits-bg"></div> <!-- Fondo decorativo -->
+  <div class="container">
+    <h2>{{ section_data.title or "Nuestros Beneficios" }}</h2>
+    <div class="grid grid--3">
+      {% for item in section_data.items or [
+        {icon:'/assets/images/placeholder.jpg', title:'Rápido', text:'Lorem ipsum dolor sit amet'},
+        {icon:'/assets/images/placeholder.jpg', title:'Seguro', text:'Consectetur adipiscing elit'},
+        {icon:'/assets/images/placeholder.jpg', title:'Fácil', text:'Sed do eiusmod tempor'}
+      ] %}
+        <div class="card benefit-card animate-on-scroll" style="--delay: {{ loop.index0 * 0.2 }}s;">
+          <img src="{{ item.icon }}" alt="{{ item.title }}" class="benefit-icon"/>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

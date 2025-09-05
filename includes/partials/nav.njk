@@ -1,0 +1,32 @@
+<nav class="nav">
+  <div class="nav__inner container">
+    <a class="nav__brand" href="/">{{ site.name or "Marca Demo" }}</a>
+
+    <!-- Burger toggle (mobile) -->
+    <button class="nav__toggle" aria-label="Abrir menú">
+      <span></span>
+    </button>
+
+    <ul class="nav__menu" id="navMenu">
+      {% if landing.nav %}
+        {% for item in landing.nav %}
+          <li>
+            <a 
+              href="{{ item.url }}" 
+              {% if item.external %}target="_blank" rel="noopener"{% endif %}
+            >
+              {{ item.text }}
+            </a>
+          </li>
+        {% endfor %}
+      {% else %}
+        <!-- Fallback si no se define nav en el frontmatter -->
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#cta-video">Llamado a la acción</a></li>
+        <li><a href="#cta">Contacto</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
