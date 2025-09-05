@@ -2,6 +2,7 @@
 layout: landing.njk
 title: "Landing Demo Cliente"
 description: "Esta es una landing de prueba para mostrar secciones dinámicas."
+permalink: "index.html"
 
 seo:
   canonical: "https://demo-landing.com"
