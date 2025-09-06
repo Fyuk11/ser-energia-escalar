@@ -1,7 +1,4 @@
-# content/global.yml
 site_name: "Demo Landing"
-logo: "/assets/images/logo.png"   # opcional
-favicon: "/assets/images/favicon.png" # opcional
 email: "info@demo.com"
 
 social:
