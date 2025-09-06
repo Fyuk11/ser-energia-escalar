@@ -33,7 +33,7 @@ sections:
   - type: benefits
     title: Nuestros Beneficios
     items:
-      - icon: /assets/images/placeholder.jpg
+      - icon: /assets/uploads/bowl-verde.jpg
         title: Rápido
         text: Resolvemos todo en tiempo récord.
       - icon: /assets/images/placeholder.jpg
