@@ -6,6 +6,23 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
+  # 🌍 Configuración global del sitio
+  - name: "global"
+    label: "Configuración Global"
+    file: "content/global.yml"
+    fields:
+      - { label: "Nombre del sitio", name: "site_name", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image", required: false }
+      - { label: "Favicon", name: "favicon", widget: "image", required: false }
+      - { label: "Email de contacto", name: "email", widget: "string", required: false }
+      - label: "Redes Sociales"
+        name: "social"
+        widget: "list"
+        fields:
+          - { label: "Tipo", name: "type", widget: "select", options: ["facebook","instagram","whatsapp","linkedin","twitter"], required: true }
+          - { label: "URL", name: "url", widget: "string", required: true }
+
+  # 📄 Landings dinámicas
   - name: "landings"
     label: "Landings"
     folder: "content/landings"
@@ -22,36 +39,117 @@ collections:
       - { label: "Open Graph Image", name: "seo.og_image", widget: "image", required: false }
       - { label: "Twitter Title", name: "seo.twitter_title", widget: "string", required: false }
       - { label: "Twitter Description", name: "seo.twitter_description", widget: "string", required: false }
+
+      # 🔹 Menú de navegación
+      - label: "Menú de navegación"
+        name: "nav"
+        widget: "list"
+        fields:
+          - { label: "Texto", name: "text", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "¿Enlace externo?", name: "external", widget: "boolean", required: false }
+
+      # 🔹 Secciones dinámicas
       - label: "Secciones"
         name: "sections"
         widget: "list"
-        fields:
-          - { label: "Tipo de sección", name: "type", widget: "select", options: ["hero","benefits","testimonials","cta","footer"], required: true }
-          - { label: "Título de sección", name: "title", widget: "string", required: false }
-          - { label: "Subtítulo / texto", name: "subtitle", widget: "text", required: false }
-          - { label: "Imagen / Background", name: "background", widget: "image", required: false }
-
-          # Items (benefits/testimonials)
-          - label: "Items"
-            name: "items"
-            widget: "list"
+        types:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
             fields:
-              - { label: "Nombre / Título", name: "name", widget: "string", required: false }
-              - { label: "Texto / descripción", name: "text", widget: "text", required: false }
-              - { label: "Icono (opcional)", name: "icon", widget: "image", required: false }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text", required: false }
+              - { label: "Background", name: "background", widget: "image", required: false }
+              - label: "CTAs"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - { label: "Texto", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
 
-          # CTA
-          - label: "CTAs"
-            name: "ctas"
-            widget: "list"
+          - label: "Beneficios"
+            name: "benefits"
+            widget: "object"
             fields:
-              - { label: "Texto botón", name: "text", widget: "string", required: true }
-              - { label: "URL", name: "url", widget: "string", required: true }
+              - { label: "Título", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Icono", name: "icon", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
 
-          # Links footer
-          - label: "Links (footer)"
-            name: "links"
-            widget: "list"
+          - label: "Divisor con gradiente"
+            name: "section-divider"
+            widget: "object"
             fields:
-              - { label: "Texto link", name: "text", widget: "string", required: true }
-              - { label: "URL", name: "url", widget: "string", required: true }
+              - { label: "Invertir colores", name: "invert", widget: "boolean", default: false }
+              - label: "Gradiente"
+                name: "gradient"
+                widget: "list"
+                fields:
+                  - { label: "Offset", name: "offset", widget: "string" }
+                  - { label: "Color", name: "color", widget: "string" }
+                  - { label: "Opacidad", name: "opacity", widget: "number", default: 1 }
+
+          - label: "Sobre nosotros"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Texto extra", name: "extra_text", widget: "text", required: false }
+              - { label: "Imágenes", name: "images", widget: "list", field: { label: "Imagen", name: "image", widget: "image" } }
+
+          - label: "Testimonios"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+
+          - label: "CTA con video"
+            name: "cta-video"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - label: "CTAs"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - { label: "Texto", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+
+          - label: "Formulario de contacto"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Texto", name: "text", widget: "string" }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Texto", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+              - label: "Redes sociales"
+                name: "social"
+                widget: "list"
+                fields:
+                  - { label: "Tipo", name: "type", widget: "select", options: ["instagram","facebook","whatsapp","linkedin","twitter"], required: true }
+                  - { label: "URL", name: "url", widget: "string" }
