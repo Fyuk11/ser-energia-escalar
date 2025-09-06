@@ -66,22 +66,20 @@ collections:
                       - { name: "title", label: "Título", widget: "string" }
                       - { name: "text", label: "Texto", widget: "text" }
 
-
               - label: "Divider"
                 name: "section-divider"
                 widget: "object"
                 fields:
-                 - { name: "fill", label: "Color de fondo", widget: "string", required: false }
-                 - label: "Gradiente"
-                   name: "gradient"
-                   widget: "list"
-                   required: false
-                   fields:
-                   - { name: "offset", label: "Offset", widget: "string" }
-                   - { name: "color", label: "Color", widget: "string" }
-                   - { name: "opacity", label: "Opacidad", widget: "number", required: false }
-                   - { name: "invert", label: "Invertir", widget: "boolean", required: false }
-
+                  - { name: "fill", label: "Color de fondo", widget: "string", required: false }
+                  - label: "Gradiente"
+                    name: "gradient"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { name: "offset", label: "Offset", widget: "string" }
+                      - { name: "color", label: "Color", widget: "string" }
+                      - { name: "opacity", label: "Opacidad", widget: "number", required: false }
+                  - { name: "invert", label: "Invertir", widget: "boolean", required: false }
 
               - label: "About"
                 name: "about"
