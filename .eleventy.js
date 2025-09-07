@@ -46,7 +46,7 @@ eleventyConfig.addGlobalData("landing", () => loadMarkdownFile("./content/landin
     return content;
   });
 
-  // Datos globales adicionales
+  // Datos globales adicionales - comint
   eleventyConfig.addGlobalData("version", Date.now());
   eleventyConfig.addGlobalData("build", { year: new Date().getFullYear() });
   eleventyConfig.addGlobalData("site", { name: "Landing Demo" });
