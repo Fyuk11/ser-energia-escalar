@@ -96,3 +96,14 @@
     font-size: 2.5rem;
   }
 }
+
+.form-success {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e6ffed;
+  border: 1px solid #34d399;
+  color: #065f46;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+}
