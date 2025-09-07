@@ -9,6 +9,11 @@
   <meta name="robots" content="{{ landing.seo?.robots or site.robots or 'index,follow' }}">
   <link rel="canonical" href="{{ landing.seo?.canonical or (site.url + page.url) }}">
 
+  <!-- Google Site Verification -->
+  {% if site.verification %}
+    <meta name="google-site-verification" content="{{ site.verification }}">
+  {% endif %}
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.name or 'Landing Demo' }}">
