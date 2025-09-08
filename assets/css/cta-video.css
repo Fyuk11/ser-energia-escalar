@@ -18,3 +18,37 @@
 .cta-content { z-index: 1; }
 .cta-content h2 { font-size: 2rem; margin-bottom: 10px; }
 .cta-content p { font-size: 1rem; margin-bottom: 15px; }
+
+/* 📱 Mobile chico */
+@media (max-width: 480px) {
+  .cta-content h2 {
+    font-size: 1.4rem;
+  }
+  .cta-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🖥️ Tablet */
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* 🖥️ Monitores grandes */
+@media (min-width: 1440px) {
+  .cta-content h2 {
+    font-size: 2.6rem;
+  }
+  .cta-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* 🖥️ Ultra wide */
+@media (min-width: 1920px) {
+  .cta-content h2 {
+    font-size: 3rem;
+  }
+}

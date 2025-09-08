@@ -109,3 +109,25 @@
     font-size: 1.2rem;
   }
 }
+
+/* 📱 Mobile chico */
+@media (max-width: 480px) {
+  .footer__menu a {
+    font-size: 0.8rem;
+  }
+  .btn-social {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
+
+/* 🖥️ Ultra wide */
+@media (min-width: 1920px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+  .footer__menu a {
+    font-size: 1.1rem;
+  }
+}

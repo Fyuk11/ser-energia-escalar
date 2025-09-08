@@ -48,7 +48,7 @@
   transform: scale(1.05);
 }
 
-/* Media queries para hero */
+/* Media queries para hero *
 @media (min-width: 768px) {
   .hero-desktop { display: block; }
   .hero-mobile { display: none; }
@@ -65,4 +65,60 @@
 @media (min-width: 1440px) {
   .hero h1 { font-size: 4rem; }
   .hero p { font-size: 1.6rem; }
+}
+
+*/
+
+/* ========================= */
+/* 📱 Breakpoints - Hero     */
+/* ========================= */
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1440px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero p {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* 📱 Mobile chico */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🖥️ Ultra wide */
+@media (min-width: 1920px) {
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+  .hero p {
+    font-size: 1.8rem;
+  }
+  .btn-primary {
+    font-size: 1.1rem;
+    padding: 14px 28px;
+  }
 }

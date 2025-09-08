@@ -35,3 +35,38 @@
 }
 
 .card img { width: 60px; margin-bottom: 1rem; }
+
+
+/* 📱 Mobile chico */
+@media (max-width: 480px) {
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
+  .benefits h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* 🖥️ Tablet */
+@media (max-width: 768px) {
+  .grid--3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 🖥️ Monitores grandes */
+@media (min-width: 1440px) {
+  .grid--3 {
+    gap: 2.5rem;
+  }
+  .benefits h2 {
+    font-size: 2.6rem;
+  }
+}
+
+/* 🖥️ Ultra wide */
+@media (min-width: 1920px) {
+  .grid--3 {
+    gap: 3.5rem;
+  }
+}

@@ -107,3 +107,25 @@
   font-weight: 600;
   text-align: center;
 }
+
+
+/* 📱 Mobile chico */
+@media (max-width: 480px) {
+  .contact__form form {
+    gap: 0.8rem;
+  }
+  .contact__info h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 🖥️ Ultra wide */
+@media (min-width: 1920px) {
+  .contact__grid {
+    max-width: 1400px;
+    gap: 5rem;
+  }
+  .contact__info h2 {
+    font-size: 2.8rem;
+  }
+}

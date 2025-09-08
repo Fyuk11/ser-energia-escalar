@@ -48,3 +48,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* 📱 Mobile chico */
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+  .testimonials h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* 🖥️ Ultra wide */
+@media (min-width: 1920px) {
+  .testimonial-card {
+    padding: 3rem;
+  }
+  .testimonials h2 {
+    font-size: 2.6rem;
+  }
+}
