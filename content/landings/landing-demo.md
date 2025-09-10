@@ -85,7 +85,7 @@ sections:
       - "/assets/images/about/cms.webp"         # Admin panel
       - "/assets/images/about/googlesearch.webp"            # Google console
       - "/assets/images/about/mockup.webp"          # Ejemplo real de landing
-      - "/assets/images/about/mockup2.jpg"
+     # - "/assets/images/about/mockup2.jpg"
 
   - type: faqs
     title: Preguntas frecuentes

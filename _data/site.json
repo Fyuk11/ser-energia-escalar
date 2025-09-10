@@ -1,7 +1,7 @@
 {
   "name": "Landing Demo Global",
   "description": "Proyecto de landings optimizadas con Eleventy",
-  "url": "https://landing-demo.netlify.app",
+  "url": "https://startland.netlify.app/",
   "robots": "index,follow",
   "og_image": "/assets/images/default-og.png",
   "twitter_image": "/assets/images/default-twitter.png",
