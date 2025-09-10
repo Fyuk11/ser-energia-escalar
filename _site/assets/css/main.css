@@ -1,11 +1,14 @@
 /* main.css */
+@import "variables.css";    /* VARIABLES */
 @import "reset.css";        /* RESET / BASE */
 @import "container.css";    /* CONTAINER */
 @import "nav.css";          /* NAV y burger */
 @import "hero.css";         /* HERO */
 @import "benefits.css";     /* BENEFITS */
 @import "section-divider.css"; /* SECTION DIVIDER */
+@import "steps.css";        /* STEPS */
 @import "about.css";        /* ABOUT */
+@import "faqs.css"; /* FAQS */
 @import "testimonials.css"; /* TESTIMONIALS */
 @import "cta-video.css";    /* CTA VIDEO */
 @import "contact.css";      /* CONTACT */

@@ -1,0 +1,19 @@
+<section id="faqs" class="section faqs animate-on-scroll">
+  <canvas id="faqsParticles" class="faqs-particles"></canvas>
+  <div class="container">
+    <h2 class="section-title">{{ section_data.title }}</h2>
+    <div class="faqs-grid">
+      {% for item in section_data.items %}
+      <div class="faq-card">
+        <div class="faq-question">
+          <h3>{{ item.question }}</h3>
+          <span class="toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

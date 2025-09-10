@@ -1,6 +1,6 @@
 // nav.js
 export function initNav() {
-  const nav = document.querySelector(".nav");
+  const nav = document.querySelector(".nav--venta");
   const burger = document.querySelector(".nav__toggle");
   const navMenu = document.querySelector(".nav__menu");
 
@@ -11,24 +11,20 @@ export function initNav() {
     navMenu.classList.toggle("active");
   };
 
-  // Burger
   burger.addEventListener("click", toggleMenu);
 
-  // Cerrar menu al click en link (mobile)
   navMenu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       if (window.innerWidth <= 768 && navMenu.classList.contains("active")) toggleMenu();
     });
   });
 
-  // Cerrar menu al click fuera
   document.addEventListener("click", e => {
     if (window.innerWidth <= 768 && navMenu.classList.contains("active") && !nav.contains(e.target)) {
       toggleMenu();
     }
   });
 
-  // Escape
   document.addEventListener("keydown", e => {
     if (window.innerWidth <= 768 && e.key === "Escape" && navMenu.classList.contains("active")) {
       toggleMenu();
@@ -45,8 +41,6 @@ export function initNav() {
     }
   };
 
-  // Ejecutar al cargar
   handleNavBackground();
-  // Ejecutar al hacer scroll
   window.addEventListener("scroll", handleNavBackground);
 }

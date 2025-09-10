@@ -1,8 +1,20 @@
 .footer {
-  padding: 1.2rem 1rem; /* altura más baja */
-  background: #111;
+  position: relative;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(180deg, #111827 0%, #0a0a0a 100%);
   color: #fff;
   font-size: 0.9rem;
+  overflow: hidden;
+}
+
+.footer-particles {
+  position: absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  pointer-events: none;
+  opacity: 0.2;
 }
 
 .footer__grid {
@@ -10,6 +22,8 @@
   grid-template-columns: 1fr auto auto;
   gap: 2rem;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__copy {
@@ -17,11 +31,9 @@
   flex-direction: column;
   gap: 0.3rem;
   color: #ccc;
-  order: 1; /* default */
 }
 
 .footer__email {
-  font-size: 0.9rem;
   font-family: monospace;
   color: #aaa;
 }
@@ -32,7 +44,6 @@
   gap: 1rem;
   padding: 0;
   margin: 0;
-  order: 2;
 }
 
 .footer__menu a {
@@ -42,13 +53,12 @@
 }
 
 .footer__menu a:hover {
-  color: #0077ff;
+  color: #0A84FF;
 }
 
 .footer__social {
   display: flex;
   gap: 1rem;
-  order: 3;
 }
 
 .btn-social {
@@ -58,7 +68,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #222;
+  background: rgba(34,34,34,0.8);
   color: #fff;
   font-size: 1.2rem;
   transition: background 0.3s ease, transform 0.2s ease;
@@ -68,15 +78,10 @@
   transform: scale(1.1);
 }
 
-.instagram:hover {
-  background: #e4405f;
-}
+.instagram:hover { background: #e4405f; }
+.whatsapp:hover { background: #25d366; }
 
-.whatsapp:hover {
-  background: #25d366;
-}
-
-/* 📱 Mobile */
+/* Responsive */
 @media (max-width: 768px) {
   .footer__grid {
     grid-template-columns: 1fr;
@@ -90,44 +95,20 @@
   .footer__social {
     justify-content: center;
   }
-  .footer__copy {
-    order: 4; /* 👉 queda abajo de todo en mobile */
-  }
 }
 
-/* 🖥️ Monitores grandes */
-@media (min-width: 1200px) {
-  .footer {
-    padding: 2rem 2rem;
-  }
-  .footer__menu a {
-    font-size: 1rem;
-  }
-  .btn-social {
-    width: 44px;
-    height: 44px;
-    font-size: 1.2rem;
-  }
-}
-
-/* 📱 Mobile chico */
 @media (max-width: 480px) {
-  .footer__menu a {
-    font-size: 0.8rem;
-  }
-  .btn-social {
-    width: 38px;
-    height: 38px;
-    font-size: 1rem;
-  }
+  .footer__menu a { font-size: 0.8rem; }
+  .btn-social { width: 38px; height: 38px; font-size: 1rem; }
 }
 
-/* 🖥️ Ultra wide */
+@media (min-width: 1200px) {
+  .footer { padding: 2rem 2rem; }
+  .footer__menu a { font-size: 1rem; }
+  .btn-social { width: 44px; height: 44px; font-size: 1.2rem; }
+}
+
 @media (min-width: 1920px) {
-  .footer {
-    padding: 3rem 2rem;
-  }
-  .footer__menu a {
-    font-size: 1.1rem;
-  }
+  .footer { padding: 3rem 2rem; }
+  .footer__menu a { font-size: 1.1rem; }
 }

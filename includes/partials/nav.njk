@@ -1,12 +1,14 @@
-<nav class="nav">
+<nav class="nav nav--venta">
   <div class="nav__inner container">
-    <a class="nav__brand" href="/">{{ site.name or "Marca Demo" }}</a>
+    <!-- Brand -->
+    <a class="nav__brand" href="/">{{ site.name or "Landing Pro" }}</a>
 
     <!-- Burger toggle (mobile) -->
     <button class="nav__toggle" aria-label="Abrir menú">
       <span></span>
     </button>
 
+    <!-- Menú -->
     <ul class="nav__menu" id="navMenu">
       {% if landing.nav %}
         {% for item in landing.nav %}
@@ -20,12 +22,11 @@
           </li>
         {% endfor %}
       {% else %}
-        <!-- Fallback si no se define nav en el frontmatter -->
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#benefits">Beneficios</a></li>
-        <li><a href="#testimonials">Testimonios</a></li>
-        <li><a href="#cta-video">Llamado a la acción</a></li>
-        <li><a href="#cta">Contacto</a></li>
+        <li><a href="#process">Cómo funciona</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact">Contacto</a></li>
       {% endif %}
     </ul>
   </div>

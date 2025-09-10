@@ -15,8 +15,8 @@ nav:
     url: "#hero"
   - text: Beneficios
     url: "#benefits"
-  - text: Testimonios
-    url: "#testimonials"
+  - text: Nosotros
+    url: "#about"
   - text: Contacto
     url: "#contact"
   - text: WhatsApp
@@ -24,24 +24,42 @@ nav:
     external: true
 sections:
   - type: hero
-    title: Bienvenido a nuestra Landing - Probando el cms
-    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    title: Tu negocio online en tiempo récord
+    subtitle: Creamos landing pages profesionales, rápidas y optimizadas para que vendas más desde el primer día.
     background: /assets/images/placeholder.jpg
     ctas:
-      - text: Contáctanos
+      - text: Quiero mi landing
         url: "#contact"
+
   - type: benefits
-    title: Nuestros Beneficios
+    title: Por qué elegir nuestras landings
     items:
-      - icon: /assets/uploads/bowl-verde.jpg
-        title: Rápido
-        text: Resolvemos todo en tiempo récord.
-      - icon: /assets/images/placeholder.jpg
-        title: Seguro
-        text: Tus datos siempre protegidos.
-      - icon: /assets/images/placeholder.jpg
-        title: Fácil
-        text: Interfaz simple y clara.
+      - icon: /assets/images/svg1.png
+        title: Rápidas de lanzar
+        text: En pocos días tu página lista para vender.
+      - icon: /assets/images/svg2.png
+        title: Confiables
+        text: Diseño seguro, moderno y optimizado para SEO.
+      - icon: /assets/images/svg3.png
+        title: Fáciles de usar
+        text: Editá textos e imágenes sin conocimientos técnicos.
+
+  - type: steps
+    title: Así trabajamos con vos
+    steps:
+      - number: 1
+        title: Brief inicial
+        text: Definimos juntos tus objetivos y el estilo ideal para tu landing.
+      - number: 2
+        title: Diseño & Propuesta
+        text: Te presentamos un prototipo visual con la estructura pensada para convertir.
+      - number: 3
+        title: Desarrollo
+        text: Programamos la página con diseño premium, velocidad y SEO optimizado.
+      - number: 4
+        title: Entrega & Soporte
+        text: Publicamos tu landing y te enseñamos a gestionarla fácilmente.
+
   - type: section-divider
     invert: true
     gradient:
@@ -51,34 +69,47 @@ sections:
       - offset: 100%
         color: "#ff8a72"
         opacity: 0.6
+
   - type: about
-    title: Conocé más sobre nuestra marca
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel
-      libero ut erat volutpat ullamcorper. Integer viverra justo ac est
-      fermentum, sed pharetra mauris dapibus.
-    extra_text: Este es un segundo párrafo que explica más sobre nuestra marca.
+    title: "Más que una landing: una herramienta de crecimiento"
+    text: >
+      Creamos sistemas vivos, diseñados para que tu negocio crezca con solidez y transparencia. 
+      Nuestras landings están optimizadas desde la base: velocidad, seguridad y diseño responsivo en todos los dispositivos.
+
+    extra_text: >
+      Con nuestro panel de administración autogestionable (Netlify CMS), podés actualizar textos, imágenes o secciones en minutos, sin conocimientos técnicos. 
+      Además, con la integración de Google Search Console, tenés acceso a estadísticas reales sobre cómo la gente encuentra tu negocio en la web. 
+      Y lo mejor: cada landing está pensada para ser escalable, para que tu presencia digital crezca al mismo ritmo que vos.
+
     images:
-      - /assets/images/slide1.webp
-      - /assets/images/slide2.webp
-      - /assets/images/slide3.webp
-  - type: testimonials
-    title: Testimonios de nuestros clientes
+      - "/assets/images/about/cms.webp"         # Admin panel
+      - "/assets/images/about/googlesearch.webp"            # Google console
+      - "/assets/images/about/mockup.webp"          # Ejemplo real de landing
+      - "/assets/images/about/mockup2.jpg"
+
+  - type: faqs
+    title: Preguntas frecuentes
     items:
-      - name: Juan P.
-        text: Excelente servicio, muy recomendable.
-      - name: María L.
-        text: Superó mis expectativas.
-      - name: Carlos R.
-        text: Profesionales y rápidos.
+      - question: "¿Puedo editar mi landing yo mismo?"
+        answer: "Sí. Con nuestro CMS podés actualizar textos, imágenes y secciones sin conocimientos técnicos."
+      - question: "¿Cuánto tarda la entrega?"
+        answer: "En promedio entre 3 y 5 días hábiles, con SEO básico incluido. Si necesitás urgencia, podemos agilizar el proceso."
+      - question: "¿Se ve bien en celular?"
+        answer: "Sí, todas las landings son 100% responsivas, adaptadas a cualquier dispositivo."
+      - question: "¿La optimización SEO está incluida?"
+        answer: "Sí, entregamos tu página lista para indexarse en Google y con métricas conectadas a Search Console."
+
   - type: cta-video
-    title: ¿Querés comenzar ya?
-    subtitle: Revisa nuestros beneficios y contáctanos sin compromiso.
+    title: Listo para despegar online
+    subtitle: Conseguí tu landing page profesional en pocos días. Es simple, rápido y accesible.
     ctas:
-      - text: Contactanos
-        url: "#contact"
+      - text: Quiero mi landing
+        url: https://wa.me/5491121652703
+
   - type: contact
-    title: ¿Querés empezar?
-    text: Completa el formulario y nos pondremos en contacto.
+    title: Pedí tu landing hoy
+    text: Completá el formulario y te contactamos para empezar cuanto antes.
+
   - type: footer
     text: © 2025 Landing Demo. Todos los derechos reservados.
     email: traduccioncreativadigital@gmail.com
@@ -87,8 +118,8 @@ sections:
         url: "#hero"
       - text: Beneficios
         url: "#benefits"
-      - text: Testimonios
-        url: "#testimonials"
+      - text: Nosotros
+        url: "#about"
       - text: Contacto
         url: "#contact"
     social:
