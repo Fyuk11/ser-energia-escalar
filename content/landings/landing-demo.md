@@ -4,12 +4,12 @@ title: Landing Demo Cliente
 description: Esta es una landing de prueba para mostrar secciones dinámicas.
 permalink: index.html
 seo:
-  canonical: https://demo-landing.com
-  og_title: Landing Demo Cliente
-  og_description: Prueba de landing dinámica con 11ty y Netlify CMS
+  canonical: https://startland.netlify.app
+  og_title: Startland landing page
+  og_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
   og_image: /assets/images/placeholder.jpg
-  twitter_title: Landing Demo Cliente
-  twitter_description: Prueba de landing dinámica con 11ty y Netlify CMS
+  twitter_title: Startland Landing Demo 
+  twitter_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
 nav:
   - text: Inicio
     url: "#hero"
