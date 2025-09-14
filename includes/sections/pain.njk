@@ -1,16 +1,14 @@
-<!-- src\_includes\sections\pain.njk -->
 <section id="pain" class="pain section bg-light">
     <div class="container">
         <div class="section-header">
-            <h2>{{ landing.pain_section.title }}</h2>
-            <p class="lead">{{ landing.pain_section.subtitle }}</p>
+            <h2>{{ section.title }}</h2>
+            <p class="lead">{{ section.subtitle }}</p>
         </div>
 
         <div class="pain-points">
-            {% for point in landing.pain_section.points %}
+            {% for point in section.points %}
             <div class="pain-point">
                 <div class="pain-point-icon">
-                    <!-- Icono de advertencia o un "no" (muy efectivo) -->
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -24,11 +22,10 @@
             {% endfor %}
         </div>
 
-        <!-- Transición hacia la solución -->
         <div class="pain-cta text-center mt-5">
-            <p class="mb-3"><strong>{{ landing.pain_section.cta_text }}</strong></p>
-            <a href="{{ landing.pain_section.cta_link }}" class="btn btn-primary btn-lg">
-                {{ landing.pain_section.cta_button }}
+            <p class="mb-3"><strong>{{ section.cta_text }}</strong></p>
+            <a href="{{ section.cta_link }}" class="btn btn-primary btn-lg">
+                {{ section.cta_button }}
             </a>
         </div>
     </div>
