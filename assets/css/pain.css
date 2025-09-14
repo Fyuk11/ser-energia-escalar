@@ -1,0 +1,100 @@
+/* ================================
+   PAIN SECTION (Modo Premium)
+=================================== */
+.pain {
+  padding: 6rem 0;
+  background: #f8f9fb; /* más elegante que el gris puro */
+}
+
+.pain .section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.pain .section-header p {
+  font-size: 1.125rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pain-points {
+  max-width: 960px;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .pain-points {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pain-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pain-point:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.pain-point-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dc3545;
+  font-size: 1.25rem;
+}
+
+.pain-point-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.pain-point-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.pain-cta {
+  margin-top: 3rem;
+}
+
+.pain-cta p {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.pain-cta .btn {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pain-cta .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
