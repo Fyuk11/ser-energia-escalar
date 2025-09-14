@@ -31,8 +31,8 @@ sections:
       - text: Quiero mi landing
         url: "#contact"
 
-  - pain_section:
-     title: "¿Te sientes identificado con alguno de estos problemas?"
+  - type: pain
+    title: "¿Te sientes identificado con alguno de estos problemas?"
     subtitle: "No estás solo. Muchos emprendedores y marketers pasan por esto antes de encontrar una solución definitiva."
     cta_text: "Pero existe una forma más fácil de hacer las cosas."
     cta_button: "Quiero conocer la solución"
