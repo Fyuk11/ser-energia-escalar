@@ -31,6 +31,22 @@ sections:
       - text: Quiero mi landing
         url: "#contact"
 
+  - pain_section:
+     title: "¿Te sientes identificado con alguno de estos problemas?"
+    subtitle: "No estás solo. Muchos emprendedores y marketers pasan por esto antes de encontrar una solución definitiva."
+    cta_text: "Pero existe una forma más fácil de hacer las cosas."
+    cta_button: "Quiero conocer la solución"
+    cta_link: "#solution" # Puede ser un anchor link a la siguiente sección o un link directo
+    points:
+    - title: "Inviertes tiempo y dinero en una landing page que no convierte"
+      description: "Diseños poco atractivos, mensajes confusos y una estructura que no guía al usuario hacia la acción."
+    - title: "Tu tasa de conversión es más baja de lo que esperabas"
+      description: "El tráfico llega, pero se va sin dejar sus datos o comprar tu producto. Es como llenar un balde con un agujero."
+    - title: "Dependes de un desarrollador para cada pequeño cambio"
+      description: "Cada vez que quieres actualizar un texto, un precio o una imagen, tienes que pedir favores, pagar caro y esperar días."
+    - title: "No tienes claridad sobre qué está funcionando y qué no"
+      description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
+
   - type: benefits
     title: Por qué elegir nuestras landings
     items:
