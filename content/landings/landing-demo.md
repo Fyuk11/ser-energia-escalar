@@ -24,11 +24,11 @@ nav:
     external: true
 sections:
   - type: hero
-    title: Tu negocio online en tiempo récord
-    subtitle: Creamos landing pages profesionales, rápidas y optimizadas para que vendas más desde el primer día.
+    title: Damos vida digital a tu marca
+    subtitle: Sitios donde tu trabajo se luzca. Creamos landing pages profesionales, rápidas y optimizadas para que vendas más desde el primer día.
     background: /assets/images/placeholder.jpg
     ctas:
-      - text: Quiero mi landing
+      - text: Quiero mi página
         url: "#contact"
 
   - type: pain
@@ -48,33 +48,33 @@ sections:
       description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
 
   - type: benefits
-    title: Por qué elegir nuestras landings
+    title: Un sitio pensado para que tus clientes comprendan rápidamente quién sos y qué ofrecés, en un diseño que comunica por sí solo.
     items:
       - icon: /assets/images/svg1.png
-        title: Rápidas de lanzar
-        text: En pocos días tu página lista para vender.
+        title: Transparencia
+        text: Construís relaciones de confianza.
       - icon: /assets/images/svg2.png
-        title: Confiables
-        text: Diseño seguro, moderno y optimizado para SEO.
+        title: Seguridad
+        text: Perciben profesionalismo desde el primer clic.
       - icon: /assets/images/svg3.png
-        title: Fáciles de usar
-        text: Editá textos e imágenes sin conocimientos técnicos.
+        title: Claridad
+        text: Encuentran lo que buscan sin perder tiempo.
 
   - type: steps
-    title: Así trabajamos con vos
+    title: Proceso claro y humano
     steps:
       - number: 1
-        title: Brief inicial
-        text: Definimos juntos tus objetivos y el estilo ideal para tu landing.
+        title: Escuchamos
+        text: Entendemos tu público y tu propuesta.
       - number: 2
-        title: Diseño & Propuesta
-        text: Te presentamos un prototipo visual con la estructura pensada para convertir.
+        title: Diseñamos
+        text: Tu mensaje y estilo pensado para ellos.
       - number: 3
-        title: Desarrollo
-        text: Programamos la página con diseño premium, velocidad y SEO optimizado.
+        title: Creamos
+        text: Transformamos tu esencia en una experiencia digital única que habla por sí sola.
       - number: 4
-        title: Entrega & Soporte
-        text: Publicamos tu landing y te enseñamos a gestionarla fácilmente.
+        title: Entregamos
+        text: Lista para usar, sin estrés ni complicaciones y te enseñamos a gestionarla fácilmente.
 
   - type: section-divider
     invert: true
@@ -116,10 +116,10 @@ sections:
         answer: "Sí, entregamos tu página lista para indexarse en Google y con métricas conectadas a Search Console."
 
   - type: cta-video
-    title: Listo para despegar online
-    subtitle: Conseguí tu landing page profesional en pocos días. Es simple, rápido y accesible.
+    title: Mostrá tu negocio como tus clientes lo esperan
+    subtitle: Tu página ya está lista para atraer y enamorar visitantes.
     ctas:
-      - text: Quiero mi landing
+      - text: Quiero mi página
         url: https://wa.me/5491121652703
 
   - type: contact
