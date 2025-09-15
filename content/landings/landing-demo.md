@@ -93,8 +93,8 @@ sections:
       Nuestras landings están optimizadas desde la base: velocidad, seguridad y diseño responsivo en todos los dispositivos.
 
     extra_text: >
-      Con nuestro panel de administración autogestionable (Netlify CMS), podés actualizar textos, imágenes o secciones en minutos, sin conocimientos técnicos. 
-      Además, con la integración de Google Search Console, tenés acceso a estadísticas reales sobre cómo la gente encuentra tu negocio en la web. 
+      Podés actualizar textos, imágenes o secciones en minutos, sin conocimientos técnicos. 
+      Además, tenés acceso a estadísticas reales sobre cómo la gente encuentra tu negocio en la web. 
       Y lo mejor: cada landing está pensada para ser escalable, para que tu presencia digital crezca al mismo ritmo que vos.
 
     images:
