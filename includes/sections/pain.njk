@@ -1,12 +1,10 @@
 <section id="pain" class="pain section">
   <div class="container">
-    <!-- Section Header -->
     <div class="section-header">
       <h2>{{ section.title }}</h2>
       <p>{{ section.subtitle }}</p>
     </div>
 
-    <!-- Pain Points -->
     <div class="pain-points">
       {% for point in section.points %}
       <div class="pain-point">
@@ -24,7 +22,6 @@
       {% endfor %}
     </div>
 
-    <!-- CTA -->
     <div class="pain-cta">
       <p><strong>{{ section.cta_text }}</strong></p>
       <a href="{{ section.cta_link }}" class="btn">

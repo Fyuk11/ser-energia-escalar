@@ -48,17 +48,17 @@ sections:
       description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
 
   - type: benefits
-    title: Un sitio pensado para que tus clientes comprendan rápidamente quién sos y qué ofrecés, en un diseño que comunica por sí solo.
+    title: Más que una landing, tu identidad digital
     items:
       - icon: /assets/images/svg1.png
-        title: Transparencia
-        text: Construís relaciones de confianza.
+        title: Diseño a medida
+        text: Cada página nace de vos.
       - icon: /assets/images/svg2.png
-        title: Seguridad
-        text: Perciben profesionalismo desde el primer clic.
+        title: Optimización total
+        text: Rápida, segura y visible en Google.
       - icon: /assets/images/svg3.png
-        title: Claridad
-        text: Encuentran lo que buscan sin perder tiempo.
+        title: Conexión inmediata
+        text: Tu página habla por vos y enamora a tu audiencia.
 
   - type: steps
     title: Proceso claro y humano
