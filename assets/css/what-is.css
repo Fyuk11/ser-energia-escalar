@@ -1,0 +1,115 @@
+/* WHAT IS SECTION - Estilo Premium */
+
+.what-is {
+  padding: 5rem 1rem;
+  background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.what-is::before,
+.what-is::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 0.08;
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.what-is::before {
+  top: -50px;
+  left: -50px;
+  background: #00aaff;
+}
+
+.what-is::after {
+  bottom: -50px;
+  right: -50px;
+  background: #ff77aa;
+}
+
+.what-is .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.what-is .text h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.what-is .text .subtitle {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.what-is .text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: center;
+}
+
+.what-is .visual img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.what-is .visual img:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* Dos columnas para tablet y desktop */
+@media (min-width: 768px) {
+  .what-is .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .what-is .text {
+    flex: 1;
+    text-align: left;
+    padding-right: 2rem;
+  }
+  .what-is .visual {
+    flex: 1;
+  }
+}
+
+/* Desktop grande y ultrawide */
+@media (min-width: 1024px) {
+  .what-is { padding: 6rem 3rem; }
+  .what-is .text h2 { font-size: 2.25rem; }
+  .what-is .text .subtitle { font-size: 1.125rem; }
+  .what-is .text p { font-size: 1.1rem; }
+}
+
+@media (min-width: 1600px) {
+  .what-is { padding: 7rem 6rem; }
+  .what-is .text h2 { font-size: 2.5rem; }
+  .what-is .text .subtitle { font-size: 1.25rem; }
+  .what-is .text p { font-size: 1.15rem; }
+}
+
+/* Animaciones fade */
+.fade-left { opacity: 0; transform: translateX(-25px); transition: all 0.7s ease-out; }
+.fade-right { opacity: 0; transform: translateX(25px); transition: all 0.7s ease-out; }
+.visible.fade-left, .visible.fade-right { opacity: 1; transform: translateX(0); }

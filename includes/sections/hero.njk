@@ -1,14 +1,15 @@
 <section class="hero" id="hero">
   <!-- Videos -->
-  <video class="hero-video hero-desktop" autoplay muted loop playsinline>
-    <source src="/assets/videos/heroDesktop.webm" type="video/webm">
-    <source src="/assets/videos/heroDesktop.mp4" type="video/mp4">
-  </video>
-
-  <video class="hero-video hero-mobile" autoplay muted loop playsinline>
-    <source src="/assets/videos/heroDeskMobile.webm" type="video/webm">
-    <source src="/assets/videos/heroDeskMobile.mp4" type="video/mp4">
-  </video>
+  {% if section_data.videos %}
+    <video class="hero-video hero-desktop" autoplay muted loop playsinline>
+      <source src="{{ section_data.videos.desktopWebm }}" type="video/webm">
+      <source src="{{ section_data.videos.desktopMp4 }}" type="video/mp4">
+    </video>
+    <video class="hero-video hero-mobile" autoplay muted loop playsinline>
+      <source src="{{ section_data.videos.mobileWebm }}" type="video/webm">
+      <source src="{{ section_data.videos.mobileMp4 }}" type="video/mp4">
+    </video>
+  {% endif %}
 
   <!-- Overlay con gradiente animado -->
   <div class="hero-overlay"></div>
@@ -17,18 +18,27 @@
   <!-- Partículas flotantes -->
   <canvas id="heroParticles" class="hero-particles"></canvas>
 
-  <!-- Contenedor central -->
+  <!-- Contenido central -->
   <div class="hero-content-wrapper">
     <div class="hero-content">
-      <h1 class="fade-left animate-on-scroll">{{ section_data.title or landing.title or "Crea tu Landing Profesional" }}</h1>
-      <p class="fade-left delay-1 animate-on-scroll">{{ section_data.subtitle or landing.description or "Convierte visitantes en clientes con diseño y tecnología profesional." }}</p>
+      <h1 class="fade-left animate-on-scroll">
+        {{ section_data.title or landing.title }}
+      </h1>
+      <p class="fade-left delay-1 animate-on-scroll">
+        {{ section_data.subtitle or landing.description }}
+      </p>
 
       {% if section_data.ctas %}
-        {% for cta in section_data.ctas %}
-          <a href="{{ cta.url }}" class="btn-primary fade-left delay-2 scroll-link animate-on-scroll">{{ cta.text }}</a>
-        {% endfor %}
-      {% else %}
-        <a href="#benefits" class="btn-primary fade-left delay-2 scroll-link animate-on-scroll">Comenzar Ahora</a>
+        <div class="hero-ctas">
+  {% for cta in section_data.ctas %}
+    <a href="{{ cta.url }}"
+       class="btn-primary fade-left delay-{{ loop.index }} scroll-link animate-on-scroll"
+       {% if "http" in cta.url %} target="_blank" rel="noopener noreferrer"{% endif %}>
+      {{ cta.text }}
+    </a>
+  {% endfor %}
+</div>
+
       {% endif %}
     </div>
   </div>

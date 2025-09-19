@@ -22,30 +22,58 @@ nav:
   - text: WhatsApp
     url: https://wa.me/5491121652703
     external: true
+
 sections:
   - type: hero
-    title: Damos vida digital a tu marca
-    subtitle: Sitios donde tu trabajo se luzca. Creamos landing pages profesionales, rápidas y optimizadas para que vendas más desde el primer día.
-    background: /assets/images/placeholder.jpg
+    title: "Energía Escalar: Equilibrio y Vitalidad para tu Vida"
+    subtitle: "Descubrí cómo la tecnología escalar puede ayudarte a mejorar tu bienestar físico, mental y emocional."
+    videos:
+      desktopWebm: "/assets/videos/heroDesktop.webm"
+      desktopMp4: "/assets/videos/heroDesktop.mp4"
+      mobileWebm: "/assets/videos/heroDeskMobile.webm"
+      mobileMp4: "/assets/videos/heroDeskMobile.mp4"
     ctas:
-      - text: Quiero mi página
-        url: "#contact"
+     - text: "Conocer más"
+       url: "#benefits"
+     - text: "Hablar por WhatsApp"
+       url: "https://wa.me/5491121652703"
+
+
 
   - type: pain
-    title: "¿Te sientes identificado con alguno de estos problemas?"
-    subtitle: "No estás solo. Muchos emprendedores y marketers pasan por esto antes de encontrar una solución definitiva."
-    cta_text: "Pero existe una forma más fácil de hacer las cosas."
-    cta_button: "Quiero conocer la solución"
-    cta_link: "#solution" # Puede ser un anchor link a la siguiente sección o un link directo
+    title: "¿Te resuena alguna de estas situaciones?"
+    subtitle: "No estás solo. Muchas personas buscan mejorar su bienestar y calidad de vida."
+    cta_text: "La buena noticia: existe una forma más fácil de recuperar tu equilibrio y bienestar."
+    cta_button: "Descubrir la solución"
+    cta_link: "#solution"
     points:
-    - title: "Inviertes tiempo y dinero en una landing page que no convierte"
-      description: "Diseños poco atractivos, mensajes confusos y una estructura que no guía al usuario hacia la acción."
-    - title: "Tu tasa de conversión es más baja de lo que esperabas"
-      description: "El tráfico llega, pero se va sin dejar sus datos o comprar tu producto. Es como llenar un balde con un agujero."
-    - title: "Dependes de un desarrollador para cada pequeño cambio"
-      description: "Cada vez que quieres actualizar un texto, un precio o una imagen, tienes que pedir favores, pagar caro y esperar días."
-    - title: "No tienes claridad sobre qué está funcionando y qué no"
-      description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
+    - title: "Sientes fatiga y falta de energía diaria"
+      description: "La rutina, el estrés y la exposición a energías densas afectan tu vitalidad."
+    - title: "Te cuesta relajarte y conciliar un sueño reparador"
+      description: "El descanso no llega como debería, y tu cuerpo no logra recuperarse completamente."
+    - title: "Buscas armonía emocional y mental"
+      description: "Las preocupaciones, la ansiedad y el estrés te desconectan de tu bienestar natural."
+    - title: "Deseas potenciar tus terapias o prácticas de bienestar"
+      description: "Quieres herramientas que acompañen tu crecimiento, salud y equilibrio de manera integral."
+
+  - type: what-is
+    title: "¿Qué es la Energía Escalar?"
+    subtitle: "Descubre cómo la energía escalar puede transformar tu bienestar de manera integral."
+    text:
+    - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo."
+    - "Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
+    visual:
+    type: "image" # o "animation" si es un SVG animado o Lottie
+    src: "/assets/images/energia-escalar-illustration.png"
+    alt: "Ilustración de energía escalar actuando sobre el cuerpo"
+
+
+
+
+
+
+
+
 
   - type: benefits
     title: Más que una landing, tu identidad digital

@@ -1,0 +1,15 @@
+<section id="what-is" class="what-is section">
+  <div class="container two-columns">
+    <div class="text fade-left animate-on-scroll">
+      <h2>{{ section.title }}</h2>
+      <p class="subtitle">{{ section.subtitle }}</p>
+      <p>{{ section.text }}</p>
+    </div>
+
+    <div class="visual fade-right animate-on-scroll">
+      {% if section.visual.type == "image" %}
+        <img src="{{ section.visual.src }}" alt="{{ section.visual.alt }}">
+      {% endif %}
+    </div>
+  </div>
+</section>

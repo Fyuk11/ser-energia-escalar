@@ -23,13 +23,30 @@ export function initScrollAnimations() {
   // ==========================
   // Scroll suave
   // ==========================
+  // ==========================
+  // Scroll suave
+  // ==========================
   document.querySelectorAll('.scroll-link').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const href = link.getAttribute('href');
+
+      // Si es externo (http, https, mailto, tel, wa.me), dejamos que se abra normal
+      if (/^(https?:|mailto:|tel:)/i.test(href) || href.includes('wa.me')) {
+        window.open(href, '_blank'); // abre en nueva pestaña
+        return;
+      }
+
+      // Si es un anchor interno (#)
+      if (href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
     });
   });
+
 
   // ==========================
   // Partículas hero premium
