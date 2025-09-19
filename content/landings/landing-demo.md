@@ -3,95 +3,61 @@ layout: landing.njk
 title: Landing Demo Cliente
 description: Esta es una landing de prueba para mostrar secciones dinámicas.
 permalink: index.html
-seo:
-  canonical: https://startland.netlify.app
-  og_title: Startland landing page
-  og_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
-  og_image: /assets/images/placeholder.jpg
-  twitter_title: Startland Landing Demo 
-  twitter_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
-nav:
-  - text: Inicio
-    url: "#hero"
-  - text: Beneficios
-    url: "#benefits"
-  - text: Nosotros
-    url: "#about"
-  - text: Contacto
-    url: "#contact"
-  - text: WhatsApp
-    url: https://wa.me/5491121652703
-    external: true
-
 sections:
   - type: hero
     title: "Energía Escalar: Equilibrio y Vitalidad para tu Vida"
     subtitle: "Descubrí cómo la tecnología escalar puede ayudarte a mejorar tu bienestar físico, mental y emocional."
-    videos:
-      desktopWebm: "/assets/videos/heroDesktop.webm"
-      desktopMp4: "/assets/videos/heroDesktop.mp4"
-      mobileWebm: "/assets/videos/heroDeskMobile.webm"
-      mobileMp4: "/assets/videos/heroDeskMobile.mp4"
     ctas:
-     - text: "Conocer más"
-       url: "#benefits"
-     - text: "Hablar por WhatsApp"
-       url: "https://wa.me/5491121652703"
-
-
+      - text: "Conocer más"
+        url: "#benefits"
+      - text: "Hablar por WhatsApp"
+        url: "https://wa.me/5491121652703"
 
   - type: pain
     title: "¿Te resuena alguna de estas situaciones?"
     subtitle: "No estás solo. Muchas personas buscan mejorar su bienestar y calidad de vida."
-    cta_text: "La buena noticia: existe una forma más fácil de recuperar tu equilibrio y bienestar."
-    cta_button: "Descubrir la solución"
-    cta_link: "#solution"
     points:
-    - title: "Sientes fatiga y falta de energía diaria"
-      description: "La rutina, el estrés y la exposición a energías densas afectan tu vitalidad."
-    - title: "Te cuesta relajarte y conciliar un sueño reparador"
-      description: "El descanso no llega como debería, y tu cuerpo no logra recuperarse completamente."
-    - title: "Buscas armonía emocional y mental"
-      description: "Las preocupaciones, la ansiedad y el estrés te desconectan de tu bienestar natural."
-    - title: "Deseas potenciar tus terapias o prácticas de bienestar"
-      description: "Quieres herramientas que acompañen tu crecimiento, salud y equilibrio de manera integral."
+      - title: "Sientes fatiga y falta de energía diaria"
+        description: "La rutina, el estrés y la exposición a energías densas afectan tu vitalidad."
+      - title: "Te cuesta relajarte y conciliar un sueño reparador"
+        description: "El descanso no llega como debería, y tu cuerpo no logra recuperarse completamente."
+      - title: "Buscas armonía emocional y mental"
+        description: "Las preocupaciones, la ansiedad y el estrés te desconectan de tu bienestar natural."
+      - title: "Deseas potenciar tus terapias o prácticas de bienestar"
+        description: "Quieres herramientas que acompañen tu crecimiento, salud y equilibrio de manera integral."
 
   - type: what-is
     title: "¿Qué es la Energía Escalar?"
     subtitle: "Descubre cómo la energía escalar puede transformar tu bienestar de manera integral."
     text:
-    - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo."
-    - "Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
+      - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo."
+      - "Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
     visual:
-     type: "image"  # o "animation" si es un SVG animado o Lottie
-     src: "/assets/images/energia-escalar-illustration.png"
-     alt: "Ilustración de energía escalar actuando sobre el cuerpo"
-
-
-
-
+      type: "image"
+      src: "/assets/images/energia-escalar-illustration.png"
+      alt: "Ilustración de energía escalar actuando sobre el cuerpo"
 
   - type: benefits
     title: "Beneficios para la salud y el bienestar"
     items:
-    - icon: /assets/images/svg1.png
-      title: "Fortalece el sistema inmune"
-      text: "Apoya la defensa natural de tu cuerpo frente a enfermedades y agentes externos."
-    - icon: /assets/images/svg2.png
-      title: "Reduce dolor e inflamación"
-      text: "Favorece la recuperación y alivia tensiones acumuladas en músculos y articulaciones."
-    - icon: /assets/images/svg3.png
-      title: "Mejora la calidad del sueño"
-      text: "Promueve un descanso profundo y reparador, ayudando a restaurar energía y vitalidad."
-    - icon: /assets/images/svg4.png
-      title: "Armoniza emociones y reduce el estrés"
-      text: "Contribuye a un equilibrio emocional, reduciendo ansiedad y tensiones cotidianas."
-    - icon: /assets/images/svg5.png
-      title: "Potencia terapias complementarias"
-      text: "Maximiza los efectos de otras prácticas de bienestar y tratamientos holísticos."
-    - icon: /assets/images/svg6.png
-      title: "Retrasa el envejecimiento celular"
-      text: "Favorece la regeneración celular y la vitalidad a nivel físico y mental."
+      - icon: /assets/images/svg1.png
+        title: "Fortalece el sistema inmune"
+        text: "Apoya la defensa natural de tu cuerpo frente a enfermedades y agentes externos."
+      - icon: /assets/images/svg2.png
+        title: "Reduce dolor e inflamación"
+        text: "Favorece la recuperación y alivia tensiones acumuladas en músculos y articulaciones."
+      - icon: /assets/images/svg3.png
+        title: "Mejora la calidad del sueño"
+        text: "Promueve un descanso profundo y reparador, ayudando a restaurar energía y vitalidad."
+      - icon: /assets/images/svg4.png
+        title: "Armoniza emociones y reduce el estrés"
+        text: "Contribuye a un equilibrio emocional, reduciendo ansiedad y tensiones cotidianas."
+      - icon: /assets/images/svg5.png
+        title: "Potencia terapias complementarias"
+        text: "Maximiza los efectos de otras prácticas de bienestar y tratamientos holísticos."
+      - icon: /assets/images/svg6.png
+        title: "Retrasa el envejecimiento celular"
+        text: "Favorece la regeneración celular y la vitalidad a nivel físico y mental."
     cta_text: "Descubrí todos los beneficios de la energía escalar"
     cta_link: "#expanded-benefits"
 
@@ -109,8 +75,8 @@ sections:
         description: "Integra cuerpo, mente y espíritu en un estado de plenitud. Expande la conciencia y fortalece el bienestar integral."
         icon: "/assets/icons/esencia.svg"
     cta:
-     text: "Quiero mi equipo"
-     link: "#contacto"
+      text: "Quiero mi equipo"
+      link: "#contacto"
 
 
 
