@@ -99,18 +99,23 @@ sections:
     title: "Los Equipos SER"
     subtitle: "Cada equipo es un puente hacia tu esencia divina, diseñado para elevar tu vibración y armonizar cuerpo, mente y espíritu."
     equipos:
-      - title: "SER AMOR"
-        text: "Canaliza la vibración universal del amor para armonizar tus emociones, potenciar relaciones y cultivar paz interior."
-        icon: "/assets/icons/amor.svg"
-      - name: "SER ORIGEN"
-        description: "Reconecta con la fuente y la esencia divina. Ideal para quienes buscan claridad, propósito y equilibrio profundo."
-        icon: "/assets/icons/origen.svg"
-      - name: "SER ESENCIA"
-        description: "Integra cuerpo, mente y espíritu en un estado de plenitud. Expande la conciencia y fortalece el bienestar integral."
-        icon: "/assets/icons/esencia.svg"
+    - name: "SER AMOR"
+      description: "Canaliza la vibración universal del amor para armonizar tus emociones, potenciar tus relaciones y cultivar paz interior. Ideal para quienes desean conectar con su energía afectiva, mejorar la comunicación y crear armonía en su entorno. Su acción suave pero profunda ayuda a equilibrar el corazón y elevar la frecuencia emocional."
+      icon: "/assets/icons/amor.svg"
+      price: "$1200 USD"
+    - name: "SER ORIGEN"
+      description: "Reconecta con la fuente y tu esencia divina, facilitando claridad mental, propósito y equilibrio profundo. Perfecto para quienes buscan reencontrarse con su autenticidad, alinear sus decisiones con su verdadera misión y despertar la conciencia espiritual en la vida diaria."
+      icon: "/assets/icons/origen.svg"
+      price: "$1350 USD"
+    - name: "SER ESENCIA"
+      description: "Integra cuerpo, mente y espíritu en un estado de plenitud, expandiendo la conciencia y fortaleciendo el bienestar integral. Diseñado para quienes quieren vivir en coherencia con su esencia, potenciar la energía vital y equilibrar todos los niveles del ser: físico, emocional y espiritual."
+      icon: "/assets/icons/esencia.svg"
+      price: "$1500 USD"
     cta:
      text: "Quiero mi equipo"
      link: "#contacto"
+
+
 
 
 

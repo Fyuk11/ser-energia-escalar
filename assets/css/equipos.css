@@ -1,10 +1,11 @@
-.equipos {
+.equipos-vertical {
   padding: 4rem 1rem;
   background: linear-gradient(135deg, #ffffff, #f9fbff);
   text-align: center;
 }
 
-.equipos .section-title {
+/* Títulos */
+.equipos-vertical .section-title {
   font-size: 2rem;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #00c6ff, #0a84ff);
@@ -12,39 +13,153 @@
   -webkit-text-fill-color: transparent;
 }
 
-.equipos .section-subtitle {
+.equipos-vertical .section-subtitle {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 3rem;
 }
 
-.equipo-card {
-  background: #fff;
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Contenedor de cada equipo */
+.equipo-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* permite que se apilen en mobile */
 }
 
-.equipo-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 198, 255, 0.2);
+/* Alterna imagen/texto */
+.equipo-vertical.reverse {
+  flex-direction: row-reverse;
 }
 
-.equipo-icon {
-  width: 70px;
-  margin-bottom: 1rem;
+/* Imagen del equipo */
+.equipo-img img {
+  width: 150px;
+  height: auto;
 }
 
+/* Texto del equipo */
+.equipo-text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.equipo-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.equipo-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.equipo-price {
+  font-weight: bold;
+  color: #0a84ff;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* CTA */
 .equipos-cta {
   margin-top: 3rem;
 }
 
-.grid {
-  display: grid;
-  gap: 2rem;
+/* Animaciones Fade-Up */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.grid--3 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ==================== */
+/* Responsive Breakpoints */
+/* ==================== */
+
+/* Mobile first: menos de 600px */
+@media (max-width: 599px) {
+  .equipo-vertical {
+    flex-direction: column !important;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .equipo-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .equipo-img img {
+    width: 120px;
+  }
+
+  .equipo-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .equipo-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets: 600px - 1023px */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .equipo-vertical {
+    gap: 2rem;
+  }
+
+  .equipo-img img {
+    width: 140px;
+  }
+
+  .equipo-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .equipo-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop: 1024px - 1599px */
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .equipo-img img {
+    width: 150px;
+  }
+
+  .equipo-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .equipo-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Ultra-wide: 1600px+ */
+@media (min-width: 1600px) {
+  .equipo-img img {
+    width: 180px;
+  }
+
+  .equipo-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .equipo-text p {
+    font-size: 1.1rem;
+  }
+
+  .equipo-vertical {
+    gap: 3rem;
+  }
 }
