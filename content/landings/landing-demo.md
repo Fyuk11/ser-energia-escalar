@@ -8,7 +8,7 @@ seo:
   og_title: Ser Energía Escalar
   og_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
   og_image: /assets/images/placeholder.jpg
-  twitter_title: Startland Landing Demo 
+  twitter_title: Ser Energía Escalar
   twitter_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
 nav:
   - text: Inicio
@@ -95,6 +95,7 @@ sections:
     cta_text: "Descubrí todos los beneficios de la energía escalar"
     cta_link: "#expanded-benefits"
 
+
   - type: equipos
     title: "Los Equipos SER"
     subtitle: "Cada equipo es un puente hacia tu esencia divina, diseñado para elevar tu vibración y armonizar cuerpo, mente y espíritu."
@@ -115,6 +116,26 @@ sections:
      text: "Quiero mi equipo"
      link: "#contacto"
 
+
+  - type: tabla_equipos
+    title: "Comparativa de Equipos SER"
+    subtitle: "Encuentra el equipo que mejor se adapta a tu necesidad y nivel de expansión."
+    equipos:
+    - name: "SER AMOR"
+      potencia: "Alcance avanzado (0.18 kW, triple descarga 6 mm)"
+      accesorios: "Bobina Oudin grande, Bobina Pancake, Manguitos, Kit alta frecuencia, Cables conductivos"
+      precio: "USD 1.050"
+    - name: "SER ORIGEN"
+      potencia: "Alcance medio (0.20 kW, triple descarga 6 mm)"
+      accesorios: "Bobina Oudin mediana, Bobina Pancake, Manguitos, Bobina Corona, Electrodo alta frecuencia, Cables, **Incluye visor**"
+      precio: "USD 1.220"
+    - name: "SER ESENCIA"
+      potencia: "Alcance completo (0.25 kW, triple descarga 6 mm)"
+      accesorios: "Bobina Oudin grande, Bobina Pancake, Manguitos, Bobina Corona, Kit alta frecuencia, Cables conductivos, Temporizador"
+      precio: "USD 1.450"
+    cta:
+     text: "Quiero mi equipo"
+     link: "#contacto"
 
 
 
