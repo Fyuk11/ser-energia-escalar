@@ -63,9 +63,10 @@ sections:
     - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo."
     - "Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
     visual:
-    type: "image" # o "animation" si es un SVG animado o Lottie
-    src: "/assets/images/energia-escalar-illustration.png"
-    alt: "Ilustración de energía escalar actuando sobre el cuerpo"
+     type: "image"  # o "animation" si es un SVG animado o Lottie
+     src: "/assets/images/energia-escalar-illustration.png"
+     alt: "Ilustración de energía escalar actuando sobre el cuerpo"
+
 
 
 
