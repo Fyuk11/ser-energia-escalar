@@ -71,23 +71,32 @@ sections:
 
 
 
-
-
-
-
-
   - type: benefits
-    title: Más que una landing, tu identidad digital
+    title: "Beneficios para la salud y el bienestar"
     items:
-      - icon: /assets/images/svg1.png
-        title: Diseño a medida
-        text: Cada página nace de vos.
-      - icon: /assets/images/svg2.png
-        title: Optimización total
-        text: Rápida, segura y visible en Google.
-      - icon: /assets/images/svg3.png
-        title: Conexión inmediata
-        text: Tu página habla por vos y enamora a tu audiencia.
+    - icon: /assets/images/svg1.png
+      title: "Fortalece el sistema inmune"
+      text: "Apoya la defensa natural de tu cuerpo frente a enfermedades y agentes externos."
+    - icon: /assets/images/svg2.png
+      title: "Reduce dolor e inflamación"
+      text: "Favorece la recuperación y alivia tensiones acumuladas en músculos y articulaciones."
+    - icon: /assets/images/svg3.png
+      title: "Mejora la calidad del sueño"
+      text: "Promueve un descanso profundo y reparador, ayudando a restaurar energía y vitalidad."
+    - icon: /assets/images/svg4.png
+      title: "Armoniza emociones y reduce el estrés"
+      text: "Contribuye a un equilibrio emocional, reduciendo ansiedad y tensiones cotidianas."
+    - icon: /assets/images/svg5.png
+      title: "Potencia terapias complementarias"
+      text: "Maximiza los efectos de otras prácticas de bienestar y tratamientos holísticos."
+    - icon: /assets/images/svg6.png
+      title: "Retrasa el envejecimiento celular"
+      text: "Favorece la regeneración celular y la vitalidad a nivel físico y mental."
+    cta_text: "Descubrí todos los beneficios de la energía escalar"
+    cta_link: "#expanded-benefits"
+
+
+
 
   - type: steps
     title: Proceso claro y humano

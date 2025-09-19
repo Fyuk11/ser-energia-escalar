@@ -1,14 +1,10 @@
 <section id="benefits" class="section benefits">
-  <div class="benefits-bg"></div>
   <div class="container">
-    <h2 class="section-title">{{ section_data.title or "Beneficios de tu Landing" }}</h2>
+    <h2 class="section-title">{{ section_data.title or "Beneficios de la energía escalar" }}</h2>
+
     <div class="grid grid--3">
-      {% set animations = ['fade-up', 'fade-left', 'fade-up'] %}
-      {% for item in section_data.items or [
-        {icon:'/assets/images/placeholder.svg', title:'Rápido', text:'Entregas en tiempo récord con calidad premium.'},
-        {icon:'/assets/images/placeholder.svg', title:'Seguro', text:'Infraestructura estable y optimizada para SEO.'},
-        {icon:'/assets/images/placeholder.svg', title:'Fácil', text:'Gestión simple y soporte personalizado.'}
-      ] %}
+      {% set animations = ['fade-up', 'fade-left', 'fade-right'] %}
+      {% for item in section_data.items %}
         <div class="card benefit-card {{ animations[loop.index0 % animations | length] }} animate-on-scroll" style="--delay: {{ loop.index0 * 0.2 }}s;">
           <img src="{{ item.icon }}" alt="{{ item.title }}" class="benefit-icon"/>
           <h3>{{ item.title }}</h3>
@@ -16,5 +12,11 @@
         </div>
       {% endfor %}
     </div>
+
+    {% if section_data.cta_text and section_data.cta_link %}
+      <div class="benefits-cta">
+        <a href="{{ section_data.cta_link }}" class="btn-primary">{{ section_data.cta_text }}</a>
+      </div>
+    {% endif %}
   </div>
 </section>
