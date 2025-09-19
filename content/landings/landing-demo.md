@@ -95,6 +95,26 @@ sections:
     cta_text: "Descubrí todos los beneficios de la energía escalar"
     cta_link: "#expanded-benefits"
 
+  - type: equipos
+    title: "Los Equipos SER"
+    subtitle: "Cada equipo es un puente hacia tu esencia divina, diseñado para elevar tu vibración y armonizar cuerpo, mente y espíritu."
+    equipos:
+      - name: "SER AMOR"
+        description: "Canaliza la vibración universal del amor para armonizar tus emociones, potenciar relaciones y cultivar paz interior."
+        icon: "/assets/icons/amor.svg"
+      - name: "SER ORIGEN"
+        description: "Reconecta con la fuente y la esencia divina. Ideal para quienes buscan claridad, propósito y equilibrio profundo."
+        icon: "/assets/icons/origen.svg"
+      - name: "SER ESENCIA"
+        description: "Integra cuerpo, mente y espíritu en un estado de plenitud. Expande la conciencia y fortalece el bienestar integral."
+        icon: "/assets/icons/esencia.svg"
+    cta:
+     text: "Quiero mi equipo"
+     link: "#contacto"
+
+
+
+
 
 
 

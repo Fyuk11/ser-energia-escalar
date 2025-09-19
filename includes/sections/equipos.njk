@@ -1,0 +1,22 @@
+<section class="equipos">
+  <div class="container">
+    <h2 class="section-title">{{ section_data.title }}</h2>
+    <p class="section-subtitle">{{ section_data.subtitle }}</p>
+
+    <p><strong>DEBUG:</strong> {{ section_data.equipos | dump | safe }}</p>
+
+    <div class="grid grid--3">
+      {% for equipo in section_data.equipos %}
+      <div class="card equipo-card">
+        <img src="{{ equipo.icon }}" alt="{{ equipo.name }}" class="equipo-icon">
+        <h3>{{ equipo.name }}</h3>
+        <p>{{ equipo.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="equipos-cta">
+      <a href="{{ section_data.cta.link }}" class="btn-primary">{{ section_data.cta.text }}</a>
+    </div>
+  </div>
+</section>
