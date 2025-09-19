@@ -55,7 +55,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData("version", Date.now());
   eleventyConfig.addGlobalData("build", { year: new Date().getFullYear() });
   eleventyConfig.addGlobalData("site", {
-    name: "Landing Demo",
+    name: "Ser Energía Escalar",
     url: "https://landing-demo.netlify.app",
     robots: "index,follow",
     og_image: "/assets/images/default-og.png",

@@ -1,11 +1,11 @@
 ---
 layout: landing.njk
-title: Landing Demo Cliente
+title: Ser Energía Escalar
 description: Esta es una landing de prueba para mostrar secciones dinámicas.
 permalink: index.html
 seo:
-  canonical: https://startland.netlify.app
-  og_title: Startland landing page
+  canonical: https://ser-energia-escalar.netlify.app/
+  og_title: Ser Energía Escalar
   og_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
   og_image: /assets/images/placeholder.jpg
   twitter_title: Startland Landing Demo 
