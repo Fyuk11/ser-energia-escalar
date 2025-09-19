@@ -117,7 +117,7 @@ sections:
      link: "#contacto"
 
 
-  - type: tabla_equipos
+  - type: comparativa-equipos
     title: "Comparativa de Equipos SER"
     subtitle: "Encuentra el equipo que mejor se adapta a tu necesidad y nivel de expansión."
     equipos:
