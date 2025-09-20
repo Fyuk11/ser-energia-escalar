@@ -1,33 +1,42 @@
 export function initSlideshow() {
-  const slides = Array.from(document.querySelectorAll(".slide"));
-  const dots = Array.from(document.querySelectorAll(".testimonials-dots .dot"));
-  if (!slides.length) return;
+  const wrap = document.querySelector(".testimonials__wrap");
+  if (!wrap) return;
 
+  const testimonials = Array.from(wrap.children);
+  const dotsContainer = document.querySelector(".testimonials__dots");
+  const dots = [];
   let currentIndex = 0;
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle("active", i === index);
-    });
-    dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }
-
-  let interval = setInterval(nextSlide, 6000);
-
-  dots.forEach(dot => {
-    dot.addEventListener("click", () => {
-      currentIndex = parseInt(dot.dataset.index);
-      showSlide(currentIndex);
-      clearInterval(interval);
-      interval = setInterval(nextSlide, 6000);
-    });
+  // Crear dots
+  testimonials.forEach((_, i) => {
+    const dot = document.createElement("div");
+    dot.classList.add("testimonials__dot");
+    if (i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => showTestimonial(i));
+    dotsContainer.appendChild(dot);
+    dots.push(dot);
   });
 
-  // Mostrar primero
-  showSlide(currentIndex);
+  function showTestimonial(index) {
+    currentIndex = index;
+    wrap.children[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    dots.forEach((d, i) => d.classList.toggle("active", i === index));
+  }
+
+  // Loop automático
+  setInterval(() => {
+    showTestimonial((currentIndex + 1) % testimonials.length);
+  }, 6000);
+
+  // Inicializar
+  showTestimonial(currentIndex);
+
+  // Swipe móvil
+  let startX = 0;
+  wrap.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+  wrap.addEventListener("touchend", e => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) showTestimonial((currentIndex + 1) % testimonials.length);
+    else if (endX - startX > 50) showTestimonial((currentIndex - 1 + testimonials.length) % testimonials.length);
+  });
 }
