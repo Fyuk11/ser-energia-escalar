@@ -1,4 +1,6 @@
-/* Section wrapper */
+/* -------------------
+   Sección Testimonios
+------------------- */
 .testimonios {
   padding: 3rem 1rem;
   text-align: center;
@@ -22,22 +24,23 @@
 
 /* Wrapper de slideshow */
 .testimonials-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-/* Slideshow */
-.testimonials-slideshow {
   position: relative;
   width: 100%;
   max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Slideshow container */
+.testimonials-slideshow {
+  position: relative;
+  width: 100%;
+  min-height: 220px; /* altura fija para que no colapse */
 }
 
 /* Cada slide */
+/* Cada slide */
 .slide.testimonial-card {
-  display: flex;
+  display: none; /* oculta por defecto */
   flex-direction: column;
   align-items: center;
   background: #fff;
@@ -46,19 +49,15 @@
   box-shadow: 0 8px 20px rgba(8,30,50,0.06);
   width: 100%;
   box-sizing: border-box;
-  opacity: 0;
-  transition: opacity 0.5s ease;
   margin: 0 auto;
-  position: absolute; /* posicionamos todas las cards en el mismo lugar */
-  top: 0;
-  left: 0;
+  text-align: center;
 }
 
-/* Slide activo */
+/* Activa */
 .slide.active {
-  opacity: 1;
-  position: relative; /* solo la activa se muestra con flow normal */
+  display: flex; /* muestra solo la activa */
 }
+
 
 /* Avatar */
 .testimonial-avatar img {
@@ -76,13 +75,11 @@
   margin-bottom: 0.75rem;
   text-align: center;
 }
-
 .testimonial-name {
   font-weight: 700;
   font-size: 1rem;
   color: #042b46;
 }
-
 .testimonial-role {
   font-size: 0.85rem;
   color: #4b6b82;
@@ -96,7 +93,7 @@
   font-style: italic;
   padding-left: 0.5rem;
   border-left: 3px solid rgba(10,132,255,0.15);
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   text-align: left;
   box-sizing: border-box;
@@ -108,7 +105,8 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  z-index: 2;
+  position: relative;
+  z-index: 3; /* por encima de las cards */
 }
 
 .testimonials-dots .dot {

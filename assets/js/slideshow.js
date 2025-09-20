@@ -1,11 +1,11 @@
 export function initSlideshow() {
   const slides = Array.from(document.querySelectorAll(".slide"));
   const dots = Array.from(document.querySelectorAll(".testimonials-dots .dot"));
-  if (slides.length === 0) return;
+  if (!slides.length) return;
 
   let currentIndex = 0;
 
-  function updateSlides(index) {
+  function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.classList.toggle("active", i === index);
     });
@@ -14,22 +14,20 @@ export function initSlideshow() {
 
   function nextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
-    updateSlides(currentIndex);
+    showSlide(currentIndex);
   }
 
-  // Cambio automático cada 6s
   let interval = setInterval(nextSlide, 6000);
 
-  // Click en dots
   dots.forEach(dot => {
     dot.addEventListener("click", () => {
       currentIndex = parseInt(dot.dataset.index);
-      updateSlides(currentIndex);
+      showSlide(currentIndex);
       clearInterval(interval);
       interval = setInterval(nextSlide, 6000);
     });
   });
 
   // Mostrar primero
-  updateSlides(currentIndex);
+  showSlide(currentIndex);
 }
