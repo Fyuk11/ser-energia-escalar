@@ -17,11 +17,14 @@ export function initSlideshow() {
     dots.push(dot);
   });
 
-  function showTestimonial(index) {
-    currentIndex = index;
-    wrap.children[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
-    dots.forEach((d, i) => d.classList.toggle("active", i === index));
-  }
+
+ function showTestimonial(index) {
+  currentIndex = index;
+  const width = wrap.clientWidth;
+  wrap.scrollTo({ left: width * index, behavior: "smooth" });
+  dots.forEach((d, i) => d.classList.toggle("active", i === index));
+}
+
 
   // Loop automático
   setInterval(() => {
