@@ -1,38 +1,39 @@
-/* export function initSlideshow() {
-  const slides = document.querySelectorAll(".slideshow .slide");
-  let currentIndex = 0;
-
-  if (slides.length > 0) {
-    setInterval(() => {
-      slides[currentIndex].classList.remove("active");
-      currentIndex = (currentIndex + 1) % slides.length;
-      slides[currentIndex].classList.add("active");
-    }, 5000); // cada 5 segundos
-  }
-}
-*/
-
 export function initSlideshow() {
   const container = document.querySelector(".testimonials-slideshow");
   if (!container) return;
 
-  const slides = container.querySelectorAll(".slide");
+  const slides = Array.from(container.querySelectorAll(".slide"));
+  const dots = Array.from(document.querySelectorAll(".testimonials-dots .dot"));
   let currentIndex = 0;
 
-  function showSlide(index) {
-    slides.forEach((s, i) => {
-      s.classList.toggle("active", i === index);
+  function updateSlides(index) {
+    slides.forEach((slide, i) => {
+      const offset = i - index;
+      slide.style.transform = `translateX(${offset * 100}%) scale(${i === index ? 1 : 0.85})`;
+      slide.style.opacity = i === index ? '1' : '0.5';
+      slide.classList.toggle('active', i === index);
     });
+
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
   }
 
   function nextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+    updateSlides(currentIndex);
   }
 
-  // Auto cambio cada 5s
-  setInterval(nextSlide, 5000);
+  // Auto slide
+  let interval = setInterval(nextSlide, 5000);
 
-  // Mostrar primero
-  showSlide(currentIndex);
+  // Dots click
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      currentIndex = parseInt(dot.dataset.index);
+      updateSlides(currentIndex);
+      clearInterval(interval);
+      interval = setInterval(nextSlide, 5000);
+    });
+  });
+
+  updateSlides(currentIndex);
 }
