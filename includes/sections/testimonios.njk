@@ -26,7 +26,10 @@
 
       <div class="testimonials-dots">
         {% for t in section_data.items %}
-          <span class="dot{% if loop.first %} active{% endif %}"></span>
+          <span 
+            class="dot{% if loop.first %} active{% endif %}" 
+            data-index="{{ loop.index0 }}">
+          </span>
         {% endfor %}
       </div>
     </div>
