@@ -1,0 +1,36 @@
+<section id="testimonios" class="testimonios section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{ section_data.title or "Testimonios" }}</h2>
+      {% if section_data.subtitle %}
+        <p class="section-subtitle">{{ section_data.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    {% if section_data.items and section_data.items | length > 0 %}
+    <div class="testimonials-wrapper">
+      <div class="testimonials-slideshow">
+        {% for t in section_data.items %}
+          <article class="slide testimonial-card{% if loop.first %} active{% endif %}">
+            <div class="testimonial-avatar">
+              <img src="{{ t.avatar or '/assets/images/testimonials/placeholder.jpg' }}" alt="Avatar de {{ t.name }}">
+            </div>
+            <div class="testimonial-person">
+              <strong class="testimonial-name">{{ t.name }}</strong>
+              {% if t.role %}<span class="testimonial-role">{{ t.role }}</span>{% endif %}
+            </div>
+            <blockquote class="testimonial-quote">“{{ t.quote }}”</blockquote>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="testimonials-dots">
+        {% for t in section_data.items %}
+          <button class="dot{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}" aria-label="Mostrar testimonio {{ loop.index }}"></button>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+

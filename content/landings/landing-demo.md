@@ -138,6 +138,25 @@ sections:
      link: "#contacto"
 
 
+  - type: testimonios
+    title: "Testimonios y experiencias"
+    subtitle: "Experiencias reales de terapeutas y usuarios que usan los equipos SER."
+    items:
+      - name: "María López"
+        role: "Terapeuta corporal, Bs. As."
+        quote: "Desde que incorporamos SER AMOR en el centro notamos pacientes con más energía y recuperación más rápida. Es una herramienta que potencia las terapias."
+        avatar: "/assets/images/testimonials/maria.jpg" # placeholder
+      - name: "Nacho Ruiz"
+        role: "Deportista y entrenador"
+        quote: "Me ayudó a reducir la fatiga post-entrenamiento y a recuperar mejor. Lo recomiendo para quienes buscan mejorar su vitalidad diaria."
+        avatar: "/assets/images/testimonials/nacho.jpg" # placeholder
+      - name: "Mónica Pérez"
+        role: "HolisTerapista"
+        quote: "Las sesiones grupales con SER ESENCIA crearon una atmósfera de paz profunda. Los pacientes hablan de más claridad y armonía emocional."
+        avatar: "/assets/images/testimonials/monica.jpg" # placeholder
+    cta:
+      text: "Quiero saber más"
+      link: "https://wa.me/5493435616629"
 
 
 
