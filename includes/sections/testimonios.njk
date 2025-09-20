@@ -26,7 +26,7 @@
 
       <div class="testimonials-dots">
         {% for t in section_data.items %}
-          <button class="dot{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}" aria-label="Mostrar testimonio {{ loop.index }}"></button>
+          <span class="dot{% if loop.first %} active{% endif %}"></span>
         {% endfor %}
       </div>
     </div>
