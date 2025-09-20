@@ -1,24 +1,41 @@
+/* Section wrapper */
 .testimonios {
   padding: 3rem 1rem;
   text-align: center;
   background: linear-gradient(180deg, rgba(10,84,130,0.03), rgba(255,255,255,0));
 }
 
-.section-title { font-size: 1.5rem; font-weight: 700; color: #06365a; margin-bottom: 0.25rem; }
-.section-subtitle { font-size: 0.95rem; color: #335a76; max-width: 720px; margin: 0 auto 1.5rem auto; }
+/* Títulos */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #06365a;
+  margin-bottom: 0.25rem;
+}
 
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #335a76;
+  max-width: 720px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Wrapper de slideshow */
 .testimonials-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
+/* Slideshow */
 .testimonials-slideshow {
   position: relative;
   width: 100%;
   max-width: 600px;
 }
 
+/* Cada slide */
 .slide.testimonial-card {
   display: flex;
   flex-direction: column;
@@ -28,12 +45,22 @@
   padding: 2rem 1.5rem;
   box-shadow: 0 8px 20px rgba(8,30,50,0.06);
   width: 100%;
+  box-sizing: border-box;
   opacity: 0;
   transition: opacity 0.5s ease;
+  margin: 0 auto;
+  position: absolute; /* posicionamos todas las cards en el mismo lugar */
+  top: 0;
+  left: 0;
 }
 
-.slide.active { opacity: 1; }
+/* Slide activo */
+.slide.active {
+  opacity: 1;
+  position: relative; /* solo la activa se muestra con flow normal */
+}
 
+/* Avatar */
 .testimonial-avatar img {
   width: 64px;
   height: 64px;
@@ -44,10 +71,24 @@
   margin-bottom: 0.75rem;
 }
 
-.testimonial-person { margin-bottom: 0.75rem; }
-.testimonial-name { font-weight: 700; font-size: 1rem; color: #042b46; }
-.testimonial-role { font-size: 0.85rem; color: #4b6b82; }
+/* Nombre y rol */
+.testimonial-person {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
 
+.testimonial-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #042b46;
+}
+
+.testimonial-role {
+  font-size: 0.85rem;
+  color: #4b6b82;
+}
+
+/* Testimonio */
 .testimonial-quote {
   font-size: 1rem;
   line-height: 1.5;
@@ -55,8 +96,10 @@
   font-style: italic;
   padding-left: 0.5rem;
   border-left: 3px solid rgba(10,132,255,0.15);
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 /* Dots debajo de la card */
@@ -65,6 +108,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  z-index: 2;
 }
 
 .testimonials-dots .dot {
@@ -72,6 +116,8 @@
   height: 12px;
   border-radius: 50%;
   background: rgba(10,132,255,0.2);
+  border: none;
+  cursor: pointer;
   transition: background 0.3s;
 }
 
