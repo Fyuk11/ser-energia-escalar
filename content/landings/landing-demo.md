@@ -239,20 +239,23 @@ sections:
 
 
   - type: footer
-    text: © 2025 Landing Demo. Todos los derechos reservados.
-    email: traduccioncreativadigital@gmail.com
+    text: © 2025 Ser Energía Escalar. Todos los derechos reservados.
+    email: contacto@serenergiaescalar.com
+    support: "Garantía y soporte técnico disponible en todo momento."
+    legal: "Nota legal: Nuestros equipos son de uso terapéutico no médico. La empresa no se hace responsable por el mal uso."
     links:
-      - text: Inicio
-        url: "#hero"
-      - text: Beneficios
-        url: "#benefits"
-      - text: Nosotros
-        url: "#about"
-      - text: Contacto
-        url: "#contact"
+     - text: Inicio
+       url: "#hero"
+     - text: Beneficios
+       url: "#benefits"
+     - text: Preguntas Frecuentes
+       url: "#faqs"
+     - text: Contacto
+       url: "#contact"
     social:
       - type: instagram
         url: https://instagram.com/demo
       - type: whatsapp
         url: https://wa.me/5491121652703
+
 ---

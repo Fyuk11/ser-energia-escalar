@@ -2,10 +2,16 @@
   <canvas id="footerParticles" class="footer-particles"></canvas>
 
   <div class="container footer__grid">
-    
+
     <div class="footer__copy">
-      <p>{{ section_data.text or "© 2025 Mi Marca Premium. Todos los derechos reservados." }}</p>
-      <span class="footer__email">{{ section.email or "contacto@midominio.com" }}</span>
+      <p>{{ section_data.text or "© 2025 Ser Energía Escalar. Todos los derechos reservados." }}</p>
+      <span class="footer__email">{{ section_data.email or "contacto@serenergiaescalar.com" }}</span>
+      {% if section_data.support %}
+        <div class="footer__support">{{ section_data.support }}</div>
+      {% endif %}
+      {% if section_data.legal %}
+        <div class="footer__legal">{{ section_data.legal }}</div>
+      {% endif %}
     </div>
 
     <ul class="footer__menu">
