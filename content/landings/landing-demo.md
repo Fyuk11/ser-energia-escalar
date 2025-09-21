@@ -164,20 +164,24 @@ sections:
 
 
   - type: steps
-    title: Proceso claro y humano
+    title: Soporte y Garantía
+    subtitle: "No estás solo en el camino"
     steps:
-      - number: 1
-        title: Escuchamos
-        text: Entendemos tu público y tu propuesta.
-      - number: 2
-        title: Diseñamos
-        text: Tu mensaje y estilo pensado para ellos.
-      - number: 3
-        title: Creamos
-        text: Transformamos tu esencia en una experiencia digital única que habla por sí sola.
-      - number: 4
-        title: Entregamos
-        text: Lista para usar, sin estrés ni complicaciones y te enseñamos a gestionarla fácilmente.
+     - number: 🛡️
+       title: Garantía total de 1 año
+       text: Disfrutá de tranquilidad con cobertura completa durante 12 meses.
+     - number: 💬
+       title: Acompañamiento online
+       text: Asistencia terapéutica y técnica siempre disponible para vos.
+     - number: 📘
+       title: Material exclusivo
+       text: Manuales, videos y protocolos claros incluidos en tu experiencia.
+     - number: 🔧
+       title: Servicio técnico en Argentina
+       text: Soporte local autorizado, rápido y confiable.
+    cta:
+      text: "Hablá con nuestro equipo técnico"
+      url: "#contacto"
 
   - type: section-divider
     invert: true
@@ -190,21 +194,16 @@ sections:
         opacity: 0.6
 
   - type: about
-    title: "Más que una landing: una herramienta de crecimiento"
-    text: >
-      Creamos sistemas vivos, diseñados para que tu negocio crezca con solidez y transparencia. 
-      Nuestras landings están optimizadas desde la base: velocidad, seguridad y diseño responsivo en todos los dispositivos.
+    title: Sobre Sergio / Historia de SER Energía Escalar
+    story: >
+     Sergio inició su camino combinando la investigación técnica con un profundo viaje espiritual. 
+     A lo largo de los años, exploró la energía desde múltiples enfoques, integrando conocimientos 
+      científicos con prácticas de geometría sagrada y terapias holísticas. 
+      De esa unión nació SER Energía Escalar: equipos creados para potenciar la transformación personal.
+    differential: "Un enfoque único que combina ciencia, geometría sagrada y acompañamiento humano."
+    signature: "La energía se transforma en conciencia."
+    image: "/images/sergio.jpg"
 
-    extra_text: >
-      Podés actualizar textos, imágenes o secciones en minutos, sin conocimientos técnicos. 
-      Además, tenés acceso a estadísticas reales sobre cómo la gente encuentra tu negocio en la web. 
-      Y lo mejor: cada landing está pensada para ser escalable, para que tu presencia digital crezca al mismo ritmo que vos.
-
-    images:
-      - "/assets/images/about/cms.webp"         # Admin panel
-      - "/assets/images/about/googlesearch.webp"            # Google console
-      - "/assets/images/about/mockup.webp"          # Ejemplo real de landing
-     # - "/assets/images/about/mockup2.jpg"
 
   - type: faqs
     title: Preguntas frecuentes
