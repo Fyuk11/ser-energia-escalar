@@ -2,7 +2,6 @@ import { initNav } from './nav.js';
 import { initScrollAnimations, initAboutAnimations, initContactParticles } from './animations.js';
 import { initSlideshow } from "./slideshow.js";
 import { initFaqs } from './faqs.js';
-import { initContactForm } from "./form.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {

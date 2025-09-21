@@ -208,25 +208,35 @@ sections:
   - type: faqs
     title: Preguntas frecuentes
     items:
-      - question: "¿Puedo editar mi landing yo mismo?"
-        answer: "Sí. Con nuestro CMS podés actualizar textos, imágenes y secciones sin conocimientos técnicos."
-      - question: "¿Cuánto tarda la entrega?"
-        answer: "En promedio entre 3 y 5 días hábiles, con SEO básico incluido. Si necesitás urgencia, podemos agilizar el proceso."
-      - question: "¿Se ve bien en celular?"
-        answer: "Sí, todas las landings son 100% responsivas, adaptadas a cualquier dispositivo."
-      - question: "¿La optimización SEO está incluida?"
-        answer: "Sí, entregamos tu página lista para indexarse en Google y con métricas conectadas a Search Console."
+     - question: "¿Cuánto dura una sesión?"
+       answer: "Cada sesión tiene una duración aproximada de 60 a 90 minutos, dependiendo de las necesidades de la persona y el proceso en curso."
+
+     - question: "¿Es compatible con otros tratamientos?"
+       answer: "Sí. La terapia energética puede complementar otros enfoques médicos o terapéuticos. Recomendamos siempre informar a tu especialista de confianza."
+
+     - question: "¿Tiene contraindicaciones?"
+       answer: "No existen contraindicaciones graves. En casos de condiciones médicas específicas sugerimos consultar previamente a un profesional de la salud."
+
+     - question: "¿Qué mantenimiento requiere?"
+       answer: "No requiere un mantenimiento rígido. Algunas personas eligen una sesión mensual como equilibrio, otras de forma puntual según su necesidad."
+
+    cta:
+      title: "¿Tenés otra pregunta?"
+      text: "Escribinos y te respondemos personalmente"
+      button_text: "Hablar con el equipo"
+      button_link: "#contacto"
+
 
   - type: cta-video
-    title: Mostrá tu negocio como tus clientes lo esperan
-    subtitle: Tu página ya está lista para atraer y enamorar visitantes.
+    title: "Eleva tu vibración y transforma tu entorno"
+    subtitle: "Es momento de acompañar a otros con la tecnología de la nueva era."
     ctas:
-      - text: Quiero mi página
-        url: https://wa.me/5491121652703
+     - text: "Quiero mi equipo"
+       url: "https://wa.me/5491121652703"
+     - text: "Soy centro holístico – quiero una presentación"
+       url: "https://wa.me/5491121652703"
 
-  - type: contact
-    title: Pedí tu landing hoy
-    text: Completá el formulario y te contactamos para empezar cuanto antes.
+
 
   - type: footer
     text: © 2025 Landing Demo. Todos los derechos reservados.

@@ -1,5 +1,5 @@
 export function initFaqs() {
-  // 🎨 Acordeón
+  // 🎨 Acordeón FAQ
   const cards = document.querySelectorAll('.faq-card');
   cards.forEach(card => {
     const question = card.querySelector('.faq-question');
@@ -8,13 +8,11 @@ export function initFaqs() {
     });
   });
 
-  // ✨ Partículas de fondo
+  // ✨ Canvas mandalas grandes
   const canvas = document.getElementById('faqsParticles');
   if (!canvas) return;
-
   const ctx = canvas.getContext('2d');
 
-  // Hacer que canvas cubra la sección
   function resizeCanvas() {
     canvas.width = canvas.parentElement.offsetWidth;
     canvas.height = canvas.parentElement.offsetHeight;
@@ -22,42 +20,64 @@ export function initFaqs() {
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
 
-  const particles = [];
-  const PARTICLE_COUNT = 50;
+  const mandalas = [];
+  const MANDALA_COUNT = 4; // más mandalas
+  const PHI = (1 + Math.sqrt(5)) / 2;
 
-  for (let i = 0; i < PARTICLE_COUNT; i++) {
-    const size = Math.random() * 3 + 1;
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size,
-      speedX: Math.random() * 0.5 - 0.25,
-      speedY: Math.random() * 0.5 - 0.25,
-      alpha: Math.random() * 0.3 + 0.2
-    });
+  for (let i = 0; i < MANDALA_COUNT; i++) {
+    const centerX = Math.random() * canvas.width;
+    const centerY = Math.random() * canvas.height;
+    const radiusBase = 100 + Math.random() * 200; // mandalas más grandes
+    const particleCount = 50 + Math.floor(Math.random() * 50);
+
+    const particles = [];
+    for (let j = 0; j < particleCount; j++) {
+      const angle = j * 2 * Math.PI / PHI;
+      const speed = 0.0005 + Math.random() * 0.002;
+      const radius = radiusBase * (0.3 + Math.random() * 0.7);
+      particles.push({
+        angle,
+        speed,
+        radius,
+        size: 1 + Math.random() * 3,
+        alpha: 0.05 + Math.random() * 0.2, // opacidad más baja para no tapar texto
+      });
+    }
+
+    mandalas.push({centerX, centerY, particles});
   }
 
-  function animateParticles() {
+  function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      ctx.beginPath();
-      const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*2);
-      gradient.addColorStop(0, `rgba(10,132,255,${p.alpha})`);
-      gradient.addColorStop(1, `rgba(10,132,255,0)`);
-      ctx.fillStyle = gradient;
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
-      ctx.fill();
 
-      p.x += p.speedX;
-      p.y += p.speedY;
+    mandalas.forEach(mandala => {
+      mandala.particles.forEach(p => {
+        p.angle += p.speed;
 
-      if (p.x < 0) p.x = canvas.width;
-      if (p.x > canvas.width) p.x = 0;
-      if (p.y < 0) p.y = canvas.height;
-      if (p.y > canvas.height) p.y = 0;
+        const x = mandala.centerX + p.radius * Math.cos(p.angle);
+        const y = mandala.centerY + p.radius * Math.sin(p.angle);
+
+        // dibujar mini mandala radial
+        ctx.beginPath();
+        const gradient = ctx.createRadialGradient(x, y, 0, x, y, p.size * 3);
+        gradient.addColorStop(0, `rgba(10,132,255,${p.alpha})`);
+        gradient.addColorStop(1, `rgba(10,132,255,0)`);
+        ctx.fillStyle = gradient;
+        ctx.arc(x, y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+
+        // líneas radiales sutiles
+        ctx.beginPath();
+        ctx.moveTo(mandala.centerX, mandala.centerY);
+        ctx.lineTo(x, y);
+        ctx.strokeStyle = `rgba(10,132,255,${p.alpha * 0.1})`;
+        ctx.lineWidth = 0.4;
+        ctx.stroke();
+      });
     });
-    requestAnimationFrame(animateParticles);
+
+    requestAnimationFrame(animate);
   }
 
-  animateParticles();
+  animate();
 }

@@ -114,6 +114,93 @@
   transform: rotate(45deg);
 }
 
+
+/* CTA final */
+.faq-cta {
+  margin-top: 80px;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: rgba(10,132,255,0.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Fondo mandala premium */
+.faq-cta::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;  /* más grande que el contenedor para que nunca se corte */
+  height: 300%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(
+      rgba(10,132,255,0.15) 0deg 30deg,
+      transparent 30deg 60deg
+    ),
+    radial-gradient(circle at center, rgba(10,132,255,0.08) 10%, transparent 70%),
+    radial-gradient(circle at center, rgba(255,255,255,0.05) 20%, transparent 80%);
+  z-index: 0;
+  animation: swing 60s linear infinite alternate; /* vaivén lento */
+  transform-origin: center center;
+}
+
+@keyframes swing {
+  0% { transform: translate(-50%, -50%) rotate(-15deg); }
+  50% { transform: translate(-50%, -50%) rotate(15deg); }
+  100% { transform: translate(-50%, -50%) rotate(-15deg); }
+}
+
+/* Mantener color original del título */
+.faq-cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #0A84FF; /* azul principal */
+}
+
+
+/* Contenido sobre el fondo */
+.faq-cta h3,
+.faq-cta p,
+.faq-cta a {
+  position: relative;
+  z-index: 1;
+}
+
+.faq-cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #cdd6d3; /* dorado premium */
+}
+
+.faq-cta p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.faq-cta .btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 2rem;
+  background: #0A84FF; /* azul principal */
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(10,132,255,0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.faq-cta .btn:hover {
+  background: #2563EB;
+  transform: translateY(-3px);
+}
+
+
+
 /* =======================
    Responsive
 ======================= */
