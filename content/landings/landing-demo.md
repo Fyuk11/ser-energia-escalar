@@ -22,7 +22,7 @@ nav:
   - text: Preguntas frecuentes
     url: "#faqs"
   - text: WhatsApp
-    url: https://wa.me/5491121652703
+    url: https://wa.me/5493435616629
     external: true
 
 
@@ -37,9 +37,9 @@ sections:
       mobileMp4: "/assets/videos/heroDeskMobile.mp4"
     ctas:
      - text: "Conocer más"
-       url: "#benefits"
+       url: "#what-is"
      - text: "Hablar por WhatsApp"
-       url: "https://wa.me/5491121652703"
+       url: "https://wa.me/5493435616629"
 
 
 
@@ -48,7 +48,7 @@ sections:
     subtitle: "No estás solo. Muchas personas buscan mejorar su bienestar y calidad de vida."
     cta_text: "La buena noticia: existe una forma más fácil de recuperar tu equilibrio y bienestar."
     cta_button: "Descubrir la solución"
-    cta_link: "#solution"
+    cta_link: "https://wa.me/5493435616629"
     points:
     - title: "Sientes fatiga y falta de energía diaria"
       description: "La rutina, el estrés y la exposición a energías densas afectan tu vitalidad."
@@ -96,7 +96,7 @@ sections:
       title: "Retrasa el envejecimiento celular"
       text: "Favorece la regeneración celular y la vitalidad a nivel físico y mental."
     cta_text: "Descubrí todos los beneficios de la energía escalar"
-    cta_link: "#expanded-benefits"
+    cta_link: "https://wa.me/5493435616629"
 
 
   - type: equipos
@@ -117,7 +117,7 @@ sections:
       price: "$1500 USD"
     cta:
      text: "Quiero mi equipo"
-     link: "#contacto"
+     link: "https://wa.me/5493435616629"
 
 
   - type: comparativa-equipos
@@ -138,7 +138,7 @@ sections:
       precio: "USD 1.450"
     cta:
      text: "Quiero mi equipo"
-     link: "#contacto"
+     link: "https://wa.me/5493435616629"
 
 
   - type: testimonios
@@ -184,7 +184,7 @@ sections:
        text: Soporte local autorizado, rápido y confiable.
     cta:
       text: "Hablá con nuestro equipo técnico"
-      url: "#contacto"
+      url: "https://wa.me/5493435616629"
 
   - type: section-divider
     invert: true
@@ -227,7 +227,7 @@ sections:
       title: "¿Tenés otra pregunta?"
       text: "Escribinos y te respondemos personalmente"
       button_text: "Hablar con el equipo"
-      button_link: "#contacto"
+      button_link: "https://wa.me/5493435616629"
 
 
   - type: cta-video
@@ -235,9 +235,9 @@ sections:
     subtitle: "Es momento de acompañar a otros con la tecnología de la nueva era."
     ctas:
      - text: "Quiero mi equipo"
-       url: "https://wa.me/5491121652703"
+       url: "https://wa.me/5493435616629"
      - text: "Soy centro holístico – quiero una presentación"
-       url: "https://wa.me/5491121652703"
+       url: "https://wa.me/5493435616629"
 
 
 
@@ -261,7 +261,7 @@ sections:
       - type: instagram
         url: https://www.instagram.com/ser.energiaescalar/
       - type: whatsapp
-        url: https://wa.me/5491121652703
+        url: https://wa.me/5493435616629
 
 
 ---
