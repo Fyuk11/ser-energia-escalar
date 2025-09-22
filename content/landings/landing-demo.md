@@ -28,8 +28,8 @@ nav:
 
 sections:
   - type: hero
-    title: "Energía Escalar: Equilibrio y Vitalidad para tu Vida"
-    subtitle: "Descubrí cómo la tecnología escalar puede ayudarte a mejorar tu bienestar físico, mental y emocional."
+    title: "Vuelve al origen de tu esencia divina"
+    subtitle: "Descubrí cómo la tecnología escalar puede ayudarte a mejorar tu bienestar físico, mental y emocional, potenciar tus terapias y transformar la salud de manera integral."
     videos:
       desktopWebm: "/assets/videos/heroDesktop.webm"
       desktopMp4: "/assets/videos/heroDesktop.mp4"
@@ -63,8 +63,8 @@ sections:
     title: "¿Qué es la Energía Escalar?"
     subtitle: "Descubre cómo la energía escalar puede transformar tu bienestar de manera integral."
     text:
-    - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo."
-    - "Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
+    - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo. Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
+
     visual:
      type: "image"  # o "animation" si es un SVG animado o Lottie
      src: "/assets/images/energia-escalar-illustration.png"
