@@ -15,13 +15,16 @@ nav:
     url: "#hero"
   - text: Beneficios
     url: "#benefits"
+  - text: Equipos
+    url: "#equipos"
   - text: Nosotros
     url: "#about"
-  - text: Contacto
-    url: "#contact"
+  - text: Preguntas frecuentes
+    url: "#faqs"
   - text: WhatsApp
     url: https://wa.me/5491121652703
     external: true
+
 
 sections:
   - type: hero
@@ -248,14 +251,17 @@ sections:
        url: "#hero"
      - text: Beneficios
        url: "#benefits"
+     - text: Equipos
+       url: "#equipos"
+     - text: Nosotros
+       url: "#about"
      - text: Preguntas Frecuentes
        url: "#faqs"
-     - text: Contacto
-       url: "#contact"
     social:
       - type: instagram
-        url: https://instagram.com/demo
+        url: https://www.instagram.com/ser.energiaescalar/
       - type: whatsapp
         url: https://wa.me/5491121652703
+
 
 ---
