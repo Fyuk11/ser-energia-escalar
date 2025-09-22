@@ -24,7 +24,7 @@
   z-index: -3;
   background: linear-gradient(
     135deg,
-    rgba(13, 27, 42, 0.65),   /* azul profundo */
+    rgba(10, 20, 30, 0.75),   /* un poco más oscuro */
     rgba(255, 215, 0, 0.15)   /* dorado translúcido */
   );
   animation: gradientShift 20s ease infinite;
@@ -83,6 +83,46 @@
 .fade-left.delay-1 { transition-delay: 0.3s; }
 .fade-left.delay-2 { transition-delay: 0.6s; }
 .fade-left.delay-3 { transition-delay: 0.9s; }
+
+
+
+.hero-mandala {
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* debajo del overlay (overlay z-index:2) y del contenido z-index:3 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.mandala-svg {
+  width: min(85vw, 800px); /* fijamos un tamaño más estable */
+  height: auto;
+  opacity: 0.15; /* jugá entre 0.12 y 0.18 para legibilidad */
+  transform-origin: center center;
+  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.12));
+  animation: mandalaRotate 120s linear infinite;
+}
+
+/* eliminamos el media query que lo cambiaba */
+
+
+/* respetar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .mandala-svg { animation: none; }
+}
+
+@keyframes mandalaRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* mobile: reducir tamaño y opacidad */
+@media (max-width: 768px) {
+  .mandala-svg { width: min(95vw, 700px); opacity: 0.08; }
+}
+
 
 /* Responsive */
 .hero-desktop { display: none; }
