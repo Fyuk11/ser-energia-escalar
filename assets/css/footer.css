@@ -3,7 +3,7 @@
 ======================= */
 .footer {
   position: relative;
-  padding: 1.2rem 1rem; /* fino y elegante */
+  padding: 1.2rem 1rem;
   background: linear-gradient(180deg, #0b0f1a 0%, #000 100%);
   color: #f5f5f5;
   font-size: 0.85rem;
@@ -31,7 +31,7 @@
 }
 
 /* =======================
-   Grid
+   Grid y layout
 ======================= */
 .footer__grid {
   display: grid;
@@ -42,25 +42,43 @@
   z-index: 1;
 }
 
-/* =======================
-   Copy / Text
-======================= */
-.footer__copy p {
-  color: #d4af37; /* Dorado suave */
+/* Footer copy con logo a la izquierda */
+.footer__copy {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center; /* centrar en mobile por defecto */
+}
+
+.footer__logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.footer__info p {
+  color: #d4af37;
   font-weight: 500;
+  margin: 0;
 }
 
 .footer__email,
-.footer__support,
-.footer__legal {
+.footer__support {
   font-size: 0.75rem;
   color: #e5e5e5;
-  margin-top: 0.2rem;
   opacity: 0.8;
+  margin: 0;
 }
 
 /* =======================
-   Menu
+   Menú y redes sociales
 ======================= */
 .footer__menu {
   list-style: none;
@@ -77,13 +95,11 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .footer__menu a:hover {
-  color: #1e90ff; /* Azul zafiro al hover */
+  color: #1e90ff;
 }
 
-/* =======================
-   Social Buttons
-======================= */
 .footer__social {
   display: flex;
   justify-content: center;
@@ -103,8 +119,9 @@
   font-size: 1rem;
   transition: all 0.3s ease;
 }
+
 .btn-social:hover {
-  background: #d4af37; /* Dorado suave */
+  background: #d4af37;
   color: #0b0f1a;
   transform: scale(1.05);
 }
@@ -113,18 +130,23 @@
    Responsive
 ======================= */
 
-/* Tablets */
+/* Tablets y desktop */
 @media (min-width: 768px) {
   .footer__grid {
     grid-template-columns: 1fr auto auto;
     text-align: left;
     align-items: center;
   }
+
+  .footer__copy {
+    justify-content: flex-start;
+  }
+
   .footer__menu { justify-content: flex-start; }
   .footer__social { justify-content: flex-end; }
 }
 
-/* Desktop */
+/* Desktop grande */
 @media (min-width: 1200px) {
   .footer { padding: 1.5rem 2rem; }
   .footer__menu a { font-size: 0.9rem; }
@@ -136,16 +158,26 @@
   .footer { padding: 1.8rem 2.2rem; }
   .footer__menu a { font-size: 1rem; }
   .footer__email,
-  .footer__support,
-  .footer__legal { font-size: 0.85rem; }
+  .footer__support { font-size: 0.85rem; }
 }
 
-/* Ultra-wide (2K/4K) */
+/* Ultra-wide */
 @media (min-width: 2560px) {
   .footer { padding: 2rem 2.5rem; font-size: 0.95rem; }
   .footer__menu a { font-size: 1.1rem; }
   .btn-social { width: 48px; height: 48px; font-size: 1.2rem; }
   .footer__email,
-  .footer__support,
-  .footer__legal { font-size: 0.95rem; }
+  .footer__support { font-size: 0.95rem; }
+}
+
+/* Mobile: logo arriba, info debajo */
+@media (max-width: 767px) {
+  .footer__copy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__info {
+    text-align: center;
+  }
 }

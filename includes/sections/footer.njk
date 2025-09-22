@@ -1,16 +1,23 @@
 <footer id="footer" class="footer">
   <div class="container footer__grid">
 
-    <div class="footer__copy">
-      <p>{{ section_data.text or "© 2025 Ser Energía Escalar. Todos los derechos reservados." }}</p>
-      <span class="footer__email">{{ section_data.email or "contacto@serenergiaescalar.com" }}</span>
-      {% if section_data.support %}
-        <div class="footer__support">{{ section_data.support }}</div>
-      {% endif %}
-      {% if section_data.legal %}
-        <div class="footer__legal">{{ section_data.legal }}</div>
-      {% endif %}
-    </div>
+<div class="footer__copy">
+  <!-- Logo a la izquierda -->
+  <img src="{{ site.logo or '/assets/images/logo.png' }}" alt="Ser Energía Escalar" class="footer__logo">
+
+  <!-- Información a la derecha del logo -->
+  <div class="footer__info">
+    <p>{{ section_data.text or "© 2025 Ser Energía Escalar. Todos los derechos reservados." }}</p>
+    <span class="footer__email">{{ section_data.email or "contacto@serenergiaescalar.com" }}</span>
+    {% if section_data.support %}
+      <div class="footer__support">{{ section_data.support }}</div>
+    {% endif %}
+    {% if section_data.legal %}
+      <div class="footer__legal">{{ section_data.legal }}</div>
+    {% endif %}
+  </div>
+</div>
+
 
     <ul class="footer__menu">
       {% for link in section_data.links %}

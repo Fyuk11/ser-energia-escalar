@@ -1,7 +1,11 @@
 <nav class="nav nav--venta">
   <div class="nav__inner container">
     <!-- Brand -->
-    <a class="nav__brand" href="/">{{ site.name or "Ser Energía Escalar" }}</a>
+<a class="nav__brand" href="/">
+  <img src="{{ site.logo or '/assets/images/logo.png' }}" alt="Ser Energía Escalar" class="nav__logo">
+  <span>{{ site.name or "Ser Energía Escalar" }}</span>
+</a>
+
 
     <!-- Burger toggle (mobile) -->
     <button class="nav__toggle" aria-label="Abrir menú">

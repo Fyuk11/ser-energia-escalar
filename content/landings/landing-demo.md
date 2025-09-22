@@ -242,6 +242,7 @@ sections:
 
 
   - type: footer
+    logo: "/assets/images/logo.png"
     text: © 2025 Ser Energía Escalar. Todos los derechos reservados.
     email: contacto@serenergiaescalar.com
     support: "Garantía y soporte técnico disponible en todo momento."
