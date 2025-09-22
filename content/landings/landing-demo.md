@@ -98,6 +98,11 @@ sections:
     cta_text: "Descubrí todos los beneficios de la energía escalar"
     cta_link: "https://wa.me/5493435616629"
 
+  - type: mission
+    title: "Nuestra Misión"
+    text: "En Ser Energía Escalar acompañamos tu bienestar mediante terapias con equipos de energía escalar. Nuestro objetivo es brindar soluciones terapéuticas personalizadas, seguras y confiables, enfocadas en mejorar tu calidad de vida. Nuestra misión es que la energía escalar llegue a todos los hogares, para que todas las personas tengan acceso a elevar su frecuencia y bienestar."
+
+
 
   - type: equipos
     title: "Los Equipos SER"
