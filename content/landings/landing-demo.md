@@ -44,20 +44,20 @@ sections:
 
 
   - type: pain
-    title: "¿Te resuena alguna de estas situaciones?"
-    subtitle: "No estás solo. Muchas personas buscan mejorar su bienestar y calidad de vida."
-    cta_text: "La buena noticia: existe una forma más fácil de recuperar tu equilibrio y bienestar."
-    cta_button: "Descubrir la solución"
+    title: "¿Te identificás con alguno de estos desafíos diarios?"
+    subtitle: "No es solo tu historia: miles de personas atraviesan lo mismo. Pero hay una manera más simple de cambiarlo."
+    cta_text: "La buena noticia: podés transformar tu bienestar con pasos naturales y efectivos."
+    cta_button: "Descubrir cómo mejorar mi bienestar"
     cta_link: "https://wa.me/5493435616629"
     points:
-    - title: "Sientes fatiga y falta de energía diaria"
-      description: "La rutina, el estrés y la exposición a energías densas afectan tu vitalidad."
-    - title: "Te cuesta relajarte y conciliar un sueño reparador"
-      description: "El descanso no llega como debería, y tu cuerpo no logra recuperarse completamente."
-    - title: "Buscas armonía emocional y mental"
-      description: "Las preocupaciones, la ansiedad y el estrés te desconectan de tu bienestar natural."
-    - title: "Deseas potenciar tus terapias o prácticas de bienestar"
-      description: "Quieres herramientas que acompañen tu crecimiento, salud y equilibrio de manera integral."
+    - title: "Recuperá tu energía y dejá atrás el cansancio que te frena."
+      description: "Ese agotamiento que arrastrás no tiene por qué ser tu normalidad. Sentí cómo volvés a tener fuerzas para todo lo que amás hacer."
+    - title: "Construí calma interior en lugar de cargar con el estrés diario."
+      description: "El ritmo acelerado y la ansiedad no tienen que dominarte. Descubrí cómo recuperar la paz mental que te sostiene."
+    - title: "Dormí profundo y liberate de esas noches inquietas."
+      description: "No más vueltas en la cama ni despertares agotadores. Regalate un descanso real que transforme tus días."
+    - title: "Viví liviano, sin el peso constante de la tensión."
+      description: "Las contracturas y la rigidez no son inevitables. Soltá el peso acumulado y sentí tu cuerpo más libre."
 
   - type: what-is
     title: "¿Qué es la Energía Escalar?"
