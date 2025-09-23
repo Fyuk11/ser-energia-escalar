@@ -10,7 +10,7 @@
 .section-title {
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
-  background: linear-gradient(90deg, #ffca0a, #050301);
+  background: linear-gradient(90deg, #ffca0a, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.3;

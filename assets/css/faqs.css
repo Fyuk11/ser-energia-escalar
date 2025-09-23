@@ -21,13 +21,18 @@
 }
 
 /* Título de sección */
+/* Título de sección FAQs */
 .faqs .section-title {
   font-size: 2.5rem;
   margin-bottom: 60px;
   text-align: center;
-  color: #0A84FF;
-  text-shadow: 0 2px 8px rgba(10,132,255,0.3);
+  color: #ffffff; /* color blanco */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2); /* sombra sutil opcional */
+  background: none; /* aseguramos que no tome gradientes previos */
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
+
 
 /* Grid de tarjetas */
 .faqs-grid {
