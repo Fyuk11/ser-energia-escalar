@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initAboutAnimations();   // <-- 💡 acá la llamamos
   initFaqs();
   initContactParticles();
-  initContactForm();
 
 
   console.log("Landing loaded ✅");
