@@ -1,15 +1,14 @@
 ---
 layout: landing.njk
-title: Ser Energía Escalar
-description: Esta es una landing de prueba para mostrar secciones dinámicas.
+title: Ser Energía Escalar – Tecnología y Bienestar Integral
+description: Descubrí cómo la Energía Escalar puede ayudarte a reconectar con tu equilibrio físico, emocional y espiritual.
 permalink: index.html
 seo:
-  canonical: https://ser-energia-escalar.netlify.app/
-  og_title: Ser Energía Escalar
-  og_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
-  og_image: /assets/images/placeholder.jpg
-  twitter_title: Ser Energía Escalar
-  twitter_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
+  canonical: https://ser-energia-escalar.netlify.app/  # cambiarás luego al dominio final
+  og_title: Ser Energía Escalar – Tecnología y Bienestar Integral
+  og_description: Reconectá con tu energía y mejorá tu bienestar con dispositivos de Energía Escalar diseñados con propósito espiritual y conciencia.
+  og_image: /assets/images/og-image.svg  # reemplazar por una imagen real y atractiva
+
 nav:
   - text: Inicio
     url: "#hero"
