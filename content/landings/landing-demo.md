@@ -77,22 +77,22 @@ sections:
   - type: benefits
     title: "Beneficios para la salud y el bienestar"
     items:
-    - icon: /assets/images/svg1.png
+    - icon: /assets/images/svg1.svg
       title: "Fortalece el sistema inmune"
       text: "Apoya la defensa natural de tu cuerpo frente a enfermedades y agentes externos."
-    - icon: /assets/images/svg2.png
+    - icon: /assets/images/svg2.svg
       title: "Reduce dolor e inflamación"
       text: "Favorece la recuperación y alivia tensiones acumuladas en músculos y articulaciones."
-    - icon: /assets/images/svg3.png
+    - icon: /assets/images/svg3.svg
       title: "Mejora la calidad del sueño"
       text: "Promueve un descanso profundo y reparador, ayudando a restaurar energía y vitalidad."
-    - icon: /assets/images/svg4.png
+    - icon: /assets/images/svg4.svg
       title: "Armoniza emociones y reduce el estrés"
       text: "Contribuye a un equilibrio emocional, reduciendo ansiedad y tensiones cotidianas."
-    - icon: /assets/images/svg5.png
+    - icon: /assets/images/svg5.svg
       title: "Potencia terapias complementarias"
       text: "Maximiza los efectos de otras prácticas de bienestar y tratamientos holísticos."
-    - icon: /assets/images/svg6.png
+    - icon: /assets/images/svg6.svg
       title: "Retrasa el envejecimiento celular"
       text: "Favorece la regeneración celular y la vitalidad a nivel físico y mental."
     cta_text: "Descubrí todos los beneficios de la energía escalar"
