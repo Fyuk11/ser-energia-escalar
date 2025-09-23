@@ -1,7 +1,12 @@
+/* ==================== */
+/* Equipos Vertical - Base */
+/* ==================== */
 .equipos-vertical {
+  position: relative; /* necesario para que el mandala quede atrás */
   padding: 4rem 1rem;
   background: linear-gradient(135deg, #ffffff, #f9fbff);
   text-align: center;
+  overflow: hidden;
 }
 
 /* Títulos */
@@ -80,86 +85,94 @@
   transform: translateY(0);
 }
 
+/* ==================== */
+/* Mandala decorativo */
+/* ==================== */
+.teams-mandala {
+  position: absolute;
+  inset: 1; /* puede ajustarse para moverlo arriba-izquierda */
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.teams-mandala .mandala-svg {
+  width: min(90vw, 800px);
+  height: auto;
+  transform-origin: center center;
+  opacity: 0.44;
+  animation: mandalaRotateTeams 200s linear infinite,
+             mandalaMoveTeams 40s ease-in-out infinite alternate;
+}
+
+/* Rotación lenta */
+@keyframes mandalaRotateTeams {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Movimiento diagonal */
+@keyframes mandalaMoveTeams {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(35%, 35%) rotate(180deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+/* Contenedor por encima */
+.equipos-vertical .container {
+  position: relative;
+  z-index: 1;
+}
 
 /* ==================== */
-/* Responsive Breakpoints */
+/* Responsivo Mobile-First */
 /* ==================== */
 
-/* Mobile first: menos de 600px */
+/* Mobile <600px */
 @media (max-width: 599px) {
   .equipo-vertical {
     flex-direction: column !important;
     gap: 1.5rem;
     text-align: center;
   }
-
   .equipo-text {
     max-width: 100%;
     text-align: center;
   }
-
-  .equipo-img img {
-    width: 120px;
-  }
-
-  .equipo-text h3 {
-    font-size: 1.3rem;
-  }
-
-  .equipo-text p {
-    font-size: 0.95rem;
+  .equipo-img img { width: 120px; }
+  .equipo-text h3 { font-size: 1.3rem; }
+  .equipo-text p { font-size: 0.95rem; }
+  .teams-mandala .mandala-svg {
+    width: min(95vw, 300px);
+    opacity: 0.25;
   }
 }
 
-/* Tablets: 600px - 1023px */
+/* Tablets 600px - 1023px */
 @media (min-width: 600px) and (max-width: 1023px) {
-  .equipo-vertical {
-    gap: 2rem;
-  }
-
-  .equipo-img img {
-    width: 140px;
-  }
-
-  .equipo-text h3 {
-    font-size: 1.4rem;
-  }
-
-  .equipo-text p {
-    font-size: 1rem;
-  }
+  .equipo-vertical { gap: 2rem; }
+  .equipo-img img { width: 140px; }
+  .equipo-text h3 { font-size: 1.4rem; }
+  .equipo-text p { font-size: 1rem; }
+  .teams-mandala .mandala-svg { width: min(90vw, 500px); opacity: 0.35; }
 }
 
-/* Desktop: 1024px - 1599px */
+/* Desktop 1024px - 1599px */
 @media (min-width: 1024px) and (max-width: 1599px) {
-  .equipo-img img {
-    width: 150px;
-  }
-
-  .equipo-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .equipo-text p {
-    font-size: 1rem;
-  }
+  .equipo-img img { width: 150px; }
+  .equipo-text h3 { font-size: 1.5rem; }
+  .equipo-text p { font-size: 1rem; }
+  .equipo-vertical { gap: 2.5rem; }
+  .teams-mandala .mandala-svg { width: min(80vw, 600px); opacity: 0.4; }
 }
 
-/* Ultra-wide: 1600px+ */
+/* Ultra-wide ≥1600px */
 @media (min-width: 1600px) {
-  .equipo-img img {
-    width: 180px;
-  }
-
-  .equipo-text h3 {
-    font-size: 1.6rem;
-  }
-
-  .equipo-text p {
-    font-size: 1.1rem;
-  }
-
-  .equipo-vertical {
-    gap: 3rem;
-  }
+  .equipo-img img { width: 180px; }
+  .equipo-text h3 { font-size: 1.6rem; }
+  .equipo-text p { font-size: 1.1rem; }
+  .equipo-vertical { gap: 3rem; }
+  .teams-mandala .mandala-svg { width: min(70vw, 700px); opacity: 0.45; }
 }

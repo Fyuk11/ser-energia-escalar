@@ -94,6 +94,7 @@
   }
 }
 
+
 /* Desktop grande y ultrawide */
 @media (min-width: 1024px) {
   .what-is { padding: 6rem 3rem; }

@@ -1,4 +1,35 @@
 <section id="equipos" class="equipos-vertical">
+
+  <!-- Mandala tipo flor de loto -->
+  <div class="teams-mandala" aria-hidden="true">
+    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" class="mandala-svg">
+      <defs>
+        <linearGradient id="lotusGold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f9d86dff"/>
+          <stop offset="100%" stop-color="#d4af37"/>
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke="url(#lotusGold)" stroke-width="2" opacity="0.4">
+        <!-- Círculos concéntricos -->
+        <circle cx="400" cy="400" r="120"/>
+        <circle cx="400" cy="400" r="220"/>
+        <circle cx="400" cy="400" r="320"/>
+        
+        <!-- Pétalos flor de loto -->
+        {% for i in range(0, 360, 15) %}
+          <path d="M400,400 
+                   m-0,-180 
+                   C405,-120,395,-60,400,0" 
+                transform="rotate({{ i }},400,400)" />
+          <path d="M400,400 
+                   m-0,-150 
+                   C408,-100,392,-50,400,0" 
+                transform="rotate({{ i + 7.5 }},400,400)" />
+        {% endfor %}
+      </g>
+    </svg>
+  </div>
+
   <div class="container">
     <h2 class="section-title">{{ section_data.title }}</h2>
     <p class="section-subtitle">{{ section_data.subtitle }}</p>
@@ -11,7 +42,7 @@
         <div class="equipo-text">
           <h3>{{ equipo.name }}</h3>
           <p>{{ equipo.description }}</p>
-           <p class="equipo-price">{{ equipo.price }}</p>
+          <p class="equipo-price">{{ equipo.price }}</p>
         </div>
       </div>
     {% endfor %}
