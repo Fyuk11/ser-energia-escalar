@@ -155,34 +155,7 @@ export function initContactParticles() {
     });
   }
 
-  function animateContact() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      ctx.beginPath();
-      const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*2);
-      gradient.addColorStop(0, `rgba(255,255,255,${p.alpha})`);
-      gradient.addColorStop(1, 'rgba(255,255,255,0)');
-      ctx.fillStyle = gradient;
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
-      ctx.fill();
-
-      p.x += p.speedX;
-      p.y += p.speedY;
-
-      if (p.x < 0) p.x = canvas.width;
-      if (p.x > canvas.width) p.x = 0;
-      if (p.y < 0) p.y = canvas.height;
-      if (p.y > canvas.height) p.y = 0;
-    });
-    requestAnimationFrame(animateContact);
-  }
-
-  animateContact();
-
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
+  
 }
 
 // Animación Fade-Up para la sección de equipos
