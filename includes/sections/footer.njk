@@ -25,20 +25,26 @@
       {% endfor %}
     </ul>
 
-    <div class="footer__social">
-      {% for s in section_data.social %}
-        {% if s.type == "instagram" %}
-          <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        {% endif %}
-        {% if s.type == "whatsapp" %}
-          <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social whatsapp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
+<div class="footer__social">
+  {% for s in section_data.social %}
+    {% if s.type == "instagram" %}
+      <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    {% endif %}
+    {% if s.type == "whatsapp" %}
+      <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    {% endif %}
+    {% if s.type == "tiktok" %}
+      <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social tiktok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
 
   </div>
 </footer>

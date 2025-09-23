@@ -61,7 +61,7 @@ sections:
 
   - type: what-is
     title: "¿Qué es la Energía Escalar?"
-    subtitle: "Descubre cómo la energía escalar puede transformar tu bienestar de manera integral."
+    subtitle: "Es una experiencia que conecta cuerpo, mente y espíritu. Cada equipo está diseñado con símbolos, geometría sagrada y frecuencias armonizadas, pensado para reconectar al ser humano con su origen divino."
     text:
     - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo. Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
 
@@ -266,8 +266,12 @@ sections:
     social:
       - type: instagram
         url: https://www.instagram.com/ser.energiaescalar/
+      - type: tiktok
+        url: "https://www.tiktok.com/@ser_sergioemanuelramel"
       - type: whatsapp
         url: https://wa.me/5493435616629
+
+
 
 
 ---
