@@ -81,20 +81,20 @@ sections:
       title: "Fortalece el sistema inmune"
       text: "Apoya la defensa natural de tu cuerpo frente a enfermedades y agentes externos."
     - icon: /assets/images/svg2.svg
-      title: "Reduce dolor e inflamación"
-      text: "Favorece la recuperación y alivia tensiones acumuladas en músculos y articulaciones."
+      title: "Reducción del estrés y ansiedad"
+      text: "Generan un estado de calma profunda y expansión de energía vital."
     - icon: /assets/images/svg3.svg
-      title: "Mejora la calidad del sueño"
-      text: "Promueve un descanso profundo y reparador, ayudando a restaurar energía y vitalidad."
+      title: "Conexión espiritual"
+      text: "Abren el canal sutil que reconecta con la esencia divina, despertando intuición y propósito."
     - icon: /assets/images/svg4.svg
-      title: "Armoniza emociones y reduce el estrés"
-      text: "Contribuye a un equilibrio emocional, reduciendo ansiedad y tensiones cotidianas."
+      title: "Armonización integral"
+      text: " Equilibran cuerpo, mente, emociones y espíritu, generando coherencia y bienestar."
     - icon: /assets/images/svg5.svg
-      title: "Potencia terapias complementarias"
-      text: "Maximiza los efectos de otras prácticas de bienestar y tratamientos holísticos."
+      title: "Regeneración celular"
+      text: "Favorecen procesos de auto-sanación, activando los mecanismos naturales del organismo."
     - icon: /assets/images/svg6.svg
-      title: "Retrasa el envejecimiento celular"
-      text: "Favorece la regeneración celular y la vitalidad a nivel físico y mental."
+      title: "Elevación vibracional"
+      text: " Llevan al ser a frecuencias más altas, facilitando claridad mental, paz emocional y vitalidad física."
     cta_text: "Descubrí todos los beneficios de la energía escalar"
     cta_link: "https://wa.me/5493435616629"
 
@@ -249,7 +249,7 @@ sections:
   - type: footer
     logo: "/assets/images/logo.png"
     text: © 2025 Ser Energía Escalar. Todos los derechos reservados.
-    email: contacto@serenergiaescalar.com
+    email: energiaescalar.ser@gmail.com
     support: "Garantía y soporte técnico disponible en todo momento."
     legal: "Nota legal: Nuestros equipos son de uso terapéutico no médico. La empresa no se hace responsable por el mal uso."
     links:
