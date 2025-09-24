@@ -1,10 +1,9 @@
 {
-  "name": "Landing Demo Global",
-  "description": "Proyecto de landings optimizadas con Eleventy",
-  "url": "https://startland.netlify.app/",
+  "name": "Ser Energía Escalar",
+  "description": "Descubrí cómo la Energía Escalar puede ayudarte a reconectar con tu equilibrio físico, emocional y espiritual.",
+  "url": "https://serenergiaescalar.com",
   "robots": "index,follow",
-  "og_image": "/assets/images/default-og.png",
-  "twitter_image": "/assets/images/default-twitter.png",
-  "twitter_site": "@miusuario",
+  "og_image": "/assets/images/og-image.svg",
   "verification": "ApWt3O30nl49iN-AGMI1hcr91sNwY0BtyH2wvV0xJQs"
 }
+
