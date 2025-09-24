@@ -30,9 +30,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("markdown", (str) => md.render(str || ""));
 
   // ✅ Filtro de fecha para sitemap
-  eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
-    return DateTime.fromJSDate(new Date(dateObj)).toFormat(format);
-  });
+eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
+  let dt;
+
+  if (!dateObj || dateObj === "now") {
+    dt = DateTime.now();
+  } else {
+    dt = DateTime.fromJSDate(new Date(dateObj));
+  }
+
+  return dt.isValid ? dt.toFormat(format) : DateTime.now().toFormat(format);
+});
+
 
   // Passthrough de assets y CMS
   eleventyConfig.addPassthroughCopy({ assets: "assets" });
