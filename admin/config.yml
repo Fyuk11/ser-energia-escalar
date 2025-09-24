@@ -7,10 +7,10 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "landing"
-    label: "Landing Demo"
+    label: "Ser energía escalar"
     files:
       - file: "content/landings/landing-demo.md"
-        label: "Landing Demo Cliente"
+        label: "Landing Ser energía escalar"
         name: "landingdemo"
         fields:
           - name: "title"
