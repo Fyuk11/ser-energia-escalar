@@ -175,6 +175,31 @@
 
 /* Media Queries Tablet, Desktop, UltraWide */
 
+
+/* Ajuste CTA Pain para Mobile */
+@media (max-width: 767px) {
+  .pain-cta {
+    padding: 1.5rem 1rem;
+  }
+
+  .pain-cta p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .pain-cta .btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
 @media (min-width: 768px) {
   .pain {
     padding: 5rem 2rem;
@@ -204,3 +229,5 @@
   .pain-points { gap: 2.5rem; }
   .pain-point { padding: 2.25rem; }
 }
+
+
