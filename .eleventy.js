@@ -56,9 +56,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData("build", { year: new Date().getFullYear() });
   eleventyConfig.addGlobalData("site", {
     name: "Ser Energía Escalar",
-    url: "https://landing-demo.netlify.app",
+    url: "https://serenergiaescalar.com",
     robots: "index,follow",
-    og_image: "/assets/images/default-og.png",
+    og_image: "/assets/images/og-image.svg",
     twitter_image: "/assets/images/default-twitter.png",
     twitter_site: "@miusuario",
     verification: "ApWt3O30nl49iN-AGMI1hcr91sNwY0BtyH2wvV0xJQs",
