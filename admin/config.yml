@@ -26,6 +26,7 @@ collections:
               - { name: "og_image", label: "OG Image", widget: "image" }
               - { name: "twitter_title", label: "Twitter Title", widget: "string" }
               - { name: "twitter_description", label: "Twitter Description", widget: "text" }
+              - { name: "twitter_image", label: "Twitter Image", widget: "image" }
 
           - label: "Menú de navegación"
             name: "nav"
@@ -45,13 +46,55 @@ collections:
                 fields:
                   - { name: "title", label: "Título", widget: "string" }
                   - { name: "subtitle", label: "Subtítulo", widget: "text" }
-                  - { name: "background", label: "Fondo", widget: "image" }
+                  - label: "Videos"
+                    name: "videos"
+                    widget: "object"
+                    fields:
+                      - { name: "desktopWebm", label: "Desktop WebM", widget: "string" }
+                      - { name: "desktopMp4", label: "Desktop MP4", widget: "string" }
+                      - { name: "mobileWebm", label: "Mobile WebM", widget: "string" }
+                      - { name: "mobileMp4", label: "Mobile MP4", widget: "string" }
                   - label: "CTAs"
                     name: "ctas"
                     widget: "list"
                     fields:
                       - { name: "text", label: "Texto", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
+
+              - label: "Pain / Desafíos"
+                name: "pain"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - { name: "cta_text", label: "Texto CTA", widget: "string" }
+                  - { name: "cta_button", label: "Botón CTA", widget: "string" }
+                  - { name: "cta_link", label: "Link CTA", widget: "string" }
+                  - label: "Puntos"
+                    name: "points"
+                    widget: "list"
+                    fields:
+                      - { name: "title", label: "Título", widget: "string" }
+                      - { name: "description", label: "Descripción", widget: "text" }
+
+              - label: "Qué es / What-is"
+                name: "what-is"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Texto"
+                    name: "text"
+                    widget: "list"
+                    fields:
+                      - { name: "text", label: "Párrafo", widget: "text" }
+                  - label: "Visual"
+                    name: "visual"
+                    widget: "object"
+                    fields:
+                      - { name: "type", label: "Tipo", widget: "string" }
+                      - { name: "src", label: "Src", widget: "string" }
+                      - { name: "alt", label: "Alt", widget: "string" }
 
               - label: "Beneficios"
                 name: "benefits"
@@ -65,25 +108,96 @@ collections:
                       - { name: "icon", label: "Ícono", widget: "image" }
                       - { name: "title", label: "Título", widget: "string" }
                       - { name: "text", label: "Texto", widget: "text" }
+                  - { name: "cta_text", label: "CTA Texto", widget: "string" }
+                  - { name: "cta_link", label: "CTA Link", widget: "string" }
 
-              - label: "Steps"
+              - label: "Misión"
+                name: "mission"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "text", label: "Texto", widget: "text" }
+
+              - label: "Equipos"
+                name: "equipos"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Lista de Equipos"
+                    name: "equipos"
+                    widget: "list"
+                    fields:
+                      - { name: "name", label: "Nombre", widget: "string" }
+                      - { name: "description", label: "Descripción", widget: "text" }
+                      - { name: "icon", label: "Ícono", widget: "image" }
+                      - { name: "price", label: "Precio", widget: "string" }
+                  - { name: "cta", label: "CTA", widget: "object",
+                      fields:
+                        - { name: "text", label: "Texto", widget: "string" }
+                        - { name: "link", label: "URL", widget: "string" } }
+
+              - label: "Comparativa de Equipos"
+                name: "comparativa-equipos"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Equipos"
+                    name: "equipos"
+                    widget: "list"
+                    fields:
+                      - { name: "name", label: "Nombre", widget: "string" }
+                      - { name: "potencia", label: "Potencia", widget: "string" }
+                      - { name: "accesorios", label: "Accesorios", widget: "text" }
+                      - { name: "precio", label: "Precio", widget: "string" }
+                  - { name: "cta", label: "CTA", widget: "object",
+                      fields:
+                        - { name: "text", label: "Texto", widget: "string" }
+                        - { name: "link", label: "URL", widget: "string" } }
+
+              - label: "Testimonios"
+                name: "testimonios"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "string" }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { name: "name", label: "Nombre", widget: "string" }
+                      - { name: "role", label: "Rol", widget: "string" }
+                      - { name: "quote", label: "Testimonio", widget: "text" }
+                      - { name: "avatar", label: "Avatar", widget: "image" }
+                  - { name: "cta", label: "CTA", widget: "object",
+                      fields:
+                        - { name: "text", label: "Texto", widget: "string" }
+                        - { name: "link", label: "URL", widget: "string" } }
+
+              - label: "Steps / Soporte"
                 name: "steps"
                 widget: "object"
                 fields:
                   - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "string" }
                   - label: "Pasos"
                     name: "steps"
                     widget: "list"
                     fields:
-                      - { name: "number", label: "Número", widget: "number" }
+                      - { name: "number", label: "Número", widget: "string" }
                       - { name: "title", label: "Título", widget: "string" }
                       - { name: "text", label: "Texto", widget: "text" }
+                  - { name: "cta", label: "CTA", widget: "object",
+                      fields:
+                        - { name: "text", label: "Texto", widget: "string" }
+                        - { name: "url", label: "URL", widget: "string" } }
 
               - label: "Divider"
                 name: "section-divider"
                 widget: "object"
                 fields:
-                  - { name: "fill", label: "Color de fondo", widget: "string", required: false }
+                  - { name: "invert", label: "Invertir", widget: "boolean", required: false }
                   - label: "Gradiente"
                     name: "gradient"
                     widget: "list"
@@ -92,28 +206,34 @@ collections:
                       - { name: "offset", label: "Offset", widget: "string" }
                       - { name: "color", label: "Color", widget: "string" }
                       - { name: "opacity", label: "Opacidad", widget: "number", required: false }
-                  - { name: "invert", label: "Invertir", widget: "boolean", required: false }
 
               - label: "About"
                 name: "about"
                 widget: "object"
                 fields:
                   - { name: "title", label: "Título", widget: "string" }
-                  - { name: "text", label: "Texto", widget: "text" }
-                  - { name: "extra_text", label: "Texto Extra", widget: "text", required: false }
-                  - { name: "images", label: "Imágenes", widget: "list", field: { name: "image", label: "Imagen", widget: "image" } }
+                  - { name: "story", label: "Historia", widget: "text" }
+                  - { name: "differential", label: "Diferencial", widget: "text" }
+                  - { name: "signature", label: "Firma", widget: "string" }
+                  - { name: "image", label: "Imagen", widget: "image" }
 
               - label: "FAQs"
                 name: "faqs"
                 widget: "object"
                 fields:
                   - { name: "title", label: "Título", widget: "string" }
-                  - label: "Preguntas"
+                  - label: "Items"
                     name: "items"
                     widget: "list"
                     fields:
                       - { name: "question", label: "Pregunta", widget: "string" }
                       - { name: "answer", label: "Respuesta", widget: "text" }
+                  - { name: "cta", label: "CTA", widget: "object",
+                      fields:
+                        - { name: "title", label: "Título", widget: "string" }
+                        - { name: "text", label: "Texto", widget: "string" }
+                        - { name: "button_text", label: "Botón", widget: "string" }
+                        - { name: "button_link", label: "URL", widget: "string" } }
 
               - label: "CTA Video"
                 name: "cta-video"
@@ -128,17 +248,11 @@ collections:
                       - { name: "text", label: "Texto", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
 
-              - label: "Contacto"
-                name: "contact"
-                widget: "object"
-                fields:
-                  - { name: "title", label: "Título", widget: "string" }
-                  - { name: "text", label: "Texto", widget: "text" }
-
               - label: "Footer"
                 name: "footer"
                 widget: "object"
                 fields:
+                  - { name: "logo", label: "Logo", widget: "image" }
                   - { name: "text", label: "Texto", widget: "string" }
                   - { name: "email", label: "Email", widget: "string" }
                   - label: "Links"
@@ -151,5 +265,5 @@ collections:
                     name: "social"
                     widget: "list"
                     fields:
-                      - { name: "network", label: "Red", widget: "string" }
+                      - { name: "type", label: "Tipo", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
