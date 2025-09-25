@@ -4,7 +4,7 @@ title: Ser Energía Escalar – Tecnología y Bienestar Integral
 description: Descubrí cómo la Energía Escalar puede ayudarte a reconectar con tu equilibrio físico, emocional y espiritual.
 permalink: index.html
 seo:
-  canonical: https://ser-energia-escalar.netlify.app/  # cambiarás luego al dominio final
+  canonical: https://serenergiaescalar.com/  # cambiarás luego al dominio final
   og_title: Ser Energía Escalar – Tecnología y Bienestar Integral
   og_description: Reconectá con tu energía y mejorá tu bienestar con dispositivos de Energía Escalar diseñados con propósito espiritual y conciencia.
   og_image: /assets/images/og-image.svg  # reemplazar por una imagen real y atractiva
