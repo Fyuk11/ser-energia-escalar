@@ -1,6 +1,6 @@
 ---
 layout: landing.njk
-title: Ser Energía Escalar – Tecnología y Bienestar Integral
+title: Energía Escalar – Tecnología y Bienestar Integral
 description: Descubrí cómo la Energía Escalar puede ayudarte a reconectar con tu equilibrio físico, emocional y espiritual.
 permalink: index.html
 seo:

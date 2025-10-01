@@ -64,7 +64,7 @@ eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
   eleventyConfig.addGlobalData("version", Date.now());
   eleventyConfig.addGlobalData("build", { year: new Date().getFullYear() });
   eleventyConfig.addGlobalData("site", {
-    name: "Ser Energía Escalar",
+    name: "Energía Escalar",
     url: "https://serenergiaescalar.com",
     robots: "index,follow",
     og_image: "/assets/images/og-image.svg",
