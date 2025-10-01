@@ -44,13 +44,13 @@ sections:
 
   - type: what-is
     title: "¿Qué es la Energía Escalar?"
-    subtitle: "Es una experiencia que conecta cuerpo, mente y espíritu. Cada equipo está diseñado con símbolos, geometría sagrada y frecuencias armonizadas, pensado para reconectar al ser humano con su origen divino."
+    subtitle: "La energía escalar descubierta por Nicolas Tesla en 1920 y desarrollada por cientificos actuales. Actúa sobre los cuatro campos de nuestro cuerpo: físico, mental, emocional y energético."
     text:
-    - "La energía escalar, descubierta por Nikola Tesla y desarrollada por científicos actuales, trabaja en el campo cuántico del cuerpo. Restaura el equilibrio celular, fortalece el sistema inmune y armoniza emociones, conectándote con la frecuencia natural de la Tierra."
+    - "Sus ondas longitudinales transportan y proporcionan energía vital a las mitocondrias que son las centrales electricas de nuestras células llenandolas de energía necesaria para eliminar bloqueos, restaurando el cuerpo conectandote con la frecuencia natural de la tierra."
 
     visual:
      type: "image"  # o "animation" si es un SVG animado o Lottie
-     src: "/assets/images/energia-escalar-illustration.png"
+     src: "/assets/images/queesEnergiaEscalar.webp"
      alt: "Ilustración de energía escalar actuando sobre el cuerpo"
 
 
