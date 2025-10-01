@@ -187,11 +187,6 @@ sections:
      - question: "¿Qué mantenimiento requiere?"
        answer: "No requiere un mantenimiento rígido. Algunas personas eligen una sesión mensual como equilibrio, otras de forma puntual según su necesidad."
 
-    cta:
-      title: "¿Tenés otra pregunta?"
-      text: "Escribinos y te respondemos personalmente"
-      button_text: "Hablar con el equipo"
-      button_link: "https://wa.me/5493435616629"
 
 
   - type: footer
