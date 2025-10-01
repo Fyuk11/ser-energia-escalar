@@ -4,18 +4,14 @@
 @import "container.css";    /* CONTAINER */
 @import "nav.css";          /* NAV y burger */
 @import "hero.css";         /* HERO */
-@import "pain.css"; /* PAIN */
 @import "what-is.css";  /* WHAT-IS */
 @import "benefits.css";     /* BENEFITS */
-@import "mission.css"; /* MISION */
 @import "equipos.css"; /* Equipos */
-@import "comparativa-equipos.css"; /* TABLA COMPARATIVA */
 @import "section-divider.css"; /* SECTION DIVIDER */
 @import "testimonios.css"; /* TESTIMONIOS */
 @import "steps.css";        /* STEPS */
 @import "about.css";        /* ABOUT */
 @import "faqs.css"; /* FAQS */
-@import "cta-video.css";    /* CTA VIDEO */
 @import "footer.css";       /* FOOTER */
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"; /* Font Awesome */
 

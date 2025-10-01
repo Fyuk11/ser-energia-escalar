@@ -42,22 +42,6 @@ sections:
 
 
 
-  - type: pain
-    title: "¿Te identificás con alguno de estos desafíos diarios?"
-    subtitle: "No es solo tu historia: miles de personas atraviesan lo mismo. Pero hay una manera más simple de cambiarlo."
-    cta_text: "La buena noticia: podés transformar tu bienestar con pasos naturales y efectivos."
-    cta_button: "Descubrir cómo mejorar mi bienestar"
-    cta_link: "https://wa.me/5493435616629"
-    points:
-    - title: "Recuperá tu energía y dejá atrás el cansancio que te frena."
-      description: "Ese agotamiento que arrastrás no tiene por qué ser tu normalidad. Sentí cómo volvés a tener fuerzas para todo lo que amás hacer."
-    - title: "Construí calma interior en lugar de cargar con el estrés diario."
-      description: "El ritmo acelerado y la ansiedad no tienen que dominarte. Descubrí cómo recuperar la paz mental que te sostiene."
-    - title: "Dormí profundo y liberate de esas noches inquietas."
-      description: "No más vueltas en la cama ni despertares agotadores. Regalate un descanso real que transforme tus días."
-    - title: "Viví liviano, sin el peso constante de la tensión."
-      description: "Las contracturas y la rigidez no son inevitables. Soltá el peso acumulado y sentí tu cuerpo más libre."
-
   - type: what-is
     title: "¿Qué es la Energía Escalar?"
     subtitle: "Es una experiencia que conecta cuerpo, mente y espíritu. Cada equipo está diseñado con símbolos, geometría sagrada y frecuencias armonizadas, pensado para reconectar al ser humano con su origen divino."
@@ -97,10 +81,6 @@ sections:
     cta_text: "Descubrí todos los beneficios de la energía escalar"
     cta_link: "https://wa.me/5493435616629"
 
-  - type: mission
-    title: "Nuestra Misión"
-    text: "En Ser Energía Escalar acompañamos tu bienestar mediante terapias con equipos de energía escalar. Nuestro objetivo es brindar soluciones terapéuticas personalizadas, seguras y confiables, enfocadas en mejorar tu calidad de vida. Nuestra misión es que la energía escalar llegue a todos los hogares, para que todas las personas tengan acceso a elevar su frecuencia y bienestar."
-
 
 
   - type: equipos
@@ -123,26 +103,6 @@ sections:
      text: "Quiero mi equipo"
      link: "https://wa.me/5493435616629"
 
-
-  - type: comparativa-equipos
-    title: "Comparativa de Equipos SER"
-    subtitle: "Encuentra el equipo que mejor se adapta a tu necesidad y nivel de expansión."
-    equipos:
-    - name: "SER AMOR"
-      potencia: "Alcance avanzado (0.18 kW, triple descarga 6 mm)"
-      accesorios: "Bobina Oudin grande, Bobina Pancake, Manguitos, Kit alta frecuencia, Cables conductivos"
-      precio: "USD 1.050"
-    - name: "SER ORIGEN"
-      potencia: "Alcance medio (0.20 kW, triple descarga 6 mm)"
-      accesorios: "Bobina Oudin mediana, Bobina Pancake, Manguitos, Bobina Corona, Electrodo alta frecuencia, Cables, **Incluye visor**"
-      precio: "USD 1.220"
-    - name: "SER ESENCIA"
-      potencia: "Alcance completo (0.25 kW, triple descarga 6 mm)"
-      accesorios: "Bobina Oudin grande, Bobina Pancake, Manguitos, Bobina Corona, Kit alta frecuencia, Cables conductivos, Temporizador"
-      precio: "USD 1.450"
-    cta:
-     text: "Quiero mi equipo"
-     link: "https://wa.me/5493435616629"
 
 
   - type: testimonios
@@ -232,17 +192,6 @@ sections:
       text: "Escribinos y te respondemos personalmente"
       button_text: "Hablar con el equipo"
       button_link: "https://wa.me/5493435616629"
-
-
-  - type: cta-video
-    title: "Eleva tu vibración y transforma tu entorno"
-    subtitle: "Es momento de acompañar a otros con la tecnología de la nueva era."
-    ctas:
-     - text: "Quiero mi equipo"
-       url: "https://wa.me/5493435616629"
-     - text: "Soy centro holístico – quiero una presentación"
-       url: "https://wa.me/5493435616629"
-
 
 
   - type: footer
