@@ -28,13 +28,13 @@ nav:
 sections:
   - type: hero
     title: "Vuelve al origen de tu esencia divina"
-    subheading: "Un camino hacia tu bienestar integral con tecnología escalar"
-    subtitle: "Descubrí cómo la tecnología escalar puede ayudarte a mejorar tu bienestar físico, mental y emocional, potenciar tus terapias y transformar la salud de manera integral."
+    subheading: "Tu AUTOMEDICINA en tu casa. Reorganiza el Organismo interno de tu SER"
+    subtitle: "Bienvenidos a recibir la tecnología escalar para tu bienestar físico,mental, emocional y energético. Te acompañará a potenciar tus terapias y transformar el cuerpo de manera integral."
     videos:
-     desktopWebm: "/assets/videos/heroDesktop.webm"
-     desktopMp4: "/assets/videos/heroDesktop.mp4"
-     mobileWebm: "/assets/videos/heroDeskMobile.webm"
-     mobileMp4: "/assets/videos/heroDeskMobile.mp4"
+     desktopWebm: "/assets/videos/heroB.webp"
+     desktopMp4: "/assets/videos/heroB.mp4"
+     mobileWebm: "/assets/videos/heroB-mobile.webp"
+     mobileMp4: "/assets/videos/heroB-mobile.mp4"
     ctas:
      - text: "Conocer más"
        url: "#what-is"

@@ -122,7 +122,7 @@
   cursor: pointer;
   padding: 12px 30px;
   border-radius: 50px;
-  background: linear-gradient(135deg, #0D1B2A, #FFD700);
+  background: linear-gradient(135deg, #000000, #000000);
   color: #fff;
   font-weight: 600;
   position: relative;
@@ -178,9 +178,9 @@
 .mandala-svg {
   width: min(85vw, 800px);
   height: auto;
-  opacity: 0.15;
+  opacity: 1.15;
   transform-origin: center center;
-  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.12));
+  filter: drop-shadow(0 6px 20px rgba(247, 244, 244, 0.396));
   animation: mandalaRotate 120s linear infinite;
 }
 
