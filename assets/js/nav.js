@@ -1,6 +1,6 @@
 // nav.js
 export function initNav() {
-  const nav = document.querySelector(".nav--venta");
+  const nav = document.querySelector(".nav--white");
   const burger = document.querySelector(".nav__toggle");
   const navMenu = document.querySelector(".nav__menu");
 

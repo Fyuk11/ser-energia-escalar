@@ -181,3 +181,60 @@
     text-align: center;
   }
 }
+
+
+
+/* =======================
+   Footer White Mode - solo colores
+======================= */
+/* Footer White Mode - colores jerarquizados */
+.footer.footer--white {
+  background: #ffffff;
+  color: #00bcd4; /* default general */
+}
+
+/* Línea superior animada */
+.footer.footer--white::before {
+  background: linear-gradient(90deg, #ffffff, #d4af37, #00bcd4, #ffffff);
+}
+
+/* Info principal */
+.footer.footer--white .footer__info p {
+  color: #d4af37; /* copyright dorado */
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Email */
+.footer.footer--white .footer__email {
+  color: #00bcd4; /* turquesa destacado */
+  opacity: 0.9;
+}
+
+/* Info secundaria: garantía y nota legal */
+.footer.footer--white .footer__support,
+.footer.footer--white .footer__legal {
+  color: #6c7a89; /* gris platino suave */
+  opacity: 0.9;
+}
+
+/* Footer menu links */
+.footer.footer--white .footer__menu a {
+  color: #00bcd4;
+}
+
+.footer.footer--white .footer__menu a:hover {
+  color: #d4af37;
+}
+
+/* Botones sociales */
+.footer.footer--white .btn-social {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,188,212,0.4);
+  color: #00bcd4;
+}
+
+.footer.footer--white .btn-social:hover {
+  background: #d4af37;
+  color: #0b0f1a;
+}
