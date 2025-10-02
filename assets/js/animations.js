@@ -129,34 +129,7 @@ export function initAboutAnimations() {
   observer.observe(aboutContent);
 }
 
-// ==========================
-// Partículas sección Contact
-// ==========================
-export function initContactParticles() {
-  const canvas = document.getElementById('contactParticles');
-  if (!canvas) return;
 
-  const ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  const particles = [];
-  const PARTICLE_COUNT = 40;
-
-  for (let i = 0; i < PARTICLE_COUNT; i++) {
-    const size = Math.random() * 2 + 1;
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: size,
-      speedX: Math.random() * 0.3 - 0.15,
-      speedY: Math.random() * 0.3 - 0.15,
-      alpha: Math.random() * 0.3 + 0.2
-    });
-  }
-
-  
-}
 
 // Animación Fade-Up para la sección de equipos
 const scrollElements = document.querySelectorAll('.animate-on-scroll');
