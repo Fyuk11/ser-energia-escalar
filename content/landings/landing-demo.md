@@ -28,17 +28,20 @@ nav:
 sections:
   - type: hero
     title: "Vuelve al origen de tu esencia divina"
+    subheading: "Un camino hacia tu bienestar integral con tecnología escalar"
     subtitle: "Descubrí cómo la tecnología escalar puede ayudarte a mejorar tu bienestar físico, mental y emocional, potenciar tus terapias y transformar la salud de manera integral."
     videos:
-      desktopWebm: "/assets/videos/heroDesktop.webm"
-      desktopMp4: "/assets/videos/heroDesktop.mp4"
-      mobileWebm: "/assets/videos/heroDeskMobile.webm"
-      mobileMp4: "/assets/videos/heroDeskMobile.mp4"
+     desktopWebm: "/assets/videos/heroDesktop.webm"
+     desktopMp4: "/assets/videos/heroDesktop.mp4"
+     mobileWebm: "/assets/videos/heroDeskMobile.webm"
+     mobileMp4: "/assets/videos/heroDeskMobile.mp4"
     ctas:
      - text: "Conocer más"
        url: "#what-is"
      - text: "Hablar por WhatsApp"
        url: "https://wa.me/5493435616629"
+    holisticTitle: "Información para Centros Holísticos"
+    holisticText: "Sumá la energía escalar a tu espacio y potencia la experiencia de tus consultantes. Capacitación, soporte y beneficios exclusivos."
 
 
 
