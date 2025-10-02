@@ -38,10 +38,14 @@ sections:
     ctas:
      - text: "Conocer más"
        url: "#what-is"
-     - text: "Hablar por WhatsApp"
-       url: "https://wa.me/5493435616629"
-    holisticTitle: "Información para Centros Holísticos"
-    holisticText: "Sumá la energía escalar a tu espacio y potencia la experiencia de tus consultantes. Capacitación, soporte y beneficios exclusivos."
+     - text: "Ver equipos"
+       url: "#equipos"
+    holistic:
+      buttonText: "Soy centro holístico"
+      title: "Brindamos Charla informativa sobre energia escalar y sesiones grupales"
+      text: "Cupo hasta 50 personas. Coordinamos la unión por WhatsApp."
+      actionText: "Coordinar sesión"
+      url: "https://wa.me/5493435616629"
 
 
 
