@@ -64,8 +64,8 @@ sections:
     title: "Beneficios"
     items:
     - icon: /assets/images/svg1.svg
-      title: "Fortalece el sistema inmune"
-      text: "Apoya la defensa natural de tu cuerpo frente a enfermedades y agentes externos."
+      title: "Refuerzo del Sistema Inmunológico"
+      text: "Activa macrófagos y linfocitos, elevando y fortaleciendo las defensas naturales contra virus, bacterias y parásitos."
     - icon: /assets/images/svg2.svg
       title: "Reducción del estrés y ansiedad"
       text: "Generan un estado de calma profunda y expansión de energía vital."
@@ -76,13 +76,23 @@ sections:
       title: "Armonización integral"
       text: " Equilibran cuerpo, mente, emociones y espíritu, generando coherencia y bienestar."
     - icon: /assets/images/svg5.svg
-      title: "Regeneración celular"
-      text: "Favorecen procesos de auto-sanación, activando los mecanismos naturales del organismo."
+      title: "Regeneración y Repación Tisular"
+      text: "Estimula la división y reproducción celular, acelerando la recuperación de tejidos y órganos dañados."
     - icon: /assets/images/svg6.svg
       title: "Elevación vibracional"
       text: " Llevan al ser a frecuencias más altas, facilitando claridad mental, paz emocional y vitalidad física."
-    cta_text: "Descubrí todos los beneficios de la energía escalar"
-    cta_link: "https://wa.me/5493435616629"
+    - icon: /assets/images/svg7.svg
+      title: "Conexión espiritual"
+      text: "Abren el canal sutil que reconecta con la esencia divina, despertando intuición y propósito."
+    - icon: /assets/images/svg8.svg
+      title: "Armonización integral"
+      text: " Equilibran cuerpo, mente, emociones y espíritu, generando coherencia y bienestar."
+    - icon: /assets/images/svg9.svg
+      title: "Regeneración celular"
+      text: "Favorecen procesos de auto-sanación, activando los mecanismos naturales del organismo."
+    - icon: /assets/images/svg10.svg
+      title: "Elevación vibracional"
+      text: " Llevan al ser a frecuencias más altas, facilitando claridad mental, paz emocional y vitalidad física."
 
 
 
