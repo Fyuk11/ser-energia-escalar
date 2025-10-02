@@ -3,14 +3,15 @@
    ======================= */
 .hero {
   position: relative;
-  min-height: 100vh; /* ocupa toda la pantalla */
-  height: auto;      /* crece con el contenido */
+  min-height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible; /* mostrar contenido extra */
+  overflow: visible;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  box-sizing: border-box;
 }
 
 /* =======================
@@ -25,6 +26,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-video { z-index: -4; }
@@ -48,7 +51,9 @@
   width: 100%;
   text-align: center;
   padding: 0 20px;
+  max-width: 100%;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -67,6 +72,7 @@
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 /* Botón principal */
@@ -81,6 +87,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .btn-primary:hover { transform: scale(1.05); }
 .btn-primary::after {
@@ -97,23 +104,14 @@
 /* =======================
    BOTÓN HOLÍSTICO (FAQ) FINAL UNIFICADO
    ======================= */
-/* =======================
-   BOTÓN HOLÍSTICO (FAQ) FINAL
-   ======================= */
-
-/* =======================
-   BOTÓN HOLÍSTICO (FAQ) FINAL
-   ======================= */
-/* =======================
-   BOTÓN HOLÍSTICO (FAQ) FINAL UNIFICADO
-   ======================= */
 .btn-holistic-wrapper {
   width: 100%;
   max-width: 300px;
   text-align: left;
-  overflow: visible; /* permite que el contenido no se corte */
+  overflow: visible;
   margin-top: 15px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .btn-holistic {
@@ -122,20 +120,18 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 12px 30px; /* igual que btn-primary */
+  padding: 12px 30px;
   border-radius: 50px;
   background: linear-gradient(135deg, #0D1B2A, #FFD700);
   color: #fff;
   font-weight: 600;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
-.btn-holistic-icon {
-  transition: transform 0.3s ease;
-}
+.btn-holistic-icon { transition: transform 0.3s ease; }
 
-/* Contenido desplegable */
 .btn-holistic-content {
   max-height: 0;
   overflow: hidden;
@@ -144,45 +140,27 @@
   margin: 0;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
-/* Contenido expandido */
 .btn-holistic-wrapper.expanded .btn-holistic-content {
   max-height: 500px;
-  padding: 15px;  /* coincide con startland */
+  padding: 15px;
   margin-top: 10px;
 }
 
-/* Rotación de la flecha al expandir */
-.btn-holistic-wrapper.expanded .btn-holistic-icon {
-  transform: rotate(45deg);
-}
+.btn-holistic-wrapper.expanded .btn-holistic-icon { transform: rotate(45deg); }
 
-/* Títulos y párrafos dentro - REGLAS ESPECÍFICAS */
 .hero .btn-holistic-content p {
-  font-size: 0.9rem;      /* tamaño igual que startland */
+  font-size: 0.9rem;
   line-height: 1.4;
   margin: 6px 0;
 }
-
 .hero .btn-holistic-content p.holistic-title {
   font-weight: 600;
-  font-size: 1rem;        /* igual que startland */
+  font-size: 1rem;
   margin-bottom: 8px;
 }
-
-/* Desktop: alineación horizontal con otros botones */
-@media(min-width:768px){
-  .hero-ctas { 
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 15px; 
-    align-items: flex-start;
-  }
-  .btn-holistic-wrapper { margin-left: 0; }
-}
-
-
 
 /* =======================
    MANDALA DECORATIVO
@@ -207,7 +185,7 @@
 }
 
 @media (max-width: 768px) {
-  .mandala-svg { width: min(95vw, 700px); opacity: 0.08; }
+  .mandala-svg { width: min(90vw, 700px); opacity: 0.08; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -228,17 +206,9 @@
 @media (min-width: 768px) {
   .hero-desktop { display: block; }
   .hero-mobile { display: none; }
-
   .hero h1 { font-size: 2.6rem; }
   .hero p { font-size: 1.2rem; }
-
-  .hero-ctas { 
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 15px; 
-    align-items: flex-start;
-  }
-
+  .hero-ctas { flex-direction: row; justify-content: center; gap: 15px; align-items: flex-start; }
   .btn-holistic-wrapper { margin-left: 0; }
 }
 
@@ -255,7 +225,10 @@
 
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.5rem; }
-  .hero p { font-size: 0.9rem; }
+  .hero p { font-size: 0.9rem; line-height: 1.3; }
+  .hero-content-wrapper { padding: 0 10px; }
+  .hero-ctas { gap: 10px; }
+  .mandala-svg { width: 90vw; }
 }
 
 /* =======================
@@ -266,3 +239,8 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* =======================
+   FIX GENERAL OVERFLOW
+   ======================= */
+html, body { overflow-x: hidden; box-sizing: border-box; }
