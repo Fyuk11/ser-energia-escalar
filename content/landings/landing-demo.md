@@ -31,9 +31,9 @@ sections:
     subheading: "Tu AUTOMEDICINA en tu casa. Reorganiza el Organismo interno de tu SER"
     subtitle: "Bienvenidos a recibir la tecnología escalar para tu bienestar físico,mental, emocional y energético. Te acompañará a potenciar tus terapias y transformar el cuerpo de manera integral."
     videos:
-     desktopWebm: "/assets/videos/heroB.webp"
+     desktopWebm: "/assets/videos/heroB.webm"
      desktopMp4: "/assets/videos/heroB.mp4"
-     mobileWebm: "/assets/videos/heroB-mobile.webp"
+     mobileWebm: "/assets/videos/heroB-mobile.webm"
      mobileMp4: "/assets/videos/heroB-mobile.mp4"
     ctas:
      - text: "Conocer más"
