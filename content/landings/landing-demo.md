@@ -61,7 +61,7 @@ sections:
 
 
   - type: benefits
-    title: "Beneficios para la salud y el bienestar"
+    title: "Beneficios"
     items:
     - icon: /assets/images/svg1.svg
       title: "Fortalece el sistema inmune"
