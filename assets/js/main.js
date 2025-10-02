@@ -1,5 +1,5 @@
 import { initNav } from './nav.js';
-import { initScrollAnimations, initAboutAnimations, initContactParticles } from './animations.js';
+import { initScrollAnimations, initAboutAnimations } from './animations.js';
 import { initSlideshow } from "./slideshow.js";
 import { initFaqs } from './faqs.js';
 import { initHeroDropdown } from './hero.js';
@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initSlideshow();
   initAboutAnimations();   // <-- 💡 acá la llamamos
   initFaqs();
-  initContactParticles();
   initHeroDropdown ();
 
   console.log("Landing loaded ✅");
