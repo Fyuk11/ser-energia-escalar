@@ -163,6 +163,22 @@
   margin-bottom: 8px;
 }
 
+
+/* =======================
+   Ajuste botón holístico interno
+======================= */
+.btn-holistic-content .btn-primary {
+  display: inline-block;       /* forzar comportamiento inline-block */
+  width: 100%;                 /* ocupar todo el ancho del contenedor */
+  max-width: 300px;            /* opcional: mantener tamaño consistente */
+  margin: 10px 0 0 0;          /* margen superior controlado */
+  text-align: center;           /* centrar texto */
+  box-sizing: border-box;       /* asegurar padding consistente */
+  position: relative;           /* no afectado por scroll externo */
+  z-index: 1;                   /* encima del contenido */
+}
+
+
 /* =======================
    MANDALA DECORATIVO
    ======================= */
@@ -245,4 +261,49 @@
    FIX GENERAL OVERFLOW
    ======================= */
 html, body { overflow-x: hidden; box-sizing: border-box; }
+
+
+/* =======================
+   Botones hero: Turquesa elegante y sobrio
+======================= */
+.hero .btn-primary {
+  background: linear-gradient(135deg, #00796b, #26a69a); /* turquesa serio, apagado */
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 30px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease, box-shadow 0.35s ease;
+}
+
+.hero .btn-primary:hover {
+  transform: scale(1.02); /* hover sutil */
+  box-shadow: 0 8px 18px rgba(38, 166, 154, 0.4); /* glow suave y elegante */
+}
+
+/* Efecto de luz diagonal más discreto */
+.hero .btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%; height: 100%;
+  background: rgba(255,255,255,0.12); /* mucho más suave */
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+
+.hero .btn-primary:hover::after {
+  left: 150%;
+}
+
+/* Ajustes responsive para botones */
+@media (min-width: 1440px) {
+  .hero .btn-primary { padding: 14px 34px; font-size: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+  .hero .btn-primary { width: 100%; text-align: center; }
+}
 
