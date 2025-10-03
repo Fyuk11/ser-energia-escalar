@@ -1,10 +1,10 @@
 /* NAV - White Energy Vibrante */
 .nav--white {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1200;
+  z-index: 2000; /* más alto para estar siempre sobre hero/video */
   background: linear-gradient(120deg, #ffffff, #f2f2f2, #e6f7f9, #f9f9f9, #ffffff);
   background-size: 400% 400%; /* gradiente grande para animación */
   animation: whiteEnergyMove 6s ease infinite;
@@ -12,7 +12,7 @@
 }
 
 .nav--white.transparent {
-  background: rgba(255, 255, 255, 0.636);
+  background: rgba(255, 255, 255, 0.795);
 }
 
 /* Animación vibrante/fluida */
