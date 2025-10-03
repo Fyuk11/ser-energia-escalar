@@ -1,26 +1,26 @@
 .testimonios {
-  padding: 3rem 1rem;
+  padding: 5rem 1rem; /* más espacio vertical */
   text-align: center;
   background: linear-gradient(180deg, rgba(10,84,130,0.03), rgba(255,255,255,0));
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: 2rem; /* más grande */
   font-weight: 700;
   color: #06365a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-subtitle {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #335a76;
-  max-width: 720px;
-  margin: 0 auto 1.5rem auto;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
 }
 
 /* Wrapper flex + scroll snap */
 .testimonials-wrapper {
-  max-width: 600px;
+  max-width: 700px; /* un poco más ancho */
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -40,31 +40,32 @@
   width: 100%;
   box-sizing: border-box;
   scroll-snap-align: start;
+  padding: 1.5rem; /* más aire interno */
 }
 
 /* Avatar */
 .testimonial-avatar img {
-  width: 64px;
-  height: 64px;
+  width: 72px; /* un poco más grande */
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(10,132,255,0.15);
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 /* Nombre y rol */
 .testimonial-person { margin-bottom: 0.75rem; }
-.testimonial-name { font-weight: 700; font-size: 1rem; color: #042b46; }
-.testimonial-role { font-size: 0.85rem; color: #4b6b82; }
+.testimonial-name { font-weight: 700; font-size: 1.1rem; color: #042b46; }
+.testimonial-role { font-size: 0.9rem; color: #4b6b82; }
 
 /* Quote */
 .testimonial-quote {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.05rem; /* un poco más grande */
+  line-height: 1.6;
   color: #173447;
   font-style: italic;
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
   border-left: 3px solid rgba(10,132,255,0.15);
   max-width: 90%;
   margin: 0 auto;
@@ -76,7 +77,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* más espacio */
 }
 
 .testimonials__dot {
@@ -94,7 +95,12 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .testimonial-quote { font-size: 0.95rem; }
-  .testimonial-avatar img { width: 56px; height: 56px; }
+  .testimonial-quote { font-size: 1rem; }
+  .testimonial-avatar img { width: 60px; height: 60px; }
   .testimonials__dot { width: 10px; height: 10px; }
+}
+
+@media (min-width: 1440px) {
+  .section-title { font-size: 2.4rem; }
+  .testimonials-wrapper { max-width: 900px; }
 }

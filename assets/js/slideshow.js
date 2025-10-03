@@ -29,7 +29,7 @@ export function initSlideshow() {
   // Loop automático
   setInterval(() => {
     showTestimonial((currentIndex + 1) % testimonials.length);
-  }, 6000);
+  }, 11000);
 
   // Inicializar
   showTestimonial(currentIndex);
