@@ -3,6 +3,7 @@ import { initScrollAnimations, initAboutAnimations } from './animations.js';
 import { initSlideshow } from "./slideshow.js";
 import { initFaqs } from './faqs.js';
 import { initHeroDropdown } from './hero.js';
+import { initSteps } from './steps.js';   // <-- 📌 importamos
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initAboutAnimations();   // <-- 💡 acá la llamamos
   initFaqs();
   initHeroDropdown ();
+  initSteps();  // <-- 📌 la llamamos
 
   console.log("Landing loaded ✅");
 });

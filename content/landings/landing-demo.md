@@ -152,20 +152,19 @@ sections:
     subtitle: "No estás solo en el camino"
     steps:
      - number: 🛡️
-       title: Garantía total de 1 año
-       text: Disfrutá de tranquilidad con cobertura completa durante 12 meses.
-     - number: 💬
-       title: Acompañamiento online
-       text: Asistencia terapéutica y técnica siempre disponible para vos.
+       title: Garantía total de 1 año (Cubre servicio técnico)
+       text:  Responsabilidad - Leer bien el instructivo y ver tutoriales de su uso. No nos responsabilizamos por el mal uso del equipo.
      - number: 📘
        title: Material exclusivo
        text: Manuales, videos y protocolos claros incluidos en tu experiencia.
-     - number: 🔧
-       title: Servicio técnico en Argentina
-       text: Soporte local autorizado, rápido y confiable.
-    cta:
-      text: "Hablá con nuestro equipo técnico"
-      url: "https://wa.me/5493435616629"
+       resources:
+        - label: "📄 Manual PDF"
+          url: "/files/manual.pdf"
+        - label: "📄 Protocolo PDF"
+          url: "/files/protocolo.pdf"
+        - label: "🎥 Tutorial en YouTube"
+          url: "https://youtu.be/XXXXXXXX"
+
 
   - type: section-divider
     invert: true

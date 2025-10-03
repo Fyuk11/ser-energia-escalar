@@ -1,25 +1,35 @@
-<section id="support" class="section steps">
+<section class="steps-section">
   <div class="container">
-    <h2>{{ section_data.title or "Soporte y Garantía" }}</h2>
-    {% if section_data.subtitle %}
-      <p class="section-subtitle">{{ section_data.subtitle }}</p>
-    {% endif %}
+    <header class="steps-header animate-on-scroll">
+      <h2>{{ section_data.title }}</h2>
+      {% if section_data.subtitle %}
+        <p class="steps-subtitle">{{ section_data.subtitle }}</p>
+      {% endif %}
+    </header>
+
     <div class="steps-grid">
       {% for step in section_data.steps %}
-        <div class="step-card animate-on-scroll" style="--delay: {{ loop.index0 * 0.2 }}s;">
+        <div class="step-card animate-on-scroll expandable" style="--delay: {{ loop.index0 * 0.2 }}s;">
           <div class="step-number">{{ step.number }}</div>
           <h3>{{ step.title }}</h3>
           <p>{{ step.text }}</p>
+
+          {% if step.resources %}
+            <button class="toggle-btn">Ver materiales</button>
+            <div class="extra-content">
+              <ul>
+                {% for resource in step.resources %}
+                  <li>
+                    <a href="{{ resource.url }}" target="_blank" rel="noopener">
+                      {{ resource.label }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
-
-    {% if section_data.cta %}
-      <div class="steps-cta">
-        <a href="{{ section_data.cta.url or '#' }}" class="btn btn-primary scroll-link">
-          {{ section_data.cta.text }}
-        </a>
-      </div>
-    {% endif %}
   </div>
 </section>
