@@ -71,32 +71,32 @@ sections:
       title: "Refuerzo del Sistema Inmunológico"
       text: "Activa macrófagos y linfocitos, elevando y fortaleciendo las defensas naturales contra virus, bacterias y parásitos."
     - icon: /assets/images/svg2.svg
-      title: "Reducción del estrés y ansiedad"
-      text: "Generan un estado de calma profunda y expansión de energía vital."
+      title: "Mejora la Oxigenación y Microcirculación"
+      text: "Favorece un eficiente flujo sanguíneo garantizando la desintoxicación en un entorno óptimo para la curación definitiva."
     - icon: /assets/images/svg3.svg
-      title: "Conexión espiritual"
-      text: "Abren el canal sutil que reconecta con la esencia divina, despertando intuición y propósito."
+      title: "Desinflamación inmediata"
+      text: "Equilibra la respuesta inflamatoria y mejora la microcirculación, alivia dolor y rigidez. Artritis, tendinitis, ciático, lumbalgias, etc."
     - icon: /assets/images/svg4.svg
-      title: "Armonización integral"
-      text: " Equilibran cuerpo, mente, emociones y espíritu, generando coherencia y bienestar."
+      title: "Regeneración articular y ósea"
+      text: "Potencia la actividad de osteoblastos y condrocitos para frenar el desgaste y regenerar estructuras (artrosis, osteoporosis, etc)."
     - icon: /assets/images/svg5.svg
       title: "Regeneración y Repación Tisular"
       text: "Estimula la división y reproducción celular, acelerando la recuperación de tejidos y órganos dañados."
     - icon: /assets/images/svg6.svg
-      title: "Elevación vibracional"
-      text: " Llevan al ser a frecuencias más altas, facilitando claridad mental, paz emocional y vitalidad física."
+      title: "Tratamiento oncológico"
+      text: "Promueve la apoptosis selectiva de células tumorales y fortalece la inmunidad favoreciendo la recuperación total y mejorando la calidad de vida. Complementa tratamientos tradicionales."
     - icon: /assets/images/svg7.svg
-      title: "Conexión espiritual"
-      text: "Abren el canal sutil que reconecta con la esencia divina, despertando intuición y propósito."
+      title: "Salud cardiovascular"
+      text: "Mejora la elasticidad vascular y reduce el estres oxidativo (hipertensión, enfermedad arterial periférica y otros)."
     - icon: /assets/images/svg8.svg
-      title: "Armonización integral"
-      text: " Equilibran cuerpo, mente, emociones y espíritu, generando coherencia y bienestar."
+      title: "Equilibrio metabólico"
+      text: "Optimiza la circulación y oxigenación de órganos claves, colaborando en el control glucémico (diabetes, tiroides)."
     - icon: /assets/images/svg9.svg
-      title: "Regeneración celular"
-      text: "Favorecen procesos de auto-sanación, activando los mecanismos naturales del organismo."
+      title: "Salud neurológica"
+      text: "Estimula la producción de factores neurotróficos (NGF, BDNF) promoviendo la neuroplasticidad (parkinson, alzheimer, neuroptías)."
     - icon: /assets/images/svg10.svg
-      title: "Elevación vibracional"
-      text: " Llevan al ser a frecuencias más altas, facilitando claridad mental, paz emocional y vitalidad física."
+      title: "Bienestar Emocional"
+      text: "Regula el eje neuroendócrino y los neurotransmisores, favoreciendo la calma y un sueño reparador (ansiedad, insomnio, estrés postraumático."
 
 
 
