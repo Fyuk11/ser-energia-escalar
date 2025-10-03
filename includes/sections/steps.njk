@@ -20,9 +20,13 @@
               <ul>
                 {% for resource in step.resources %}
                   <li>
-                    <a href="{{ resource.url }}" target="_blank" rel="noopener">
-                      {{ resource.label }}
-                    </a>
+                    <span class="resource-label">{{ resource.label }}</span>
+                    {% if "drive.google.com/drive/folders" in resource.url %}
+                      <a href="{{ resource.url }}" target="_blank" rel="noopener" class="btn-link">📂 Abrir carpeta</a>
+                    {% else %}
+                      <a href="{{ resource.url }}" target="_blank" rel="noopener" class="btn-link">👁 Ver</a>
+                      <a href="{{ resource.url }}" target="_blank" rel="noopener" download class="btn-link">📥 Descargar</a>
+                    {% endif %}
                   </li>
                 {% endfor %}
               </ul>

@@ -151,21 +151,26 @@ sections:
     title: Soporte y Garantía
     subtitle: "No estás solo en el camino"
     steps:
-     - number: 🛡️
-       title: Garantía total de 1 año (Cubre servicio técnico)
-       text:  Responsabilidad - Leer bien el instructivo y ver tutoriales de su uso. No nos responsabilizamos por el mal uso del equipo.
-     - number: 📘
-       title: Material exclusivo
-       text: Manuales, videos y protocolos claros incluidos en tu experiencia.
-       resources:
+    - number: 🛡️
+      title: Garantía total de 1 año (Cubre servicio técnico)
+      text: Responsabilidad - Leer bien el instructivo y ver tutoriales de su uso. No nos responsabilizamos por el mal uso del equipo.
+    - number: 📘
+      title: Material exclusivo
+      text: Manuales, videos y protocolos claros incluidos en tu experiencia.
+      resources:
         - label: "📄 Manual PDF"
-          url: "/files/manual.pdf"
+          url: "/assets/files/manual.txt"
         - label: "📄 Protocolo PDF"
-          url: "/files/protocolo.pdf"
-        - label: "🎥 Tutorial en YouTube"
-          url: "https://youtu.be/XXXXXXXX"
+          url: "/assets/files/protocolo.pdf"
+        - label: "🎥 Tutorial 1"
+          url: "https://drive.google.com/file/d/1TNlsnOAuPs1QFa9lm0oqRaZLIdhvroiK/view?usp=sharing"
+        - label: "🎥 Tutorial 2"
+          url: "https://drive.google.com/file/d/1TNlsnOAuPs1QFa9lm0oqRaZLIdhvroiK/view?usp=sharing"
+        - label: "🎥 Tutorial 3"
+          url: "https://drive.google.com/file/d/1TNlsnOAuPs1QFa9lm0oqRaZLIdhvroiK/view?usp=sharing"
 
 
+ 
   - type: section-divider
     invert: true
     gradient:

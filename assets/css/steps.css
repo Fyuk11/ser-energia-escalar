@@ -183,3 +183,52 @@
     max-width: 1600px;
   }
 }
+
+
+
+
+/* Recursos dentro del colapsable */
+.extra-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.extra-content li {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resource-label {
+  font-weight: 600;
+  color: #222;
+  margin-right: 8px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-link:first-of-type {
+  background: #f3f4f6;
+  color: #111;
+}
+.btn-link:first-of-type:hover {
+  background: #e5e7eb;
+}
+
+.btn-link:last-of-type {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-link:last-of-type:hover {
+  background: #05508c;
+}
