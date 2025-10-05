@@ -1,54 +1,67 @@
-<section id="equipos" class="equipos-vertical">
-
-  <!-- Mandala tipo flor de loto -->
-  <div class="teams-mandala" aria-hidden="true">
-    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" class="mandala-svg">
-      <defs>
-        <linearGradient id="lotusGold" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#f9d86dff"/>
-          <stop offset="100%" stop-color="#d4af37"/>
-        </linearGradient>
-      </defs>
-      <g fill="none" stroke="url(#lotusGold)" stroke-width="2" opacity="0.4">
-        <!-- Círculos concéntricos -->
-        <circle cx="400" cy="400" r="120"/>
-        <circle cx="400" cy="400" r="220"/>
-        <circle cx="400" cy="400" r="320"/>
-        
-        <!-- Pétalos flor de loto -->
-        {% for i in range(0, 360, 15) %}
-          <path d="M400,400 
-                   m-0,-180 
-                   C405,-120,395,-60,400,0" 
-                transform="rotate({{ i }},400,400)" />
-          <path d="M400,400 
-                   m-0,-150 
-                   C408,-100,392,-50,400,0" 
-                transform="rotate({{ i + 7.5 }},400,400)" />
-        {% endfor %}
-      </g>
-    </svg>
-  </div>
-
+<section id="equipos" class="section equipos">
   <div class="container">
-    <h2 class="section-title">{{ section_data.title }}</h2>
-    <p class="section-subtitle">{{ section_data.subtitle }}</p>
+    <h2>{{ section_data.title or "Nuestros equipos" }}</h2>
+    <p>{{ section_data.subtitle or "" }}</p>
+    <br>
 
-    {% for equipo in section_data.equipos %}
-      <div class="equipo-vertical {% if loop.index is odd %}reverse{% endif %} animate-on-scroll">
-        <div class="equipo-img">
-          <img src="{{ equipo.icon }}" alt="{{ equipo.name }}">
-        </div>
-        <div class="equipo-text">
+    <div class="equipos-grid">
+      {% for equipo in section_data.equipos %}
+      <div class="equipo-card">
+        <!-- Header: icono + nombre -->
+        <div class="equipo-header">
+          <img src="{{ equipo.icon }}" alt="{{ equipo.name }}" class="equipo-icon">
           <h3>{{ equipo.name }}</h3>
-          <p>{{ equipo.description }}</p>
-          <p class="equipo-price">{{ equipo.price }}</p>
+        </div>
+
+        <!-- Descripción y precio -->
+        {% if equipo.description %}
+        <p class="equipo-description">{{ equipo.description }}</p>
+        {% endif %}
+        {% if equipo.price %}
+        <p class="equipo-price">{{ equipo.price }}</p>
+        {% endif %}
+
+        <!-- Accordion toggle -->
+        <button class="equipo-toggle">Ver detalles</button>
+
+        <!-- Contenido desplegable -->
+        <div class="equipo-content">
+          {% if equipo.details %}
+          <div class="equipo-details">
+            <h4>Detalles técnicos</h4>
+            {% for detalle in equipo.details %}
+            <div class="detalle-item">• {{ detalle }}</div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          {% if equipo.accessories %}
+          <div class="equipo-accessories">
+            <h4>Accesorios incluidos</h4>
+            {% for acc in equipo.accessories %}
+            <div class="accessory-item">
+              {% if acc.icon %}
+              <img src="{{ acc.icon }}" alt="{{ acc.name }}" class="accessory-icon">
+              {% endif %}
+              <span>{{ acc.name }}</span>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- CTA dentro del contenido -->
+          {% if equipo.cta and equipo.cta.whatsapp %}
+            {% set ctaTitle = equipo.cta['title'] or "Quiero mi " ~ equipo.name %}
+            <div class="equipo-buy">
+              <a href="https://wa.me/{{ equipo.cta.whatsapp }}?text=Hola!%20Quiero%20mi%20{{ equipo.name }}" 
+                 target="_blank" class="btn-whatsapp">
+                {{ ctaTitle }}
+              </a>
+            </div>
+          {% endif %}
         </div>
       </div>
-    {% endfor %}
-
-    <div class="equipos-cta">
-      <a href="{{ section_data.cta.link }}" class="btn-primary scroll-link">{{ section_data.cta.text }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>

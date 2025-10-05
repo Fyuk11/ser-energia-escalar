@@ -4,6 +4,7 @@ import { initSlideshow } from "./slideshow.js";
 import { initFaqs } from './faqs.js';
 import { initHeroDropdown } from './hero.js';
 import { initSteps } from './steps.js';   // <-- 📌 importamos
+import { initEquipos } from './equipos.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFaqs();
   initHeroDropdown ();
   initSteps();  // <-- 📌 la llamamos
+  initEquipos();
 
   console.log("Landing loaded ✅");
 });
