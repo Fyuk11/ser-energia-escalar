@@ -138,7 +138,7 @@ sections:
         - name: "KIT Alta Frecuencia"
           icon: "/assets/images/accesorios/kit-alta-frecuencia.png"
       cta:
-        whatsapp: "5491123456789"
+        whatsapp: "5493435616629"
         title: "Quiero mi equipo"
 
     - name: "SER ORIGEN"
@@ -172,7 +172,7 @@ sections:
         - name: "KIT Alta Frecuencia"
           icon: "/assets/images/accesorios/kit-alta-frecuencia.png"
       cta:
-        whatsapp: "5491123456789"
+        whatsapp: "5493435616629"
         title: "Quiero mi equipo"
 
     - name: "SER ESENCIA"
@@ -203,7 +203,7 @@ sections:
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/bobina-corona.png"
       cta:
-        whatsapp: "5491123456789"
+        whatsapp: "5493435616629"
         title: "Quiero mi equipo"
 
 

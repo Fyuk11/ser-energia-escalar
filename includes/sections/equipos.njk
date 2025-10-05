@@ -53,7 +53,7 @@
           {% if equipo.cta and equipo.cta.whatsapp %}
             {% set ctaTitle = equipo.cta['title'] or "Quiero mi " ~ equipo.name %}
             <div class="equipo-buy">
-              <a href="https://wa.me/{{ equipo.cta.whatsapp }}?text=Hola!%20Quiero%20mi%20{{ equipo.name }}" 
+              <a href="https://wa.me/{{ equipo.cta.whatsapp }}?text=Hola!%20Quiero%20mi%20equipo%20{{ equipo.name }}" 
                  target="_blank" class="btn-whatsapp">
                 {{ ctaTitle }}
               </a>
