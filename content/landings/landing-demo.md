@@ -16,8 +16,6 @@ nav:
     url: "#benefits"
   - text: Equipos
     url: "#equipos"
-  - text: Nosotros
-    url: "#about"
   - text: Preguntas frecuentes
     url: "#faqs"
   - text: WhatsApp
@@ -309,8 +307,6 @@ sections:
        url: "#benefits"
      - text: Equipos
        url: "#equipos"
-     - text: Nosotros
-       url: "#about"
      - text: Preguntas Frecuentes
        url: "#faqs"
     social:
