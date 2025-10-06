@@ -1,7 +1,7 @@
 /* === SECCIÓN EQUIPOS === */
 .equipos-section {
   padding: 4rem 1.5rem;
-  background: var(--color-bg, #f7f7f7);
+  background: var(--color-bg, #f1f1f1);
   text-align: center;
 }
 
@@ -11,8 +11,9 @@
   margin-bottom: 0.4rem;
 }
 
+
 .section-subtitle {
-  color: #666;
+  color: #555555 !important; 
   font-size: 0.95rem;
   margin-bottom: 2.5rem;
 }
@@ -162,7 +163,7 @@
   transition: background 0.3s ease;
 }
 .cta-btn:hover {
-  background: #6b3ae6;
+  background: #3ae64b;
 }
 
 /* === ANIMACIONES === */
@@ -232,3 +233,6 @@
   .equipo-cover img { height: 300px; }
   .equipo-content { padding: 2rem; }
 }
+
+
+
