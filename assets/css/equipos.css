@@ -1,25 +1,26 @@
 /* === SECCIÓN EQUIPOS === */
 .equipos-section {
-  padding: 6rem 2rem;
+  padding: 4rem 1.5rem;
   background: var(--color-bg, #f7f7f7);
   text-align: center;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .section-subtitle {
   color: #666;
-  margin-bottom: 3rem;
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
 }
 
 .equipos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 /* === CARD === */
@@ -37,32 +38,32 @@
 
 .equipo-cover img {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: cover;
   display: block;
 }
 
 .equipo-content {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .equipo-name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-dark, #222);
 }
 
 .equipo-description {
   color: #555;
-  font-size: 0.95rem;
-  margin: 0.5rem 0 0.75rem;
+  font-size: 0.9rem;
+  margin: 0.4rem 0 0.6rem;
   line-height: 1.5;
 }
 
 .equipo-price {
   color: var(--color-primary, #7a4ef1);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 /* === TOGGLE === */
@@ -70,10 +71,11 @@
   background: var(--color-primary, #7a4ef1);
   color: #fff;
   border: none;
-  padding: 0.6rem 1.4rem;
+  padding: 0.55rem 1.4rem;
   border-radius: 999px;
   cursor: pointer;
   transition: background 0.3s;
+  font-size: 0.9rem;
 }
 .toggle-btn:hover {
   background: #6b3ae6;
@@ -102,7 +104,7 @@
   margin-left: 1.25rem;
   margin-bottom: 0.4rem;
   color: #444;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 /* === ACCESORIOS === */
@@ -117,8 +119,8 @@
 .accessory-badge {
   background: #f2f2f2;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 68px;
+  height: 68px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,14 +131,15 @@
 }
 
 .accessory-badge img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 0.2rem;
 }
 
 .accessory-badge span {
   font-size: 0.7rem;
   color: #333;
+  text-align: center;
 }
 
 .accessory-badge:hover {
@@ -146,7 +149,7 @@
 
 /* === CTA === */
 .cta-wrapper {
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
 }
 
 .cta-btn {
@@ -168,9 +171,64 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .equipo-cover img {
-    height: 180px;
+/* === MEDIA QUERIES === */
+
+/* Tablets pequeñas */
+@media (min-width: 480px) {
+  .equipos-section {
+    padding: 5rem 2rem;
   }
+  .equipos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .section-subtitle { font-size: 1rem; }
+  .equipo-cover img { height: 220px; }
+  .equipos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 2rem;
+  }
+  .equipo-content { padding: 1.5rem; }
+}
+
+/* Laptops */
+@media (min-width: 1024px) {
+  .equipos-section {
+    padding: 6rem 3rem;
+  }
+  .equipos-grid {
+    gap: 2.5rem;
+  }
+  .equipo-name { font-size: 1.4rem; }
+  .equipo-description { font-size: 1rem; }
+}
+
+/* Monitores grandes (1440px+) */
+@media (min-width: 1440px) {
+  .equipos-section {
+    padding: 7rem 6rem;
+  }
+  .equipos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .equipo-cover img { height: 260px; }
+}
+
+/* Ultrawide (2K - 4K) */
+@media (min-width: 1920px) {
+  .equipos-section {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 8rem 8rem;
+  }
+  .section-title { font-size: 2.4rem; }
+  .equipo-card { border-radius: 2rem; }
+  .equipo-cover img { height: 300px; }
+  .equipo-content { padding: 2rem; }
 }
