@@ -101,11 +101,10 @@ sections:
   - type: equipos
     title: "Equipos SER"
     subtitle: "Descubrí nuestros dispositivos y accesorios"
-    cta:
-      title: "Quiero mi equipo"
     equipos:
     - name: "SER AMOR"
-      icon: "/assets/images/ser-amor.png"
+      cover: "/assets/images/ser-amor-cover.jpg"   # Imagen de portada destacada
+      icon: "/assets/images/ser-amor.png"                  # (opcional) icono pequeño si lo necesitás en el header
       description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con tapa transparente. Electrodos de tungsteno de 6mm."
       price: "$2.000 USD"
       details:
@@ -140,6 +139,7 @@ sections:
         title: "Quiero mi equipo"
 
     - name: "SER ORIGEN"
+      cover: "/assets/images/equipos/ser-origen-cover.jpg"
       icon: "/assets/images/ser-origen.png"
       description: "Dispositivo de 3 Spark Gap. Diseño rígido portátil con electrodos de tungsteno de 5mm."
       price: "$1.600 USD"
@@ -174,6 +174,7 @@ sections:
         title: "Quiero mi equipo"
 
     - name: "SER ESENCIA"
+      cover: "/assets/images/equipos/ser-esencia-cover.jpg"
       icon: "/assets/images/ser-esencia.png"
       description: "Dispositivo de 1 Spark Gap. Diseño portátil con electrodos de tungsteno de 4mm."
       price: "$950 USD"

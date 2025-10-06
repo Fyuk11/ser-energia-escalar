@@ -1,66 +1,58 @@
-<section id="equipos" class="section equipos">
+<section class="equipos-section" id="equipos">
   <div class="container">
-    <h2>{{ section_data.title or "Nuestros equipos" }}</h2>
-    <p>{{ section_data.subtitle or "" }}</p>
-    <br>
+    <h2 class="section-title">{{ section.title }}</h2>
+    <p class="section-subtitle">{{ section.subtitle }}</p>
 
     <div class="equipos-grid">
-      {% for equipo in section_data.equipos %}
-      <div class="equipo-card">
-        <!-- Header: icono + nombre -->
-        <div class="equipo-header">
-          <img src="{{ equipo.icon }}" alt="{{ equipo.name }}" class="equipo-icon">
-          <h3>{{ equipo.name }}</h3>
+      {% for equipo in section.equipos %}
+      <article class="equipo-card">
+        {% if equipo.cover %}
+        <div class="equipo-cover">
+          <img src="{{ equipo.cover }}" alt="{{ equipo.name }}">
         </div>
-
-        <!-- Descripción y precio -->
-        {% if equipo.description %}
-        <p class="equipo-description">{{ equipo.description }}</p>
-        {% endif %}
-        {% if equipo.price %}
-        <p class="equipo-price">{{ equipo.price }}</p>
         {% endif %}
 
-        <!-- Accordion toggle -->
-        <button class="equipo-toggle">Ver detalles</button>
-
-        <!-- Contenido desplegable -->
         <div class="equipo-content">
-          {% if equipo.details %}
+          <h3 class="equipo-name">{{ equipo.name }}</h3>
+          <p class="equipo-description">{{ equipo.description }}</p>
+          <p class="equipo-price">{{ equipo.price }}</p>
+
+          <button class="toggle-btn" aria-expanded="false">
+            Ver detalles
+          </button>
+
           <div class="equipo-details">
-            <h4>Detalles técnicos</h4>
-            {% for detalle in equipo.details %}
-            <div class="detalle-item">• {{ detalle }}</div>
-            {% endfor %}
-          </div>
-          {% endif %}
+            <ul class="details-list">
+              {% for detail in equipo.details %}
+              <li>{{ detail }}</li>
+              {% endfor %}
+            </ul>
 
-          {% if equipo.accessories %}
-          <div class="equipo-accessories">
-            <h4>Accesorios incluidos</h4>
-            {% for acc in equipo.accessories %}
-            <div class="accessory-item">
-              {% if acc.icon %}
-              <img src="{{ acc.icon }}" alt="{{ acc.name }}" class="accessory-icon">
-              {% endif %}
-              <span>{{ acc.name }}</span>
+            {% if equipo.accessories %}
+            <div class="accessories">
+              {% for acc in equipo.accessories %}
+              <div class="accessory-badge" title="{{ acc.name }}">
+                <img src="{{ acc.icon }}" alt="{{ acc.name }}">
+                <span>{{ acc.name }}</span>
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-          </div>
-          {% endif %}
+            {% endif %}
 
-          <!-- CTA dentro del contenido -->
-          {% if equipo.cta and equipo.cta.whatsapp %}
-            {% set ctaTitle = equipo.cta['title'] or "Quiero mi " ~ equipo.name %}
-            <div class="equipo-buy">
-              <a href="https://wa.me/{{ equipo.cta.whatsapp }}?text=Hola!%20Quiero%20mi%20equipo%20{{ equipo.name }}" 
-                 target="_blank" class="btn-whatsapp">
-                {{ ctaTitle }}
+            {% if equipo.cta %}
+            <div class="cta-wrapper">
+              <a
+                href="https://wa.me/{{ equipo.cta.whatsapp }}"
+                target="_blank"
+                class="cta-btn"
+              >
+                {{ equipo.cta.title }}
               </a>
             </div>
-          {% endif %}
+            {% endif %}
+          </div>
         </div>
-      </div>
+      </article>
       {% endfor %}
     </div>
   </div>

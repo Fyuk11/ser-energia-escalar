@@ -1,238 +1,176 @@
-/* ===========================
-   Sección Equipos
-=========================== */
-.section.equipos {
-  padding: 4rem 1.5rem;
-  background: linear-gradient(180deg, #fafafa 0%, #f2f2f2 100%);
+/* === SECCIÓN EQUIPOS === */
+.equipos-section {
+  padding: 6rem 2rem;
+  background: var(--color-bg, #f7f7f7);
   text-align: center;
 }
 
-.section.equipos .container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* Título y subtítulo */
-.equipos-title {
+.section-title {
   font-size: 2rem;
-  font-weight: 800;
-  color: var(--color-dark, #222);
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.equipos-subtitle {
-  font-size: 1rem;
-  color: var(--color-gray, #666);
-  margin-bottom: 2.5rem;
+.section-subtitle {
+  color: #666;
+  margin-bottom: 3rem;
 }
 
-/* Grid de equipos */
 .equipos-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 2rem;
 }
 
-/* Card de equipo */
+/* === CARD === */
 .equipo-card {
-  background: var(--color-light, #fff);
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
 }
-
-/* Hover efecto */
 .equipo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
 }
 
-/* Header: icono + nombre */
-.equipo-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+.equipo-cover img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
-.equipo-icon {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
+.equipo-content {
+  padding: 1.5rem;
 }
 
-.equipo-card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin: 0;
-  color: var(--color-primary, #2a7ae2);
+.equipo-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-dark, #222);
 }
 
-/* Descripción y precio */
 .equipo-description {
+  color: #555;
   font-size: 0.95rem;
-  color: var(--color-dark, #333);
-  margin-bottom: 0.25rem;
+  margin: 0.5rem 0 0.75rem;
+  line-height: 1.5;
 }
 
 .equipo-price {
-  font-weight: 700;
-  color: var(--color-primary, #2a7ae2);
-  margin-bottom: 0.5rem;
+  color: var(--color-primary, #7a4ef1);
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-/* Botón toggle */
-.equipo-toggle {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 0.6rem 1rem;
-  margin-top: 0.5rem;
-  background: #eee;
+/* === TOGGLE === */
+.toggle-btn {
+  background: var(--color-primary, #7a4ef1);
+  color: #fff;
   border: none;
-  border-radius: 6px;
-  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
   cursor: pointer;
   transition: background 0.3s;
 }
-
-.equipo-toggle:hover {
-  background: #ddd;
+.toggle-btn:hover {
+  background: #6b3ae6;
 }
 
-/* Contenido del toggle */
-.equipo-content {
+.equipo-details {
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.4s ease, margin-top 0.3s ease;
+  overflow: hidden;
+  transition: all 0.4s ease;
   margin-top: 0;
 }
-
-/* Fade-in de los detalles y accesorios */
-.equipo-details, .equipo-accessories, .equipo-buy {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* Cuando se abre la card */
-.equipo-card.open .equipo-content {
+.equipo-card.active .equipo-details {
+  max-height: 1500px;
   opacity: 1;
   margin-top: 1rem;
 }
 
-.equipo-card.open .equipo-details,
-.equipo-card.open .equipo-accessories,
-.equipo-card.open .equipo-buy {
-  opacity: 1;
-  transform: translateY(0);
+/* === DETALLES === */
+.details-list {
+  text-align: left;
+  margin-bottom: 1rem;
 }
-
-/* Detalles técnicos */
-.equipo-details h4,
-.equipo-accessories h4 {
-  font-size: 1rem;
-  color: var(--color-dark, #222);
-  margin-bottom: 0.5rem;
-  border-left: 4px solid var(--color-primary, #2a7ae2);
-  padding-left: 0.6rem;
-}
-
-.detalle-item {
+.details-list li {
+  list-style: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: #444;
   font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  padding-left: 0.3rem;
 }
 
-/* Accesorios circulares */
-.accessory-item {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+/* === ACCESORIOS === */
+.accessories {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.accessory-badge {
+  background: #f2f2f2;
   border-radius: 50%;
-  background: #f0f0f0;
-  margin: 0.4rem;
-  padding: 0.4rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--color-gray-dark, #555);
-  transition: background 0.3s, transform 0.2s, opacity 0.4s ease;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, background 0.3s;
   opacity: 0;
-  transform: scale(0.8);
+  animation: fadeIn 0.6s forwards;
 }
 
-.equipo-card.open .accessory-item {
-  opacity: 1;
-  transform: scale(1);
+.accessory-badge img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.2rem;
 }
 
-.accessory-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  margin-bottom: 0.25rem;
+.accessory-badge span {
+  font-size: 0.7rem;
+  color: #333;
 }
 
-/* CTA */
-.equipo-buy {
-  text-align: center;
-  margin-top: 0.8rem;
-  opacity: 0;
-  transform: translateY(10px);
+.accessory-badge:hover {
+  transform: scale(1.08);
+  background: #e0e0e0;
 }
 
-.equipo-card.open .equipo-buy {
-  opacity: 1;
-  transform: translateY(0);
+/* === CTA === */
+.cta-wrapper {
+  margin-top: 1.5rem;
 }
 
-.btn-whatsapp {
+.cta-btn {
   display: inline-block;
-  width: 100%;
-  text-align: center;
-  background-color: #25D366;
+  background: var(--color-primary, #7a4ef1);
   color: #fff;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
   text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s ease;
+}
+.cta-btn:hover {
+  background: #6b3ae6;
 }
 
-.btn-whatsapp:hover {
-  background-color: #1DA851;
-  transform: translateY(-1px);
+/* === ANIMACIONES === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===========================
-   Responsive
-=========================== */
-@media(min-width: 576px){
-  .equipos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media(min-width: 992px){
-  .equipos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-
-@media(min-width: 1400px){
-  .equipos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .equipo-cover img {
+    height: 180px;
   }
 }
