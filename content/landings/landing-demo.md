@@ -209,7 +209,7 @@ sections:
 
   - type: testimonios
     title: "Testimonios y experiencias"
-    subtitle: "Experiencias reales de terapeutas y usuarios que usan los equipos SER."
+    subtitle: ""
     items:
       - name: "María López"
         role: "Terapeuta corporal, Bs. As."

@@ -12,9 +12,9 @@
       <div class="testimonials__wrap">
         {% for t in section_data.items %}
           <div class="testimonial">
-            <div class="testimonial-avatar">
+            {#<div class="testimonial-avatar">
               <img src="{{ t.avatar or '/assets/images/testimonials/placeholder.jpg' }}" alt="Avatar de {{ t.name }}">
-            </div>
+            </div>#}
             <div class="testimonial-person">
               <strong class="testimonial-name">{{ t.name }}</strong>
               {% if t.role %}<span class="testimonial-role">{{ t.role }}</span>{% endif %}
