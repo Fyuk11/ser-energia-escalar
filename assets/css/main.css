@@ -1,6 +1,7 @@
 /* main.css */
 @import "variables.css";    /* VARIABLES */
 @import "reset.css";        /* RESET / BASE */
+@import "fix-light.css"; /* FIX DARKMODE */
 @import "container.css";    /* CONTAINER */
 @import "nav.css";          /* NAV y burger */
 @import "hero.css";         /* HERO */
@@ -16,4 +17,6 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"; /* Font Awesome */
 
 
+
 /* Si querés, media queries también pueden ir en cada sección, o en un archivo global responsive.css */
+

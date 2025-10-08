@@ -1,0 +1,47 @@
+/* fix-light.css — bloquea dark mode sin afectar hero/video */
+
+/* 1. Forzar modo claro en la raíz */
+:root {
+  color-scheme: light !important;
+}
+
+/* 2. Fondo y texto base */
+html, body {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+/* 3. Secciones que se ven mal en dark mode */
+.testimonios,
+.section-divider,
+.benefits,
+.steps,
+.about,
+.footer {
+  background-color: #fff !important;
+  color: #111827 !important;
+}
+
+/* Mantener hero siempre visible */
+.hero, 
+.hero-video, 
+.hero-overlay, 
+.hero-fallback, 
+.hero-particles {
+  position: absolute; /* ya estaba */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1 !important;
+  visibility: visible !important;
+  mix-blend-mode: normal !important; /* importante */
+  z-index: 0 !important; /* cambiar de negativo a 0 */
+}
+
+/* Contenido por encima */
+.hero-content-wrapper {
+  position: relative;
+  z-index: 1; /* sigue arriba del video */
+}
