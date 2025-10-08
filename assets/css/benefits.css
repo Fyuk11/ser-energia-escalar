@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.section-title {
+.benefits .section-title {
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
   background: linear-gradient(90deg, #ffffff, #ffffff);
@@ -33,7 +33,7 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(255, 194, 10, 0.237);
+  box-shadow: 0 12px 24px rgba(10,132,255,0.15);
 }
 
 .benefit-icon {
