@@ -233,8 +233,8 @@ sections:
 
 
   - type: steps
-    title: Soporte y Garantía
-    subtitle: "No estás solo en el camino"
+    title: Material para ti
+    subtitle: ""
     steps:
     - number: 🛡️
       title: Garantía total de 1 año (Cubre servicio técnico)
@@ -275,7 +275,7 @@ sections:
       De esa unión nació SER Energía Escalar: equipos creados para potenciar la transformación personal.
     differential: "Un enfoque único que combina ciencia, geometría sagrada y acompañamiento humano."
     signature: "La energía se transforma en conciencia."
-    image: "/images/sergio.jpg"
+    image: "/assets/images/sergio-about.webp"
 
 
   - type: faqs

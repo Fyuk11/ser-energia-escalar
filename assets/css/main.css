@@ -1,7 +1,7 @@
 /* main.css */
 @import "variables.css";    /* VARIABLES */
 @import "reset.css";        /* RESET / BASE */
-@import "fix-light.css"; /* FIX DARKMODE */
+@import "fix-light.css"; /* FIX LIGHT MODE */
 @import "container.css";    /* CONTAINER */
 @import "nav.css";          /* NAV y burger */
 @import "hero.css";         /* HERO */
