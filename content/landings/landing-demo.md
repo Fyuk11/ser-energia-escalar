@@ -16,6 +16,8 @@ nav:
     url: "#benefits"
   - text: Equipos
     url: "#equipos"
+  - text: Tutoriales
+    url: "#steps"
   - text: Preguntas frecuentes
     url: "#faqs"
   - text: WhatsApp
@@ -27,7 +29,7 @@ sections:
   - type: hero
     title: "Vuelve al origen de tu esencia divina"
     subheading: "Tu AUTOMEDICINA en tu casa. Reorganiza el Organismo interno de tu SER"
-    subtitle: "Bienvenidos a recibir la tecnología escalar para tu bienestar físico, mental, emocional y energético. Te acompañará a potenciar tus terapias y transformar el cuerpo de manera integral."
+    subtitle: ""
     videos:
      desktopWebm: "/assets/videos/heroB.webm"
      desktopMp4: "/assets/videos/heroB.mp4"
@@ -308,6 +310,8 @@ sections:
        url: "#benefits"
      - text: Equipos
        url: "#equipos"
+     - text: Tutoriales
+       url: "#steps"
      - text: Preguntas Frecuentes
        url: "#faqs"
     social:
