@@ -28,8 +28,8 @@ nav:
 sections:
   - type: hero
     title: "Vuelve al origen de tu esencia divina"
-    subheading: "Tu AUTOMEDICINA en tu casa. Reorganiza el Organismo interno de tu SER"
-    subtitle: ""
+    subheading: "Tu AUTOMEDICINA en tu casa."
+    subtitle: "Reorganizá el organismo interno de tu SER"
     heroImage:
       desktop: "/assets/images/PORTADAS SER ENERGIA ESCALAR.webp"
       mobile: "/assets/images/PORTADAS SER ENERGIA ESCALAR.webp"

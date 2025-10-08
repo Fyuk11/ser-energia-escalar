@@ -250,3 +250,14 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
   .hero-desktop { display: block; }
   .hero-mobile { display: none; }
 }
+
+
+
+.hero-content-wrapper {
+  padding: 20px;
+}
+
+.hero h1, .hero h2, .hero p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.878),
+               0 0 8px rgba(255,255,255,0.3);
+}
