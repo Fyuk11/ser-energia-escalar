@@ -63,25 +63,4 @@
     </div>
   </div>
 
-  <!-- Mandala decorativo -->
-  <div class="hero-mandala" aria-hidden="true">
-    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="mandala-svg">
-      <defs>
-        <linearGradient id="goldGrad" x1="0" x2="1">
-          <stop offset="0" stop-color="#f7f3e6"/>
-          <stop offset="1" stop-color="#d4af37"/>
-        </linearGradient>
-      </defs>
-      <g fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.14">
-        <circle cx="250" cy="250" r="120"/>
-        <circle cx="250" cy="250" r="170"/>
-        <circle cx="250" cy="250" r="220"/>
-        <g transform="translate(250,250)">
-          {% for angle in [0,45,90,135,180,225,270,315] %}
-          <path d="M0,-120 C20,-80 20,-40 0,-0" transform="rotate({{ angle }})"/>
-          {% endfor %}
-        </g>
-      </g>
-    </svg>
-  </div>
 </section>

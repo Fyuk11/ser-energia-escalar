@@ -180,40 +180,7 @@
   margin-bottom: 8px;
 }
 
-/* =======================
-   MANDALA DECORATIVO
-   ======================= */
-.hero-mandala {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
 
-.mandala-svg {
-  width: min(85vw, 800px);
-  height: auto;
-  opacity: 1.15;
-  transform-origin: center center;
-  filter: drop-shadow(0 6px 20px rgba(247, 244, 244, 0.396));
-  animation: mandalaRotate 120s linear infinite;
-}
-
-@media (max-width: 768px) {
-  .mandala-svg { width: min(90vw, 700px); opacity: 0.08; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .mandala-svg { animation: none; }
-}
-
-@keyframes mandalaRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 /* =======================
    RESPONSIVE
