@@ -1,18 +1,14 @@
 <section class="hero" id="hero">
-  <!-- Videos -->
-  {% if section_data.videos %}
-    <video class="hero-video hero-desktop" autoplay muted loop playsinline>
-      <source src="{{ section_data.videos.desktopWebm }}" type="video/webm">
-      <source src="{{ section_data.videos.desktopMp4 }}" type="video/mp4">
-    </video>
-    <video class="hero-video hero-mobile" autoplay muted loop playsinline>
-      <source src="{{ section_data.videos.mobileWebm }}" type="video/webm">
-      <source src="{{ section_data.videos.mobileMp4 }}" type="video/mp4">
-    </video>
+  <!-- Imagen de fondo -->
+  {% if section_data.heroImage %}
+    <div class="hero-image hero-desktop" 
+         style="background-image: url('{{ section_data.heroImage.desktop }}');"></div>
+    <div class="hero-image hero-mobile" 
+         style="background-image: url('{{ section_data.heroImage.mobile }}');"></div>
   {% endif %}
 
   <div class="hero-overlay"></div>
-  <div class="hero-fallback"></div>
+ 
   <canvas id="heroParticles" class="hero-particles"></canvas>
 
   <div class="hero-content-wrapper">

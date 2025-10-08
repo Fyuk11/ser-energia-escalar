@@ -30,11 +30,9 @@ sections:
     title: "Vuelve al origen de tu esencia divina"
     subheading: "Tu AUTOMEDICINA en tu casa. Reorganiza el Organismo interno de tu SER"
     subtitle: ""
-    videos:
-     desktopWebm: "/assets/videos/heroB.webm"
-     desktopMp4: "/assets/videos/heroB.mp4"
-     mobileWebm: "/assets/videos/heroB-mobile.webm"
-     mobileMp4: "/assets/videos/heroB-mobile.mp4"
+    heroImage:
+      desktop: "/assets/images/PORTADAS SER ENERGIA ESCALAR.webp"
+      mobile: "/assets/images/PORTADAS SER ENERGIA ESCALAR.webp"
     ctas:
      - text: "Conocer más"
        url: "#what-is"
@@ -101,7 +99,7 @@ sections:
 
 
   - type: equipos
-    title: "Equipos SER"
+    title: "Equipos"
     subtitle: "Descubrí nuestros dispositivos y accesorios"
     equipos:
     - name: "SER AMOR"

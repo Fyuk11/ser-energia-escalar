@@ -34,7 +34,7 @@
 .hero-video { z-index: -4; }
 .hero-overlay { 
   z-index: -3;
-  background: linear-gradient(135deg, rgba(10,20,30,0.75), rgba(255,215,0,0.15));
+  background: linear-gradient(135deg, rgba(7, 14, 20, 0.57), rgba(255, 217, 0, 0.082));
   animation: gradientShift 20s ease infinite;
 }
 .hero-fallback { 
@@ -263,3 +263,23 @@
    FIX GENERAL OVERFLOW
    ======================= */
 html, body { overflow-x: hidden; box-sizing: border-box; }
+
+
+
+
+.hero-image {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -4; /* detrás del overlay y del contenido */
+}
+.hero-desktop { display: none; }
+.hero-mobile { display: block; }
+
+@media (min-width: 768px) {
+  .hero-desktop { display: block; }
+  .hero-mobile { display: none; }
+}
