@@ -247,12 +247,20 @@ sections:
           url: "/assets/files/manual.txt"
         - label: "📄 Protocolo PDF"
           url: "/assets/files/protocolo.pdf"
-        - label: "🎥 Tutorial 1"
-          url: "https://drive.google.com/file/d/1TNlsnOAuPs1QFa9lm0oqRaZLIdhvroiK/view?usp=sharing"
-        - label: "🎥 Tutorial 2"
-          url: "https://drive.google.com/file/d/1TNlsnOAuPs1QFa9lm0oqRaZLIdhvroiK/view?usp=sharing"
-        - label: "🎥 Tutorial 3"
-          url: "https://drive.google.com/file/d/1TNlsnOAuPs1QFa9lm0oqRaZLIdhvroiK/view?usp=sharing"
+        - label: "🎥 Mantenimiento"
+          url: "https://drive.google.com/file/d/1Bk2n-jYERlguuT49TxQa2-DH-cJWAJFW/view?usp=drive_link"
+        - label: "🎥 Mantenimiento y limpieza"
+          url: "https://drive.google.com/file/d/1vFlzMsxnVNYoNy-vdbaJkQawJPKGauDQ/view?usp=sharing"
+        - label: "🎥 Tutorial Ser Amor"
+          url: "https://drive.google.com/file/d/1T7N_bNEyOmWT5whXGUm0X4uVLQH44f2c/view?usp=sharing"
+        - label: "🎥 Tutorial Ser Origen"
+          url: "https://drive.google.com/file/d/1WX6UQSFoHG1p0iGQdr0WCkY24DnAzxmT/view?usp=sharing"
+        - label: "🎥 Tutorial Ser Esencia"
+          url: "https://drive.google.com/file/d/16YLipdYXpd8JNCAznb9NWmHyHOdZ2R3R/view?usp=sharing"
+        - label: "🎥 Demostración Ser Amor"
+          url: "https://drive.google.com/file/d/1cwogZltJCcV3RIJuW9OxCBKzEhdmzI0J/view?usp=sharing"
+        - label: "🎥 Demostración Ser Origen"
+          url: "https://drive.google.com/file/d/1wswqWPn6PMux_ItxAmAUp2NR_BN0KMnB/view?usp=sharing"
 
 
  
@@ -267,7 +275,7 @@ sections:
         opacity: 0.6
 
   - type: about
-    title: Sobre Sergio | Historia de SER Energía Escalar l prob
+    title: Sobre Sergio | Historia de SER Energía Escalar
     story1: >
       Sergio diseña y crea equipos de energía escalar materializando la armonía, amor y purificación. Y es así que intensiona cada una de las piezas. Su energía, entrega y conexión con la geometría sagrada son grandes pilares para la realización de los mismos; resultando ser construcción consciente. Conectando plenamente con cada persona o lugar que solicite su equipo.
 
