@@ -3,7 +3,7 @@
   position: relative;
   padding: 4rem 1rem;
   text-align: center;
-  background: linear-gradient(135deg, #1b7eff 0%, #244de2 50%, #4e6df5 100%);
+  background: linear-gradient(135deg, #4c89e3 0%, #1f4fa5 100%); /* azul más oscuro que what-is */
   overflow: hidden;
 }
 
@@ -45,15 +45,7 @@
   margin-top: 3rem;
 }
 
-.btn-primary {
-  padding: 0.75rem 2rem;
-  background: #f1bf08;
-  color: #fff;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.25s ease;
-}
-
+/* Boton cta hover*/
 .btn-primary:hover {
   background: #0073e6;
   transform: translateY(-2px);
@@ -97,3 +89,4 @@
   .benefit-icon { width: 75px; }
   .section-title { font-size: 3rem; }
 }
+
