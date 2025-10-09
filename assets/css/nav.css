@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   z-index: 2000; /* más alto para estar siempre sobre hero/video */
-   background: #0629da; /* Azul fuerte */
+   background: #0629daea; /* Azul fuerte */
   background-size: 400% 400%; /* gradiente grande para animación */
   animation: whiteEnergyMove 6s ease infinite;
   transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
@@ -122,7 +122,7 @@
     right: -100%;
     width: 250px;
     height: 100vh;
-    background: #0629da;
+    background: #0629dad3;
     display: flex;
     justify-content: center;
     align-items: center;

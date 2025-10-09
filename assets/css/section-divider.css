@@ -21,7 +21,7 @@
 .section-divider path {
   fill: url(#dividerGradient);
   animation: waveMotion 8s ease-in-out infinite;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.486));
+  filter: drop-shadow(0 6px 12px rgba(248, 204, 9, 0.486));
 }
 
 /* Animación de onda */
