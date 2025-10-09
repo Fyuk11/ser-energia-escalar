@@ -31,7 +31,7 @@ sections:
     subheading: "Tu AUTOMEDICINA en tu casa."
     subtitle: "Reorganizá el organismo interno de tu SER"
     heroImage:
-      desktop: "/assets/images/PORTADAS SER ENERGIA ESCALAR.webp"
+      desktop: "/assets/images/PORTADAS_DESKTOP.webp"
       mobile: "/assets/images/PORTADAS SER ENERGIA ESCALAR.webp"
     ctas:
      - text: "Conocer más"
@@ -267,14 +267,16 @@ sections:
         opacity: 0.6
 
   - type: about
-    title: Sobre Sergio / Historia de SER Energía Escalar
-    story: >
-     Sergio inició su camino combinando la investigación técnica con un profundo viaje espiritual. 
-     A lo largo de los años, exploró la energía desde múltiples enfoques, integrando conocimientos 
-      científicos con prácticas de geometría sagrada y terapias holísticas. 
-      De esa unión nació SER Energía Escalar: equipos creados para potenciar la transformación personal.
-    differential: "Un enfoque único que combina ciencia, geometría sagrada y acompañamiento humano."
-    signature: "La energía se transforma en conciencia."
+    title: Sobre Sergio | Historia de SER Energía Escalar
+    story1: >
+      Sergio diseña y crea equipos de energía escalar materializando la armonía, amor y purificación. Y es así que intensiona cada una de las piezas. Su energía, entrega y conexión con la geometría sagrada son grandes pilares para la realización de los mismos; resultando ser construcción consciente. Conectando plenamente con cada persona o lugar que solicite su equipo.
+
+    story2: >
+      En su taller siempre cuida y respeta su ambiente de creación; el mismo es armónico y amoroso. Si en el día se presenta una vibración inferior a la misma, pues deja de construir y retoma cuando el clima de su lugar vuelve a estar en sintonía con frecuencia elevada.
+
+
+    differential: "Junto a su compañera de vida Anabella, tienen como misión acercar la energia escalar a cada hogar de Argentina y el mundo para que todos reciban y conecten con su automedicina."
+    signature: "Reorganizando el organismo para volver al origen de nuestra esencia divina."
     image: "/assets/images/sergio-about.webp"
 
 

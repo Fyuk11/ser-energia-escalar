@@ -3,14 +3,22 @@
     <div class="about-image">
       <img src="{{ section_data.image }}" alt="Foto de Sergio" loading="lazy">
     </div>
+
     <div class="about-text">
       <h2>{{ section_data.title or "Sobre Sergio" }}</h2>
+
       <p class="about-story">
-        {{ section_data.story }}
+        {{ section_data.story1 }}
       </p>
+
+      <p class="about-story p2">
+        {{ section_data.story2 }}
+      </p>
+
       <div class="about-highlight">
         {{ section_data.differential }}
       </div>
+
       {% if section_data.signature %}
         <p class="about-signature">“{{ section_data.signature }}”</p>
       {% endif %}
