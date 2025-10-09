@@ -236,3 +236,29 @@
 
 
 
+/* Estado abierto: altura automática y scroll si es necesario */
+.step-card.open .extra-content {
+  max-height: none;
+  opacity: 1;
+}
+
+/* En pantallas pequeñas, permitir scroll interno si hay muchos recursos */
+@media (max-width: 600px) {
+  .extra-content {
+    max-height: 70vh; /* límite visual razonable */
+    overflow-y: auto;
+    padding-right: 0.5rem;
+  }
+
+  /* Scroll más suave y visible */
+  .extra-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  .extra-content::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 3px;
+  }
+  .extra-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
