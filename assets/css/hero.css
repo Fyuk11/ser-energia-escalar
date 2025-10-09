@@ -209,7 +209,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero h1 { font-size: 3.5rem; }
+  .hero h1 { font-size: 3.2rem; }
   .hero p { font-size: 0.9rem; line-height: 1.3; }
   .hero-content-wrapper { padding: 0 10px; }
   .hero-ctas { gap: 10px; }
