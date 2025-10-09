@@ -15,14 +15,15 @@
     <div class="hero-content">
       <!-- Título principal -->
       <h1 class="fade-left animate-on-scroll">
-        {{ section_data.title or landing.title }}
+       <span class="golden-text">{{ section_data.title or landing.title }}</span>
       </h1> </br>
 
       <!-- Subtítulo opcional -->
       {% if section_data.subheading %}
-      <h2 class="fade-left delay-1 animate-on-scroll hero-subtitle">
-        {{ section_data.subheading }}
-      </h2>
+     <h2 class="fade-left delay-1 animate-on-scroll hero-subtitle">
+  {{ section_data.subheading | safe }}
+</h2>
+
       {% endif %}
 
       <!-- Párrafo descriptivo -->

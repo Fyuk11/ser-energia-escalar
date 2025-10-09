@@ -28,7 +28,7 @@ nav:
 sections:
   - type: hero
     title: "Vuelve al origen de tu esencia divina"
-    subheading: "Tu AUTOMEDICINA en tu casa."
+    subheading: "Tu <span class='golden-text'>AUTOMEDICINA</span> en tu casa."
     subtitle: "Reorganizá el organismo interno de tu SER"
     heroImage:
       desktop: "/assets/images/PORTADAS_DESKTOP.webp"
