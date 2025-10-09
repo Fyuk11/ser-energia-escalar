@@ -236,3 +236,57 @@
 
 
 
+
+/* === ACCESORIOS (MEJORADOS) === */
+/* === ACCESORIOS (IMAGEN ARRIBA + NOMBRE ABAJO) === */
+/* === ACCESORIOS (IMAGEN COMPLETA + BORDE SUAVE + NOMBRE) === */
+.accessories-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.accessories-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--color-dark, #222);
+}
+
+.accessories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 0.8rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.accessory-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+}
+
+.accessory-item img {
+  width: 100%;
+  height: 70px;
+  object-fit: contain; /* mantiene proporción completa */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accessory-item img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.accessory-item .accessory-name {
+  font-size: 0.7rem;
+  margin-top: 4px;
+  text-align: center;
+  color: #333;
+  line-height: 1.2;
+}

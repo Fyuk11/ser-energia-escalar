@@ -28,16 +28,20 @@
               {% endfor %}
             </ul>
 
-            {% if equipo.accessories %}
-            <div class="accessories">
-              {% for acc in equipo.accessories %}
-              <div class="accessory-badge" title="{{ acc.name }}">
-                <img src="{{ acc.icon }}" alt="{{ acc.name }}">
-                <span>{{ acc.name }}</span>
-              </div>
-              {% endfor %}
-            </div>
-            {% endif %}
+{% if equipo.accessories %}
+<div class="accessories-section">
+  <h4 class="accessories-title">Accesorios</h4>
+  <div class="accessories-list">
+    {% for acc in equipo.accessories %}
+    <div class="accessory-item">
+      <img src="{{ acc.icon }}" alt="{{ acc.name }}">
+      <span class="accessory-name">{{ acc.name }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
 
             {% if equipo.cta %}
             <div class="cta-wrapper">
