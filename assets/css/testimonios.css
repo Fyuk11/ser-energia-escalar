@@ -1,7 +1,7 @@
 .testimonios {
   padding: 5rem 1rem; /* más espacio vertical */
   text-align: center;
-  background: linear-gradient(180deg, rgba(209, 183, 13, 0.773), rgba(255,223,93,0.05));
+  background: linear-gradient(90deg, #d4af37, #fff4b3, #d4af37);
 }
 
 .section-title {
@@ -66,7 +66,7 @@
   color: #000000;
   font-style: italic;
   padding-left: 0.75rem;
-  border-left: 3px solid rgba(6, 60, 113, 0.984);
+  border-left: 3px solid rgba(4, 30, 57, 0.984);
   max-width: 90%;
   margin: 0 auto;
   text-align: left;
