@@ -267,7 +267,7 @@ sections:
         opacity: 0.6
 
   - type: about
-    title: Sobre Sergio | Historia de SER Energía Escalar
+    title: Sobre Sergio | Historia de SER Energía Escalar l prob
     story1: >
       Sergio diseña y crea equipos de energía escalar materializando la armonía, amor y purificación. Y es así que intensiona cada una de las piezas. Su energía, entrega y conexión con la geometría sagrada son grandes pilares para la realización de los mismos; resultando ser construcción consciente. Conectando plenamente con cada persona o lugar que solicite su equipo.
 
