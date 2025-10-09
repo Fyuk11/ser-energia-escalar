@@ -20,8 +20,6 @@ nav:
     url: "#steps"
   - text: Preguntas frecuentes
     url: "#faqs"
-  - text: WhatsApp
-    url: https://wa.me/5493435616629
     external: true
 
 
