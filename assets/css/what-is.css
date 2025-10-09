@@ -1,36 +1,56 @@
-/* WHAT IS SECTION - Estilo Premium */
-
+/* =======================
+   WHAT IS SECTION - Hero Espacial
+   ======================= */
 .what-is {
   padding: 5rem 1rem;
-  background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
+  color: #ffffff;
+  background: linear-gradient(270deg, #4245e1, #3972c8, #014fcc, #323ada, #4a90f2);
+  background-size: 1000% 1000%;
+  animation: spaceGradient 15s ease infinite;
 }
 
+/* Animación del degradado */
+@keyframes spaceGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Círculos decorativos tipo luz espacial */
 .what-is::before,
 .what-is::after {
   content: "";
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   opacity: 0.08;
-  filter: blur(80px);
+  filter: blur(100px);
   z-index: 0;
 }
 
 .what-is::before {
-  top: -50px;
-  left: -50px;
-  background: #00aaff;
+  top: -100px;
+  left: -80px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .what-is::after {
-  bottom: -50px;
-  right: -50px;
-  background: #ff77aa;
+  bottom: -120px;
+  right: -80px;
+  background: rgba(0, 188, 212, 0.2);
 }
 
+/* Contenido encima del fondo animado */
+.what-is .text,
+.what-is .visual {
+  position: relative;
+  z-index: 1;
+}
+
+/* Contenedor */
 .what-is .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -38,33 +58,26 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  position: relative;
-  z-index: 1;
 }
 
+/* Textos */
 .what-is .text h2 {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #222;
-  margin-bottom: 0.75rem;
+  color: #ffffff;
   text-align: center;
+  margin-bottom: 0.75rem;
 }
 
-.what-is .text .subtitle {
-  font-size: 1rem;
-  color: #555;
+.what-is .text .subtitle,
+.what-is .text p {
+  color: #ffffff;
   text-align: center;
   margin-bottom: 1.5rem;
-}
-
-.what-is .text p {
-  font-size: 0.95rem;
   line-height: 1.7;
-  color: #555;
-  text-align: center;
 }
 
-/* --- Opción 3: Glow radial al hover --- */
+/* Visual */
 .what-is .visual img {
   max-width: 100%;
   height: auto;
@@ -75,10 +88,9 @@
 
 .what-is .visual img:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 40px rgba(0, 188, 212, 0.5),
-              0 0 70px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 0 40px rgba(0, 148, 212, 0.5),
+              0 0 70px rgba(0, 148, 212, 0.3);
 }
-
 
 /* Dos columnas para tablet y desktop */
 @media (min-width: 768px) {
@@ -96,7 +108,6 @@
     flex: 1;
   }
 }
-
 
 /* Desktop grande y ultrawide */
 @media (min-width: 1024px) {
@@ -117,52 +128,3 @@
 .fade-left { opacity: 0; transform: translateX(-25px); transition: all 0.7s ease-out; }
 .fade-right { opacity: 0; transform: translateX(25px); transition: all 0.7s ease-out; }
 .visible.fade-left, .visible.fade-right { opacity: 1; transform: translateX(0); }
-
-
-
-
-
-/* WHAT IS SECTION - Fondo azul y letras blancas */
-/* WHAT IS SECTION - Fondo azul y letras blancas, sin cambiar tamaño de letras */
-.what-is {
-  padding: 5rem 1rem;
-  background: linear-gradient(180deg, #4a90f2 0%, #3a76d2 100%); /* azul clarito degradado */
-  color: #ffffff; /* letras blancas por defecto */
-  position: relative;
-  overflow: hidden;
-}
-
-.what-is .text h2,
-.what-is .text .subtitle,
-.what-is .text p {
-  color: #ffffff; /* asegurar letras blancas */
-  text-align: center; /* mantener centrado en mobile */
-}
-
-/* Circulos decorativos más suaves */
-.what-is::before {
-  top: -50px;
-  left: -50px;
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.what-is::after {
-  bottom: -50px;
-  right: -50px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* Visual */
-.what-is .visual img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.what-is .visual img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 40px rgba(0, 188, 212, 0.5),
-              0 0 70px rgba(0, 188, 212, 0.3);
-}
