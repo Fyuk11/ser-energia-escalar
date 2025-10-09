@@ -243,14 +243,6 @@ sections:
       title: Material exclusivo
       text: Manuales, videos y protocolos claros incluidos en tu experiencia.
       resources:
-        - label: "📄 Manual PDF"
-          url: "/assets/files/manual.txt"
-        - label: "📄 Protocolo PDF"
-          url: "/assets/files/protocolo.pdf"
-        - label: "🎥 Mantenimiento"
-          url: "https://drive.google.com/file/d/1Bk2n-jYERlguuT49TxQa2-DH-cJWAJFW/view?usp=drive_link"
-        - label: "🎥 Mantenimiento y limpieza"
-          url: "https://drive.google.com/file/d/1vFlzMsxnVNYoNy-vdbaJkQawJPKGauDQ/view?usp=sharing"
         - label: "🎥 Tutorial Ser Amor"
           url: "https://drive.google.com/file/d/1T7N_bNEyOmWT5whXGUm0X4uVLQH44f2c/view?usp=sharing"
         - label: "🎥 Tutorial Ser Origen"
@@ -261,7 +253,10 @@ sections:
           url: "https://drive.google.com/file/d/1cwogZltJCcV3RIJuW9OxCBKzEhdmzI0J/view?usp=sharing"
         - label: "🎥 Demostración Ser Origen"
           url: "https://drive.google.com/file/d/1wswqWPn6PMux_ItxAmAUp2NR_BN0KMnB/view?usp=sharing"
-
+        - label: "🎥 Mantenimiento"
+          url: "https://drive.google.com/file/d/1Bk2n-jYERlguuT49TxQa2-DH-cJWAJFW/view?usp=drive_link"
+        - label: "🎥 Mantenimiento y limpieza"
+          url: "https://drive.google.com/file/d/1vFlzMsxnVNYoNy-vdbaJkQawJPKGauDQ/view?usp=sharing"
 
  
   - type: section-divider
