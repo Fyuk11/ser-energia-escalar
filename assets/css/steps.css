@@ -236,11 +236,11 @@
 
 
 
-/* Estado abierto: altura automática y scroll si es necesario */
+/* Estado abierto: altura automática y scroll si es necesario *
 .step-card.open .extra-content {
   max-height: none;
   opacity: 1;
-}
+} */
 
 /* En pantallas pequeñas, permitir scroll interno si hay muchos recursos */
 @media (max-width: 600px) {
@@ -261,4 +261,17 @@
   .extra-content::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.05);
   }
+}
+
+/* ===========================
+   STEPS - Corrección apertura inicial
+   =========================== */
+.extra-content {
+  display: none; /* oculto por defecto */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.step-card.open .extra-content {
+  display: block; /* se muestra solo al abrir */
 }
