@@ -98,7 +98,7 @@ sections:
 
   - type: equipos
     title: "Equipos"
-    subtitle: "Descubrí nuestros dispositivos y accesorios"
+    subtitle: ""
     equipos:
     - name: "SER AMOR"
       cover: "/assets/images/Ser Amor.webp"   # Imagen de portada destacada
@@ -130,8 +130,8 @@ sections:
       - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
   
       accessories:
-        - name: "Bobina Oudin"
-          icon: "/assets/images/accesorios/Amor/"
+        - name: "Bobina Grande"
+          icon: "/assets/images/accesorios/Amor/Bobina Mediana.webp"
         - name: "Bobina Pancake Radiante"
           icon: "/assets/images/accesorios/Amor/Pancake radiante 20cm.webp"
         - name: "Bobina Pancake Magnética"
@@ -235,7 +235,7 @@ sections:
 
       accessories:
         - name: "Bobina Oudin Chica"
-          icon: "/assets/images/accesorios/bobina-oudin-chica.png"
+          icon: "/assets/images/accesorios/Esencia/Bobina Mediana.webp"
         - name: "Bobina Pancake Radiante"
           icon: "/assets/images/accesorios/Esencia/Pancake radiante 20cm.webp"
         - name: "Bobina Pancake Magnética"
