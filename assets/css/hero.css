@@ -315,3 +315,21 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
   }
 
 }
+
+
+/* ===========================
+   AJUSTE HERO SUBTITLE MOBILE
+   =========================== */
+.subtitle-text {
+  font-size: 1.3rem; /* base desktop */
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .subtitle-text {
+    font-size: 1.8rem !important; /* más grande en mobile */
+    font-weight: 700 !important; /* más gruesa */
+    line-height: 1.4;
+    text-align: center;
+  }
+}
