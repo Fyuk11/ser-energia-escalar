@@ -101,24 +101,34 @@ sections:
     subtitle: "Descubrí nuestros dispositivos y accesorios"
     equipos:
     - name: "SER AMOR"
-      cover: "/assets/images/ser-amor-cover.jpg"   # Imagen de portada destacada
+      cover: "/assets/images/Ser Amor.webp"   # Imagen de portada destacada
       icon: "/assets/images/ser-amor.png"                  # (opcional) icono pequeño si lo necesitás en el header
-      description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con tapa transparente. Electrodos de tungsteno de 6mm."
+      description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con su tapa en transparencia. Cuenta con electrodos de tugusteno puros de 6mm."
       price: "$2.000 USD"
       details:
-        - "Diseño: caja de madera con tapa transparente grabada, 24x44x15 cm, peso 4kg. Rejilla exterior cubre ventilación con geometría sagrada."
-        - "Alimentación: 110-220v, fuente 12v/15A, 50-60Hz."
-        - "Fuente de poder: ZVS + flyback sintonizado en resonancia, genera 30.000V."
-        - "Consumo de energía: 0.18 kW."
-        - "Banco de Capacitores: alta tensión 4,7 nf/6000v para filtrar energía."
-        - "Spark Gap externo: triple, electrodos de tungsteno de 6mm."
-        - "Sistema de control: botón metálico con LED."
-        - "Temporizador: 999 seg. (16.65 min)."
-        - "Salida magnética: 1 conector canon izquierdo."
-        - "Salida radiante: 2 conectores canon derecho."
-        - "Ventilación: 1 ventilador 120mm con LED azul."
-        - "Seguridad eléctrica: fusible interno + tecla de corte externa, conexión a tierra."
-        - "Emisores de ruido: <60dB."
+        - "Diseño: caja de madera con tapa transparente grabada, de 24cm x 44cm x 15cm; peso 4kg. Regilla exterior cubre ventilación con diseño de geometría sagrada."
+        - "Alimentación: 110-220v para fuente de 12v/15 A - (50-60 hz)"
+        - "Fuente de poder: ZVS + flyback sintonizado en resonancia, para generar 30.000 voltios."
+        - "Consumo de energía: 0.18 kilovatios."
+        - "Banco de Capacitores: de alta tensión 4,7 nf/6000v (dispuestos para filtrar el flujo de la energía caliente de 30.000 voltios (+ y -) en energía fría, las cuales se encuentran en la bobina D'Arsonval produciendose la energía de punto 0 radiante y magnética."
+        - "Spark Gap externo: triple Spark Gap (3 descargas sucesivas de alto voltaje) con electrodos de tugusteno puro de 6mm (vida útil prolongada)."
+        - "Sistema de control e interfaz: botón de encendido metálico con luz led ubicado en la parte superior derecha del equipo."
+        - "Temporizador de corte automático: 999 segundos de sesión (16.65 minutos)."
+        - "Salida magnética: 1 conector canon del lado izquierdo del dispositivo (cable rojo)."
+        - "Salida Radiante: 2 conectores canon del lado derecho del dispositivo (cable azul)."
+        - "Ventilación: 1 ventilador de 120mm X 120mm con luz led azul."
+        - "Seguridad eléctrica: fusible interno y tecla trasera externa que corta corriente, conexión a tierra (mariposa)."
+        - "Emisores de ruido: <60DB en condiciones normales de calibrado."
+
+      accessories_details:
+      - "Bobina Oudin Grande o Mediana ( para envios fuera de Argentina) : diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
+      - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
+      - "Bobina Pancake o Bobina  Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
+      - "Manguitos: 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito ( cable rojo= magnético) conector canon de entrada magnética ( lado izquierdo del dispositivo).Un  manguito ( cable azul= radiante) conector canon entrada radiante ( ubicado en el centro)"
+      - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta a la bobina Oudin en la parte superior."
+      - "KIT de Alta Frecuencia: Cuatro electrodos intercambiables para diferentes tratamientos estéticos y zonas específicas con distintas afecciones. Un cabezal porta electrodo con cable azul= radiante de 2 mts, conectado a la bobina Oudin y conectar a la vez la pancake magnética = cable rojo, del lado izquierdo, para cerrar el circuito."
+      - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
+  
       accessories:
         - name: "Bobina Oudin"
           icon: "/assets/images/accesorios/Amor/"
@@ -127,33 +137,47 @@ sections:
         - name: "Bobina Pancake Magnética"
           icon: "/assets/images/accesorios/Amor/Pancake magnética 24cm.webp"
         - name: "Manguitos"
-          icon: "/assets/images/accesorios/Amor/Manguitos.webp"
+          icon: "/assets/images/accesorios/Amor/Manguitos para Equipo Ser Amor.webp"
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/Amor/Bobina Corona.webp"
         - name: "KIT Alta Frecuencia"
           icon: "/assets/images/accesorios/Amor/KIT de alta frecuencia.webp"
+        - name: "3 Spark Gap. Electrodos tugusteno puros de 6mm"
+          icon: "/assets/images/accesorios/Amor/ACCESORIO SER AMOR 3 Spark Gap. Electrodos tugusteno puros de 6mm..webp"
       cta:
         whatsapp: "5493435616629"
         title: "Quiero mi equipo"
 
     - name: "SER ORIGEN"
-      cover: "/assets/images/equipos/ser-origen-cover.jpg"
+      cover: "/assets/images/Ser Origen.webp"
       icon: "/assets/images/ser-origen.png"
-      description: "Dispositivo de 3 Spark Gap. Diseño rígido portátil con electrodos de tungsteno de 5mm."
+      description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño rígido portátil con electrodos de tugusteno puros de 5mm."
       price: "$1.600 USD"
       details:
-        - "Diseño: caja rústica PVC, 25x47x20cm, peso 3kg."
-        - "Alimentación: 110-220v, fuente 12v/15A, 50-60Hz."
-        - "Fuente de poder: ZVS + flyback, genera 30.000V."
-        - "Consumo de energía: 0.18 kW."
-        - "Banco de Capacitores: 4,7 nf/6000v."
-        - "Spark Gap externo: triple, electrodos de tungsteno de 5mm."
-        - "Sistema de control: botón PVC con LED rojo."
-        - "Temporizador: 999 seg. (16.65 min)."
-        - "Salidas: 2 magnéticas (izquierda) y 2 radiantes (derecha)."
-        - "Ventilación: 4 ventiladores 80mm LED azul."
+        - "Diseño: caja rústica de PVC (modelo caja herramientas) con manija de facil transportación, dimensiones: 25cm x 47cm x 20cm; peso 3kg. "
+        - "Alimentación: 110-220v para fuente de 12v/15 A - (50-60 hz)."
+        - "Fuente de poder: ZVS + flyback sintonizado en resonancia, para generar 30.000 voltios."
+        - "Consumo de energía: 0.18 kilovatios."
+        - "Banco de Capacitores: de alta tensión 4,7 nf/6000v (dispuestos para filtrar el flujo de la energía caliente de 30.000 voltios (+ y -) en energía fría, las cuales se encuentran en la bobina D'Arsonval produciendose la energía de punto 0 radiante y magnética."
+        - "Spark Gap externo: triple Spark Gap (3 descargas sucesivas de alto voltaje) con electrodos de tugusteno puro de 5mm (vida útil prolongada)."
+        - "Sistema de control e interfaz: botón de encendido de pvc con luz led roja ubicado en la parte izquierda frontal del equipo."
+        - "Temporizador de corte automático: 999 segundos de sesión (16.65 minutos)."
+        - "4 salidas ubicadas al centro en la parte frontal del equipo"
+        - "2 Salidas magnéticas: del lado izquierdo para la conexión a tierra y accesorios señalados con conector roja magnética (ambas se pueden conectar arriba o abajo)."
+        - "2 Salida Radiantes: del lado derecho para conexión accesorios señalados con conector azul (radiante) pudiendose colocar los mismos arriba o abajo."
+        - "4 Ventilación: 1 ventilador de 80mm X 80mm con luz led azul."
         - "Seguridad eléctrica: fusible interno."
-        - "Emisores de ruido: <60dB."
+        - "Emisores de ruido: <60DB en condiciones normales de calibrado."
+
+      accessories_details:
+      - "Bobina Oudin Mediana diseño cilíndrico en espiral sentido anti-horario, 50cm de alto x 16cm de diámetro. Amplificador de energía radiante, conector cable azul, lado derecho."
+      - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
+      - "Bobina Pancake o Bobina  Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
+      - "Manguitos ( salidas de conexión ubicadas en el centro del equipo) : 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo= magnético con salida magnética por lado izquierdo. Un manguito, cable azul= radiante con salida por lado derecho."
+      - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta a la bobina Oudin en la parte superior."
+      - "KIT de Alta Frecuencia: 4 electrodos intercambiables para diferentes tratamientos estéticos y zonas específicas con distintas afecciones. Un cabezal porta electrodo con cable azul= radiante de 2 mts, conectado a la bobina Oudin y conectar a la vez la pancake magnética = cable rojo, del lado izquierdo, para cerrar el circuito."
+      - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
+
       accessories:
         - name: "Bobina Oudin Mediana"
           icon: "/assets/images/accesorios/Origen/Bobina Mediana.webp"
@@ -162,11 +186,13 @@ sections:
         - name: "Bobina Pancake Magnética"
           icon: "/assets/images/accesorios/Origen/Pancake magnética 24cm.webp"
         - name: "Manguitos"
-          icon: "/assets/images/accesorios/Origen/Manguitos.webp"
+          icon: "/assets/images/accesorios/Origen/Manguitos para Equipo Ser Origen.webp"
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/Origen/Bobina Corona.webp"
         - name: "KIT Alta Frecuencia"
           icon: "/assets/images/accesorios/Origen/KIT de alta frecuencia.webp"
+        - name: "3 Spark Gap. Electrodos tugusteno puro de 5mm"
+          icon: "/assets/images/accesorios/Origen/ACCESORIO SER ORIGEN 3Spark Gap. Electrodos tugusteno puro de 5mm..webp"
       cta:
         whatsapp: "5493435616629"
         title: "Quiero mi equipo"
@@ -174,20 +200,31 @@ sections:
     - name: "SER ESENCIA"
       cover: "/assets/images/equipos/ser-esencia-cover.jpg"
       icon: "/assets/images/ser-esencia.png"
-      description: "Dispositivo de 1 Spark Gap. Diseño portátil con electrodos de tungsteno de 4mm."
+      description: "Dispositivo de 1 Spark Gap o acelerador de partículas. Diseño rígido portátil con electrodos de tugusteno puros de 4mm."
       price: "$950 USD"
       details:
-        - "Diseño: caja rústica PVC, 25x47x20cm, peso 3kg."
-        - "Alimentación: 110-220v, fuente 12v/15A, 50-60Hz."
-        - "Fuente de poder: ZVS + flyback, genera 24.000V."
-        - "Consumo de energía: 0.18 kW."
-        - "Banco de Capacitores: 4,7 nf/2000v."
-        - "Spark Gap externo: 1 descarga simple, electrodos cruzados 4mm."
-        - "Sistema de control: botón PVC con LED rojo."
-        - "Salidas: 1 magnética (izquierda) y 1 radiante (derecha)."
-        - "Ventilación: 4 ventiladores 80mm LED azul."
+        - "Diseño: caja rústica de PVC (modelo caja herramientas) con manija de facil transportación, dimensiones: 25cm x 47cm x 20cm; peso 3kg."
+        - "Alimentación: 110-220v para fuente de 12v/15 A - (50-60 hz)."
+        - "Fuente de poder: ZVS + flyback sintonizado en resonancia, para generar 24.000 voltios."
+        - "Consumo de energía: 0.18 kilovatios."
+        - "Banco de Capacitores: de alta tensión 4,7 nf/2000v (dispuestos para filtrar el flujo de la energía caliente de 24.000 voltios (+ y -) en energía fría, las cuales se encuentran en la bobina D'Arsonval produciendose la energía de punto 0 radiante y magnética."
+        - "Spark Gap externo: triple Spark Gap (1 descarga simple sucesiva de alto voltaje con electrodos cruzados, aceleradores de partículas múltiples, de tugusteno puro de 4mm."
+        - "Sistema de control e interfaz: botón de encendido de pvc con luz led roja ubicado en la parte izquierda frontal del equipo."
+        - "2 salidas ubicadas al centro en la parte frontal del equipo"
+        - "1 Salida magnética: del lado izquierdo para la conexión a tierra y accesorio señalado con conector rojo magnético (ambas se pueden conectar arriba o abajo)."
+        - "1 Salida Radiante: del lado derecho para conexión accesorio señalado con conector azul ( radiante) pudiendose colocar los mismos arriba o abajo."
+        - "4 Ventilación: 1 ventilador de 80mm X 80mm con luz led azul."
         - "Seguridad eléctrica: fusible interno."
-        - "Emisores de ruido: <60dB."
+        - "Emisores de ruido: <60DB en condiciones normales de calibrado."
+
+      accessories_details:
+      - "Bobina Oudin Chica diseño cilíndrico en espiral sentido anti-horario, 50cm de alto x 11cm de diámetro. Amplificador de energía radiante, conector cable azul, lado derecho."
+      - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
+      - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
+      - "Manguitos (salidas de conexión ubicadas en el centro del equipo): 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo = magnético con salida magnética por lado izquierdo. Un manguito, cable azul = radiante con salida por lado derecho."
+      - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta a la bobina Oudin en la parte superior."
+      - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
+
       accessories:
         - name: "Bobina Oudin Chica"
           icon: "/assets/images/accesorios/bobina-oudin-chica.png"
@@ -231,14 +268,14 @@ sections:
 
 
   - type: steps
-    title: Material para ti
+    title: 
     subtitle: ""
     steps:
     - number: 🛡️
       title: Garantía total de 1 año (Cubre servicio técnico)
       text: Responsabilidad - Leer bien el instructivo y ver tutoriales de su uso. No nos responsabilizamos por el mal uso del equipo.
     - number: 📘
-      title: Material exclusivo
+      title: Material para ti
       text: Manuales, videos y protocolos claros incluidos en tu experiencia.
       resources:
         - label: "🎥 Tutorial Ser Amor"

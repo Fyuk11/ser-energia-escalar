@@ -29,18 +29,45 @@
             </ul>
 
 {% if equipo.accessories %}
-<div class="accessories-section">
-  <h4 class="accessories-title">Accesorios</h4>
-  <div class="accessories-list">
-    {% for acc in equipo.accessories %}
-    <div class="accessory-item">
-      <img src="{{ acc.icon }}" alt="{{ acc.name }}">
-      <span class="accessory-name">{{ acc.name }}</span>
+  <div class="accessories-section">
+    <h4 class="accessories-title">Accesorios</h4>
+
+    {% if equipo.accessories_description %}
+      <p class="accessories-description">{{ equipo.accessories_description }}</p>
+    {% endif %}
+
+    {# --- LISTA DE ACCESORIOS (como las características) --- #}
+    {% if equipo.accessories_details %}
+      <ul class="details-list accessories-details">
+        {% for item in equipo.accessories_details %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {# --- GALERÍA DE IMÁGENES DESLIZABLE --- #}
+    <div class="accessories-gallery">
+      <div class="gallery-wrapper">
+        <button class="gallery-btn prev-btn" aria-label="Anterior">‹</button>
+
+        <div class="gallery-track">
+          {% for acc in equipo.accessories %}
+            <div class="gallery-item">
+              <img src="{{ acc.icon }}" alt="{{ acc.name }}">
+              <span class="accessory-name">{{ acc.name }}</span>
+            </div>
+          {% endfor %}
+        </div>
+
+        <button class="gallery-btn next-btn" aria-label="Siguiente">›</button>
+      </div>
     </div>
-    {% endfor %}
   </div>
-</div>
 {% endif %}
+
+
+
+
 
 
             {% if equipo.cta %}

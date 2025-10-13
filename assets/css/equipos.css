@@ -37,12 +37,24 @@
   transform: translateY(-3px);
 }
 
+
+.equipo-cover {
+  background: #f8f8f8; /* color de fondo neutro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px; /* podés ajustar según proporciones típicas */
+  padding: 0.1rem;
+}
+
 .equipo-cover img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   display: block;
+  border-radius: 0.5rem;
 }
+
 
 .equipo-content {
   padding: 1.25rem;
@@ -88,12 +100,16 @@
   overflow: hidden;
   transition: all 0.4s ease;
   margin-top: 0;
+    transition: max-height 0.6s ease, opacity 0.4s ease;
 }
+
 .equipo-card.active .equipo-details {
-  max-height: 1500px;
+  max-height: 9999px; /* antes estaba en 1500px */
   opacity: 1;
   margin-top: 1rem;
+  overflow: visible; /* asegura que la galería no se corte */
 }
+
 
 /* === DETALLES === */
 .details-list {
@@ -189,13 +205,14 @@
 @media (min-width: 768px) {
   .section-title { font-size: 2rem; }
   .section-subtitle { font-size: 1rem; }
-  .equipo-cover img { height: 220px; }
+  .equipo-cover img { height: 260px; }
   .equipos-grid {
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 2rem;
   }
   .equipo-content { padding: 1.5rem; }
 }
+
 
 /* Laptops */
 @media (min-width: 1024px) {
@@ -218,7 +235,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
   }
-  .equipo-cover img { height: 260px; }
+  .equipo-cover img { height: 300px; }
 }
 
 /* Ultrawide (2K - 4K) */
@@ -236,57 +253,104 @@
 
 
 
-
-/* === ACCESORIOS (MEJORADOS) === */
-/* === ACCESORIOS (IMAGEN ARRIBA + NOMBRE ABAJO) === */
-/* === ACCESORIOS (IMAGEN COMPLETA + BORDE SUAVE + NOMBRE) === */
-.accessories-section {
-  margin-top: 1.5rem;
+/* === GALERÍA DE ACCESORIOS === */
+.accessories-gallery {
+  margin-top: 1.8rem;
   text-align: center;
+  position: relative;
 }
 
 .accessories-title {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.8rem;
-  color: var(--color-dark, #222);
+  margin-bottom: 1rem;
+  color: #222;
 }
 
-.accessories-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  gap: 0.8rem;
-  justify-items: center;
-  align-items: start;
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
-.accessory-item {
+.gallery-track {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70px;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
 }
 
-.accessory-item img {
+.gallery-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 200px;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
   width: 100%;
-  height: 70px;
-  object-fit: contain; /* mantiene proporción completa */
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  padding: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px;
+  object-fit: contain; /* mantiene proporción real */
+  border-radius: 0.75rem;
+  background: #fff;
 }
 
-.accessory-item img:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.accessory-item .accessory-name {
-  font-size: 0.7rem;
-  margin-top: 4px;
-  text-align: center;
+.accessory-name {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
   color: #333;
-  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Botones laterales */
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.gallery-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+/* Móviles */
+@media (max-width: 600px) {
+  .gallery-item {
+    width: 250px;
+  }
+  .gallery-item img {
+    height: 250px;
+  }
+}
+
+.accessories-description {
+  font-size: 0.9rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+  text-align: center;
 }
