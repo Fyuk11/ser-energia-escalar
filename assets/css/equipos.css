@@ -313,28 +313,7 @@
   font-weight: 500;
 }
 
-/* Botones laterales */
-.gallery-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  border: none;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  z-index: 2;
-}
 
-.gallery-btn:hover {
-  background: rgba(0,0,0,0.7);
-}
-
-.prev-btn { left: 5px; }
-.next-btn { right: 5px; }
 
 /* Móviles */
 @media (max-width: 600px) {
@@ -354,3 +333,5 @@
   line-height: 1.6;
   text-align: center;
 }
+
+

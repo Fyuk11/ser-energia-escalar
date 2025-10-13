@@ -144,6 +144,9 @@ sections:
           icon: "/assets/images/accesorios/Amor/KIT de alta frecuencia.webp"
         - name: "3 Spark Gap. Electrodos tugusteno puros de 6mm"
           icon: "/assets/images/accesorios/Amor/ACCESORIO SER AMOR 3 Spark Gap. Electrodos tugusteno puros de 6mm..webp"
+      video:
+        label: "🎥 Tutorial Ser Amor"
+        url: "https://drive.google.com/file/d/1T7N_bNEyOmWT5whXGUm0X4uVLQH44f2c/view?usp=sharing"
       cta:
         whatsapp: "5493435616629"
         title: "Quiero mi equipo"
@@ -193,6 +196,11 @@ sections:
           icon: "/assets/images/accesorios/Origen/KIT de alta frecuencia.webp"
         - name: "3 Spark Gap. Electrodos tugusteno puro de 5mm"
           icon: "/assets/images/accesorios/Origen/ACCESORIO SER ORIGEN 3Spark Gap. Electrodos tugusteno puro de 5mm..webp"
+
+      video:
+        label: "🎥 Tutorial Ser Origen"
+        url: "https://drive.google.com/file/d/1WX6UQSFoHG1p0iGQdr0WCkY24DnAzxmT/view?usp=sharing"
+
       cta:
         whatsapp: "5493435616629"
         title: "Quiero mi equipo"
@@ -236,6 +244,11 @@ sections:
           icon: "/assets/images/accesorios/Esencia/Manguitos.webp"
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/Esencia/Bobina Corona.webp"
+
+      video:
+        label: "🎥 Tutorial Ser Esencia"
+        url: "https://drive.google.com/file/d/16YLipdYXpd8JNCAznb9NWmHyHOdZ2R3R/view?usp=sharing"
+
       cta:
         whatsapp: "5493435616629"
         title: "Quiero mi equipo"
