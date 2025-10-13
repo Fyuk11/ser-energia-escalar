@@ -293,3 +293,16 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
 
 
 
+/* =======================
+   AJUSTE SUBTITLE EN MOBILE
+   ======================= */
+.subtitle-text {
+  font-size: 1rem; /* tamaño base en desktop/tablet */
+}
+
+@media (max-width: 480px) {
+  .subtitle-text {
+     font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}
