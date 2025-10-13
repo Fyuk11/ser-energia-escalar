@@ -130,7 +130,7 @@ sections:
       - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
   
       accessories:
-        - name: "Bobina Grande"
+        - name: "Bobina Oudin Grande"
           icon: "/assets/images/accesorios/Amor/Bobina Mediana.webp"
         - name: "Bobina Pancake Radiante"
           icon: "/assets/images/accesorios/Amor/Pancake radiante 20cm.webp"
