@@ -295,9 +295,9 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
 
 /* =======================
    AJUSTE SUBTITLE EN MOBILE
-   ======================= */
+   ======================= *
 .subtitle-text {
-  font-size: 5.6rem; /* tamaño base en desktop/tablet */
+  font-size: 5.6rem; /* tamaño base en desktop/tablet *
 }
 
 @media (max-width: 480px) {
@@ -315,7 +315,7 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
   }
 
 }
-
+*/
 
 /* ===========================
    AJUSTE HERO SUBTITLE MOBILE
@@ -327,8 +327,8 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
 
 @media (max-width: 480px) {
   .subtitle-text {
-    font-size: 1.8rem !important; /* más grande en mobile */
-    font-weight: 700 !important; /* más gruesa */
+    font-size: 1.6rem !important; /* más grande en mobile */
+    font-weight: 600 !important; /* más gruesa */
     line-height: 1.4;
     text-align: center;
   }
