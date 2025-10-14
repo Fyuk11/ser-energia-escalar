@@ -184,7 +184,7 @@
 
 /* Gradiente dorado en el texto */
 .cta-btn span {
-  background: linear-gradient(90deg, #f1fb3a, #f1fc18, #ffef40);
+  background: #f1c40f;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
