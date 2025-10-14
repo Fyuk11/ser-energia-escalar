@@ -117,13 +117,17 @@
 
 .testimonial-video video {
   width: 100%;
-  max-width: 600px; /* antes era 400px */
-  aspect-ratio: auto; /* para videos horizontales o verticales */
-  height: auto;
+  max-width: 600px; /* Ideal para vertical */
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  height: auto;
+  outline: none;
+  background: #000;
+  aspect-ratio: 9 / 16; /* mantiene proporción vertical */
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 .testimonial-video video:hover {
