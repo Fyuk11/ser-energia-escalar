@@ -47,7 +47,7 @@
 
 /* Boton cta hover*/
 .btn-primary:hover {
-   background: linear-gradient(90deg, #f3d982, #f6edb9, #d2ad32);
+   background: linear-gradient(90deg, #f3d982, #f6edb9, #eabf33);
   transform: translateY(-2px);
 }
 
