@@ -304,7 +304,7 @@ html, body { overflow-x: hidden; box-sizing: border-box; }
 
 @media (max-width: 480px) {
   .subtitle-text {
-    font-size: 1rem !important; /* más grande en mobile */
+    font-size: 0.9rem !important; /* más grande en mobile */
     font-weight: 600 !important; /* más gruesa */
     line-height: 1.4;
     text-align: center;
