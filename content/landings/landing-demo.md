@@ -271,9 +271,8 @@ sections:
         role: "HolisTerapista"
         quote: "Las sesiones grupales con SER ESENCIA crearon una atmósfera de paz profunda. Los pacientes hablan de más claridad y armonía emocional."
         avatar: "/assets/images/testimonials/monica.jpg" # placeholder
-    cta:
-      text: "Quiero saber más"
-      link: "https://wa.me/5493435616629"
+    video: "/assets/videos/testimonio_optimizado.mp4"
+
 
 
 

@@ -27,5 +27,15 @@
       <div class="testimonials__dots"></div>
     </div>
     {% endif %}
+
+    {% if section_data.video %}
+  <div class="testimonial-video">
+    <video controls poster="/assets/images/testimonials/video-poster.jpg">
+      <source src="{{ section_data.video }}" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+{% endif %}
+
   </div>
 </section>
