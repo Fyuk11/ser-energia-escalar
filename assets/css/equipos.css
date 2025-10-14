@@ -177,7 +177,7 @@
   border-radius: 999px;
   text-decoration: none;
   transition: background 0.3s ease;
-  font-weight: 600;
+  font-weight: 800;
   position: relative;
   overflow: hidden;
 }
@@ -190,9 +190,6 @@
   background-clip: text;
   color: transparent;
 }
-
-
-
 
 .cta-btn:hover {
   background: #0f39f4;
