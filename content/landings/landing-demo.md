@@ -20,7 +20,7 @@ nav:
     url: "#steps"
   - text: Preguntas frecuentes
     url: "#faqs"
-    external: true
+  
 
 
 sections:
@@ -121,12 +121,12 @@ sections:
         - "Emisores de ruido: <60DB en condiciones normales de calibrado."
 
       accessories_details:
-      - "Bobina Oudin Grande o Mediana ( para envios fuera de Argentina) : diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
+      - "Bobina Oudin Grande o Mediana (para envios fuera de Argentina): diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
       - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
-      - "Bobina Pancake o Bobina  Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
-      - "Manguitos: 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito ( cable rojo= magnético) conector canon de entrada magnética ( lado izquierdo del dispositivo).Un  manguito ( cable azul= radiante) conector canon entrada radiante ( ubicado en el centro)"
+      - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
+      - "Manguitos: 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito (cable rojo = magnético) conector canon de entrada magnética (lado izquierdo del dispositivo). Un manguito (cable azul = radiante) conector canon entrada radiante (ubicado en el centro)"
       - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta a la bobina Oudin en la parte superior."
-      - "KIT de Alta Frecuencia: Cuatro electrodos intercambiables para diferentes tratamientos estéticos y zonas específicas con distintas afecciones. Un cabezal porta electrodo con cable azul= radiante de 2 mts, conectado a la bobina Oudin y conectar a la vez la pancake magnética = cable rojo, del lado izquierdo, para cerrar el circuito."
+      - "KIT de Alta Frecuencia: Cuatro electrodos intercambiables para diferentes tratamientos estéticos y zonas específicas con distintas afecciones. Un cabezal porta electrodo con cable azul= radiante de 2 mts, conectado a la bobina Oudin."
       - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
   
       accessories:
@@ -149,7 +149,7 @@ sections:
         url: "https://drive.google.com/file/d/1T7N_bNEyOmWT5whXGUm0X4uVLQH44f2c/view?usp=sharing"
       cta:
         whatsapp: "5493435616629"
-        title: "Quiero mi equipo"
+        title: "QUIERO MI EQUIPO"
 
     - name: "SER ORIGEN"
       cover: "/assets/images/Ser Origen.webp"
@@ -175,10 +175,10 @@ sections:
       accessories_details:
       - "Bobina Oudin Mediana diseño cilíndrico en espiral sentido anti-horario, 50cm de alto x 16cm de diámetro. Amplificador de energía radiante, conector cable azul, lado derecho."
       - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
-      - "Bobina Pancake o Bobina  Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
-      - "Manguitos ( salidas de conexión ubicadas en el centro del equipo) : 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo= magnético con salida magnética por lado izquierdo. Un manguito, cable azul= radiante con salida por lado derecho."
+      - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
+      - "Manguitos (salidas de conexión ubicadas en el centro del equipo): 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo = magnético con salida magnética por lado izquierdo. Un manguito, cable azul = radiante con salida por lado derecho."
       - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta a la bobina Oudin en la parte superior."
-      - "KIT de Alta Frecuencia: 4 electrodos intercambiables para diferentes tratamientos estéticos y zonas específicas con distintas afecciones. Un cabezal porta electrodo con cable azul= radiante de 2 mts, conectado a la bobina Oudin y conectar a la vez la pancake magnética = cable rojo, del lado izquierdo, para cerrar el circuito."
+      - "KIT de Alta Frecuencia: 4 electrodos intercambiables para diferentes tratamientos estéticos y zonas específicas con distintas afecciones. Un cabezal porta electrodo con cable azul= radiante de 2 mts, conectado a la bobina Oudin."
       - "Conductividad: se utilizan cables de doble mayado y alto voltéico, lo que permite conducir sin pérdida de la energía generada."
 
       accessories:
@@ -203,7 +203,7 @@ sections:
 
       cta:
         whatsapp: "5493435616629"
-        title: "Quiero mi equipo"
+        title: "QUIERO MI EQUIPO"
 
     - name: "SER ESENCIA"
       cover: "/assets/images/equipos/ser-esencia-cover.jpg"
@@ -251,7 +251,7 @@ sections:
 
       cta:
         whatsapp: "5493435616629"
-        title: "Quiero mi equipo"
+        title: "QUIERO MI EQUIPO"
 
 
 
@@ -367,7 +367,7 @@ sections:
        url: "#faqs"
     social:
       - type: instagram
-        url: https://www.instagram.com/ser.energiaescalar/
+        url: https://www.instagram.com/serconciente555
       - type: tiktok
         url: "https://www.tiktok.com/@ser_sergioemanuelramel"
       - type: whatsapp

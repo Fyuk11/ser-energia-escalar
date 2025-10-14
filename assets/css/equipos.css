@@ -171,7 +171,7 @@
 
 .cta-btn {
   display: inline-block;
-  background: linear-gradient(90deg, #d4af37, #c0b473, #d4af37);
+  background: linear-gradient(90deg, #3446d4, #3d5de9, #1a42d5);
   color: #fff;
   padding: 0.7rem 1.8rem;
   border-radius: 999px;
@@ -179,7 +179,7 @@
   transition: background 0.3s ease;
 }
 .cta-btn:hover {
-  background: #886d14;
+  background: #0f39f4;
 }
 
 /* === ANIMACIONES === */
