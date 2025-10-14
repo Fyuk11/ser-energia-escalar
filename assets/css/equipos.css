@@ -169,15 +169,31 @@
   margin-top: 1.3rem;
 }
 
+
 .cta-btn {
   display: inline-block;
   background: linear-gradient(90deg, #3446d4, #3d5de9, #1a42d5);
-  color: #fff;
   padding: 0.7rem 1.8rem;
   border-radius: 999px;
   text-decoration: none;
   transition: background 0.3s ease;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Gradiente dorado en el texto */
+.cta-btn span {
+  background: linear-gradient(90deg, #f3d982, #f6edb9, #d2ad32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+
 .cta-btn:hover {
   background: #0f39f4;
 }

@@ -78,15 +78,16 @@
 
 
             {% if equipo.cta %}
-            <div class="cta-wrapper">
-              <a
-                href="https://wa.me/{{ equipo.cta.whatsapp }}"
-                target="_blank"
-                class="cta-btn"
-              >
-                {{ equipo.cta.title }}
-              </a>
-            </div>
+<div class="cta-wrapper">
+  <a
+    href="https://wa.me/{{ equipo.cta.whatsapp }}"
+    target="_blank"
+    class="cta-btn"
+  >
+    <span>{{ equipo.cta.title }}</span>
+  </a>
+</div>
+
             {% endif %}
           </div>
         </div>
