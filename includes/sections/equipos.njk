@@ -65,6 +65,16 @@
   </div>
 {% endif %}
 
+{# --- LINK DEL VIDEO YOUTUBE --- #}
+{% if equipo.video_youtube %}
+  <div class="equipo-video-link" style="margin-top: 0.8rem;">
+    <a href="{{ equipo.video_youtube.url }}" target="_blank" rel="noopener" class="btn-link youtube-link">
+      {{ equipo.video_youtube.label }}
+    </a>
+  </div>
+{% endif %}
+
+
 {# --- LINK DEL VIDEO --- #}
 {% if equipo.video %}
   <div class="equipo-video-link" style="margin-top: 1.5rem;">
