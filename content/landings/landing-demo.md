@@ -334,17 +334,17 @@ sections:
   - type: faqs
     title: Preguntas frecuentes
     items:
-     - question: "¿Cuánto dura una sesión?"
-       answer: "Cada sesión tiene una duración aproximada de 60 a 90 minutos, dependiendo de las necesidades de la persona y el proceso en curso."
+     - question: "¿Cuantas sesiones semanales se recomiendan?"
+       answer: "Se recomiendan 3 sesiones como mínimo por semana. Lo ideal es 2 sesiones por día de 15 a 30 minutos cada una."
 
      - question: "¿Es compatible con otros tratamientos?"
        answer: "Sí. La terapia energética puede complementar otros enfoques médicos o terapéuticos. Recomendamos siempre informar a tu especialista de confianza."
 
      - question: "¿Tiene contraindicaciones?"
-       answer: "No existen contraindicaciones graves. En casos de condiciones médicas específicas sugerimos consultar previamente a un profesional de la salud."
+       answer: "No existen contraindicaciones graves. En casos de condiciones médicas específicas sugerimos consultar previamente a un profesional de la salud. NO USAR en personas que tengan implantes de dispositivos electrónicos (marcapasos, implante coclear, etc)"
 
-     - question: "¿Qué mantenimiento requiere?"
-       answer: "No requiere un mantenimiento rígido. Algunas personas eligen una sesión mensual como equilibrio, otras de forma puntual según su necesidad."
+     - question: "¿Que precauciones debo tener?"
+       answer: "Conectar y utilizar el equipo en un espacio alejado, a un mínimo de 3mts de distancia de dispositivos electrónicos (router, teléfonos, computadoras, relojes digitales, electrodomésticos, etc). Personas que usen audífonos deberán quitarlos antes de la sesión y dejarlos lejos de dispositivo. Personas que tengan prótesis metálicas realizar sesión normal observando: si siente calor en la zona de la prótesis, se sugiere cambiar a circuito abierto (conectar solo radiante).Encender el equipo una vez que la persona este conectada a los accesorios. Y mientras el equipo este encendido, nunca soltar los manguitos."
 
 
 
