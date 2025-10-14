@@ -177,6 +177,7 @@
   border-radius: 999px;
   text-decoration: none;
   transition: background 0.3s ease;
+  font-size: 1.2rem; /* o 1.2rem si querés más presencia */
   font-weight: 900;
   position: relative;
   overflow: hidden;
