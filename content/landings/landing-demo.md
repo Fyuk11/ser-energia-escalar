@@ -344,7 +344,7 @@ sections:
        answer: "No existen contraindicaciones graves. En casos de condiciones médicas específicas sugerimos consultar previamente a un profesional de la salud. NO USAR en personas que tengan implantes de dispositivos electrónicos (marcapasos, implante coclear, etc)"
 
      - question: "¿Que precauciones debo tener?"
-       answer: "Conectar y utilizar el equipo en un espacio alejado, a un mínimo de 3mts de distancia de dispositivos electrónicos (router, teléfonos, computadoras, relojes digitales, electrodomésticos, etc). Personas que usen audífonos deberán quitarlos antes de la sesión y dejarlos lejos de dispositivo. Personas que tengan prótesis metálicas realizar sesión normal observando: si siente calor en la zona de la prótesis, se sugiere cambiar a circuito abierto (conectar solo radiante).Encender el equipo una vez que la persona este conectada a los accesorios. Y mientras el equipo este encendido, nunca soltar los manguitos."
+       answer: "Conectar y utilizar el equipo en un espacio alejado, a un mínimo de 3mts de distancia de dispositivos electrónicos (router, teléfonos, computadoras, relojes digitales, electrodomésticos, etc). Personas que usen audífonos deberán quitarlos antes de la sesión y dejarlos lejos de dispositivo. Personas que tengan prótesis metálicas realizar sesión normal observando: si siente calor en la zona de la prótesis, se sugiere cambiar a circuito abierto (conectar solo radiante). Encender el equipo una vez que la persona este conectada a los accesorios. Y mientras el equipo este encendido, nunca soltar los manguitos."
 
 
 

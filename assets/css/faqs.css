@@ -108,7 +108,7 @@
 }
 
 .faq-card.active .faq-answer {
-  max-height: 500px;
+  max-height: 700px;
 }
 
 .faq-card.active .faq-question .toggle {
