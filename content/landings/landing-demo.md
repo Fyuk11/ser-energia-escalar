@@ -215,8 +215,8 @@ sections:
         title: "QUIERO MI EQUIPO"
 
     - name: "SER ESENCIA"
-      cover: "/assets/images/equipos/ser-esencia-cover.jpg"
-      icon: "/assets/images/ser-esencia.png"
+      cover: "/assets/images/Ser Esencia.webp"
+      icon: "/assets/images/Ser Esencia.webp"
       description: "Dispositivo de 1 Spark Gap o acelerador de partículas. Diseño rígido portátil con electrodos de tugusteno puros de 4mm."
       price: "$950 USD"
       details:
