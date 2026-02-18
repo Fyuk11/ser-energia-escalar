@@ -242,15 +242,15 @@
   opacity: 1;
 } */
 
-/* En pantallas pequeñas, permitir scroll interno si hay muchos recursos */
+/* En pantallas pequeñas, permitir scroll interno si hay muchos recursos *
 @media (max-width: 600px) {
   .extra-content {
-    max-height: 70vh; /* límite visual razonable */
+    max-height: 100vh; /* límite visual razonable *
     overflow-y: auto;
     padding-right: 0.5rem;
   }
 
-  /* Scroll más suave y visible */
+  /* Scroll más suave y visible *
   .extra-content::-webkit-scrollbar {
     width: 6px;
   }
@@ -262,6 +262,60 @@
     background: rgba(0, 0, 0, 0.05);
   }
 }
+*/
+@media (max-width: 600px) {
+  /* ===== MEJORAS PARA EL EXTRA-CONTENT EN MÓVIL ===== */
+
+  /* 1. Asegurar que el contenedor abierto ocupe todo el alto necesario */
+  .step-card.open .extra-content {
+    max-height: none;        /* Elimina el límite fijo de 600px */
+    height: auto;            /* Altura automática según contenido */
+    overflow-y: auto;        /* Scroll vertical si es muy largo (ya lo tienes) */
+  }
+
+  /* 2. Reorganizar los elementos de cada recurso */
+  .extra-content li {
+    flex-direction: column;  /* Apila label y botones verticalmente */
+    align-items: stretch;    /* Que ocupen todo el ancho */
+    gap: 8px;                /* Espacio entre elementos */
+    margin: 1rem 0;          /* Más separación entre recursos */
+  }
+
+  /* 3. Hacer que los botones ocupen todo el ancho y se vean mejor */
+  .btn-link {
+    width: 100%;             /* Botones a lo ancho completo */
+    text-align: center;      /* Texto centrado */
+    padding: 0.6rem 1rem;    /* Un poco más de área táctil */
+    box-sizing: border-box;  /* Para que el padding no desborde */
+  }
+
+  /* 4. Separar visualmente los dos botones (Ver y Descargar) */
+  .btn-link:first-of-type {
+    margin-bottom: 4px;
+  }
+
+  /* 5. Ajustar el padding de la tarjeta para ganar espacio */
+  .step-card {
+    padding: 1.5rem 1rem;    /* Menos padding lateral, más vertical */
+  }
+
+  /* 6. El botón "Ver materiales" también mejorado */
+  .toggle-btn {
+    width: 100%;             /* Botón ancho completo para fácil acceso */
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  /* 7. Pequeño ajuste al número circular */
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+
+
 
 /* ===========================
    STEPS - Corrección apertura inicial
