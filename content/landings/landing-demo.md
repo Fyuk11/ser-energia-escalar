@@ -317,6 +317,8 @@ sections:
           url: "https://drive.google.com/file/d/1Bk2n-jYERlguuT49TxQa2-DH-cJWAJFW/view?usp=drive_link"
         - label: "🎥 Mantenimiento y limpieza"
           url: "https://drive.google.com/file/d/1vFlzMsxnVNYoNy-vdbaJkQawJPKGauDQ/view?usp=sharing"
+        - label: "🎥 Recalibración Ser Amor y Origen"
+          url: "https://drive.google.com/file/d/1ic08ktHn9WzypIF7wNw7_SPAYO06xsYK/view?usp=sharing"
 
  
   - type: section-divider
