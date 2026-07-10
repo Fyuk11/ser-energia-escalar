@@ -210,7 +210,7 @@ sections:
         url: "https://www.youtube.com/watch?v=XXXXXXXXXXX"         
          
       video:
-        label: "🎥 Tutorial Ser Amor"
+        label: "🎥 Tutorial Ser Origen Nuevo"
         url: "https://drive.google.com/file/d/1T7N_bNEyOmWT5whXGUm0X4uVLQH44f2c/view?usp=sharing"
       cta:
         whatsapp: "5493435616629"
