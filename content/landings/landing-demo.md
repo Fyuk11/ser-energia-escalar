@@ -308,7 +308,7 @@ sections:
         - name: "Bobina Pancake Radiante"
           icon: "/assets/images/accesorios/Esencia/Bobina pankeke radiante - Ser Esencia.webp"
         - name: "Manguitos"
-          icon: "/assets/images/accesorios/Esencia/Manguitos nuevos.webp"
+          icon: "/assets/images/accesorios/Esencia/Manguitos.webp"
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/Esencia/Bobina Corona.webp"
 
