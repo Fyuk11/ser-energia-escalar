@@ -106,7 +106,7 @@ sections:
       description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con su tapa en transparencia. Cuenta con electrodos de tugusteno puros de 6mm. Recalibración externa."
       price: "$2.000 USD"
       details:
-        - "Diseño: caja de madera con tu tapa transparente grabada, de 24cm x 44cm x 15cm; peso 4kg. Regilla exterior cubre ventilación con diseño de Geometría sagrada (Flor de la vida)."
+        - "Diseño: caja de madera con su tapa transparente grabada, de 24cm x 44cm x 15cm; peso 4kg. Regilla exterior cubre ventilación con diseño de Geometría sagrada (Flor de la vida)."
         - "Alimentación: 110-220v para fuente de 12v/15 A - (50-60 hz)"
         - "Fuente de poder: ZVS + flyback sintonizado en resonancia, para generar 30.000 voltios."
         - "Consumo de energía: 0.18 kilovatios."
