@@ -121,7 +121,7 @@ sections:
         - "Emisores de ruido: <60DB en condiciones normales de calibrado."
 
       accessories_details:
-      - "Bobina Oudin Grande o Mediana (para envios fuera de Argentina): diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
+      - "Bobina Oudin Grande o Mediana: diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
       - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
       - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
       - "Manguitos: 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito (cable rojo = magnético) conector canon de entrada magnética (lado izquierdo del dispositivo). Un manguito (cable azul = radiante) conector canon entrada radiante (ubicado en el centro)"
@@ -158,7 +158,7 @@ sections:
         title: "QUIERO MI EQUIPO"
 
 
-    - name: "SER ORIGEN NUEVO"
+    - name: "SER ORIGEN (INFINITO)"
       cover: "/assets/images/Ser Origen Nuevo -foto editada 1600 x 800.webp"   # Imagen de portada destacada
       icon: "/assets/images/ser-amor.png"                  # (opcional) icono pequeño si lo necesitás en el header
       description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con su tapa en transparencia. Cuenta con electrodos de tugusteno puros de 6mm. Recalibración externa."
@@ -173,17 +173,17 @@ sections:
         - "Sistema de control e interfaz: botón de encendido metálico con luz led ubicado en la parte superior derecha del equipo."
         - "Temporizador de corte automático: 999 segundos de sesión (16.65 minutos)."
         - "2 salidas ubicadas al centro en la parte frontal del equipo. Geometría sagrada (Metatrón)."
-        - "Salida magnética: 1 conector canon del lado izquierdo del dispositivo."
-        - "Salida Radiante: 2 conectores canon del lado derecho del dispositivo donde se conecta bobina oudin y manguito (y lámpara de alta frecuencia cuando se usa)"
+        - "Salida magnética: 1 conector del lado izquierdo del dispositivo donde se conecta cable a tierra manguito rojo y bobina panckake roja = magnética."
+        - "Salida Radiante: 1 conector del lado derecho del dispositivo donde se conecta bobina oudin y manguito (y lámpara de alta frecuencia cuando se usa)"
         - "Ventilación: 1 ventilador de 120mm X 120mm con luz led azul."
         - "Seguridad eléctrica: fusible interno y tecla trasera externa que corta corriente, conexión a tierra (mariposa)."
         - "Emisores de ruido: <60DB en condiciones normales de calibrado."
 
       accessories_details:
-      - "Bobina Oudin Grande o Mediana (para envios fuera de Argentina): diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
+      - "Bobina Oudin Grande o Mediana: diseño cilíndrico en espiral sentido anti-horario, 1m de alto x 16cm de diámetro. Amplificador de energía radiante, conector canon, cable azul."
       - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
       - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
-      - "Manguitos: 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito (cable rojo = magnético) conector canon de entrada magnética (lado izquierdo del dispositivo). Un manguito (cable azul = radiante) conector canon entrada radiante (ubicado en el centro)"
+      - "Manguitos: 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito (cable rojo = magnético) conector de entrada magnética (lado izquierdo del dispositivo). Un manguito (cable azul = radiante) conector entrada radiante (ubicado en el centro)"
       - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta a la bobina Oudin en la parte superior."
       - "Lámpara roja de alta frecuencia, aplicada con energía escalar para zonas focalizadas. Tratamientos estéticos, varices, dolores, etc. Cabezal con 2 metros de cable azul, conectado a la salida radiante (azul) del equipo."
       - "Conductividad: Se utilizan cables de cobre puro de alta calidad para conducir la energía generada con eficacia."
@@ -193,9 +193,9 @@ sections:
         - name: "Bobina Oudin Grande"
           icon: "/assets/images/accesorios/Amor/Bobina Mediana.webp"
         - name: "Bobina Pancake Radiante"
-          icon: "/assets/images/accesorios/Amor/Pancake radiante 20cm.webp"
+          icon: "/assets/images/accesorios/Origen/Pancake radiante 20cm.webp"
         - name: "Bobina Pancake Magnética"
-          icon: "/assets/images/accesorios/Amor/Pancake magnética 24cm.webp"
+          icon: "/assets/images/accesorios/Origen/Pancake magnética 24cm.webp"
         - name: "Manguitos"
           icon: "/assets/images/accesorios/Amor/Manguitos nuevos.webp"
         - name: "Bobina Corona"
@@ -228,19 +228,19 @@ sections:
         - "Alimentación: 110-220v para fuente de 12v/15 A - (50-60 hz). (Consultar opción de conexión 12v directo a batería)"
         - "Fuente de poder: ZVS + flyback sintonizado en resonancia, para generar 30.000 voltios."
         - "Consumo de energía: 0.18 kilovatios."
-        - "Banco de Capacitores: de alta tensión 4,7 nf/6000v (dispuestos para filtrar el flujo de la energía caliente de 30.000 voltios (+ y -) en energía fría, las cuales se encuentran en la bobina D'Arsonval produciendose la energía de punto 0 radiante y magnética."
+        - "Banco de Capacitores: de alta tensión 4,7 nf/2000v (dispuestos para filtrar el flujo de la energía caliente de 24.000 voltios (+ y -) en energía fría, las cuales se encuentran en la bobina D'Arsonval produciendose la energía de punto 0 radiante y magnética."
         - "Spark Gap externo: Con electrodos de tugusteno puro de 4mm. Recalibración externa de la potencia y frecuencia (vida útil prolongada). (Opción económica consultar por electrodos de hierro a 8.8)"
         - "Sistema de control e interfaz: botón de encendido de pvc con luz led roja ubicado en la parte izquierda frontal del equipo."
         - "Temporizador de corte automático: 999 segundos de sesión (16.65 minutos)."
         - "2 salidas ubicadas al centro en la parte frontal del equipo. Geometría sagrada (Metatrón)."
-        - "2 Salidas magnéticas: del lado izquierdo para la conexión a tierra y accesorios señalados con conector roja magnética (ambas se pueden conectar arriba o abajo)."
-        - "2 Salida Radiantes: del lado derecho para conexión accesorios señalados con conector azul donde se conecta bobina oudin y manguito (y lámpara de alta frecuencia cuando se usa)."
+        - "1 Salida magnética: del lado izquierdo para la conexión a tierra y accesorios señalados con conector roja magnética."
+        - "1 Salida Radiante: del lado derecho para conexión accesorios señalados con conector azul donde se conecta bobina oudin y manguito (y lámpara de alta frecuencia cuando se usa)."
         - "4 Ventilación: 1 ventilador de 80mm X 80mm con luz led azul."
         - "Seguridad eléctrica: fusible interno."
         - "Emisores de ruido: <60DB en condiciones normales de calibrado."
 
       accessories_details:
-      - "Bobina Oudin Mediana diseño cilíndrico en espiral sentido anti-horario, 50cm de alto x 16cm de diámetro. Amplificador de energía radiante, conector cable azul, lado derecho."
+      - "Bobina Oudin Chica diseño cilíndrico en espiral sentido anti-horario, 50cm de alto x 16cm de diámetro. Amplificador de energía radiante, conector cable azul, lado derecho."
       - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
       - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
       - "Manguitos (salidas de conexión ubicadas en el centro del equipo): 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo = magnético con salida magnética por lado izquierdo. Un manguito, cable azul = radiante con salida por lado derecho."
@@ -291,14 +291,14 @@ sections:
         - "Spark Gap externo: simple salto de chispa, electrodos cruzados, múltiples aceleradores de partículas de tugusteno puro de 3 MM. (Opción económica consultar por electrodos de acero de 8.8)."
         - "Sistema de control e interfaz: botón de encendido de pvc con luz led roja ubicado en la parte izquierda frontal del equipo."
         - "2 salidas ubicadas al centro en la parte frontal del equipo. Geometría sagrada (Metatrón)."
-        - "1 Salida magnética: del lado izquierdo para la conexión a tierra y accesorio señalado con conector rojo magnético (ambas se pueden conectar arriba o abajo)."
-        - "1 Salida Radiante: del lado derecho para conexión accesorio señalado con conector azul ( radiante) pudiendose colocar los mismos arriba o abajo."
+        - "1 Salida magnética: del lado izquierdo para la conexión a tierra y accesorio señalado con conector rojo magnético."
+        - "1 Salida Radiante: del lado derecho para conexión accesorio señalado con conector azul (radiante)."
         - "4 Ventilación: 1 ventilador de 80mm X 80mm con luz led azul."
         - "Seguridad eléctrica: fusible interno."
         - "Emisores de ruido: <60DB en condiciones normales de calibrado."
 
       accessories_details:
-      - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
+      - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 25cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
       - "Manguitos (salidas de conexión ubicadas en el centro del equipo): 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo = magnético con salida magnética por lado izquierdo. Un manguito, cable azul = radiante con salida por lado derecho."
       - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta al lado derecho (azul radiante)."
       - "Conductividad: Se utilizan cables de cobre puro de alta calidad para conducir la energía generada con eficacia."
@@ -311,6 +311,8 @@ sections:
           icon: "/assets/images/accesorios/Esencia/Manguitos.webp"
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/Esencia/Bobina Corona.webp"
+        - name: "Spark Gap Simple"
+          icon: "/assets/images/accesorios/Esencia/ajustar foto"
 
       video_youtube:
         label: "🎬 Modo de uso"
