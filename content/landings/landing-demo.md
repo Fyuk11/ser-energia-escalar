@@ -312,7 +312,7 @@ sections:
         - name: "Bobina Corona"
           icon: "/assets/images/accesorios/Esencia/Bobina Corona.webp"
         - name: "Spark Gap Simple"
-          icon: "/assets/images/accesorios/Esencia/ajustar foto"
+          icon: "/assets/images/accesorios/Esencia/Spar gap simple del ser Esencia.webp"
 
       video_youtube:
         label: "🎬 Modo de uso"
