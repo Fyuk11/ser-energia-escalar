@@ -158,8 +158,8 @@ sections:
         title: "QUIERO MI EQUIPO"
 
 
-    - name: "SER ORIGEN (INFINITO)"
-      cover: "/assets/images/Ser Origen Nuevo -foto editada 1600 x 800.webp"   # Imagen de portada destacada
+    - name: "SER ORIGEN ∞"
+      cover: "/assets/images/Ser Origen Nuevo -foto editada - EDITADA RECORTADA (1).webp"   # Imagen de portada destacada
       icon: "/assets/images/ser-amor.png"                  # (opcional) icono pequeño si lo necesitás en el header
       description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con su tapa en transparencia. Cuenta con electrodos de tugusteno puros de 6mm. Recalibración externa."
       price: "$1.800 USD"
