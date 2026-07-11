@@ -263,7 +263,7 @@ sections:
         - name: "Lámpara roja de alta frecuencia"
           icon: "/assets/images/accesorios/Origen/Lámpara roja de alta frecuencia.webp"
         - name: "3 Spark Gap. Electrodos tugusteno puro de 4mm"
-          icon: "/assets/images/accesorios/Origen/ACCESORIO SER ORIGEN 3Spark Gap. Electrodos tugusteno puro de 5mm..webp"
+          icon: "/assets/images/accesorios/Origen/Spar gap del Ser origen caja plástica.webp"
 
       video_youtube:
         label: "🎬 Modo de uso"
