@@ -298,15 +298,15 @@ sections:
         - "Emisores de ruido: <60DB en condiciones normales de calibrado."
 
       accessories_details:
-      - "Bobina Pancake o Bobina Tesla Magnética: diseño plano, espiralado de 24cm de diámetro con geometría sagrada."
+      - "Bobina Pancake o Bobina Tesla Radiante: diseño plano, espiralado de 20cm de diámetro con geometría sagrada. Es un amplificador de energía radiante."
       - "Manguitos (salidas de conexión ubicadas en el centro del equipo): 2 cables de 2mts de longitud con manoplas de aluminio y protector aislante. Un manguito de cable rojo = magnético con salida magnética por lado izquierdo. Un manguito, cable azul = radiante con salida por lado derecho."
       - "Bobina Corona: diseño circular bobinado, medida standcar 55cm de diámetro se conecta al lado derecho (azul radiante)."
       - "Conductividad: Se utilizan cables de cobre puro de alta calidad para conducir la energía generada con eficacia."
       - "Conexión a tierra: Jabalina de 50 cm de cobre + cable de conexión al equipo. Se recomienda conectar la jabalina directo al jardín (tierra). En caso de depto preparar un recipiente de 50 cm con tierra, minerales, cuarzos, sales y agua de mar."
 
       accessories:
-        - name: "Bobina Pancake Magnética"
-          icon: "/assets/images/accesorios/Esencia/pancake roja - magnetica 24cm.jpeg"
+        - name: "Bobina Pancake Radiante"
+          icon: "/assets/images/accesorios/Esencia/Bobina pankeke radiante - Ser Esencia.webp"
         - name: "Manguitos"
           icon: "/assets/images/accesorios/Esencia/Manguitos nuevos.webp"
         - name: "Bobina Corona"
