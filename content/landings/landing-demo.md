@@ -158,7 +158,7 @@ sections:
         title: "QUIERO MI EQUIPO"
 
 
-    - name: "SER ORIGEN ∞"
+    - name: "SER ORIGEN DIVINO"
       cover: "/assets/images/Ser Origen Nuevo -foto editada - EDITADA RECORTADA (1).webp"   # Imagen de portada destacada
       icon: "/assets/images/ser-amor.png"                  # (opcional) icono pequeño si lo necesitás en el header
       description: "Dispositivo de 3 Spark Gap o acelerador de partículas. Diseño en madera con su tapa en transparencia. Cuenta con electrodos de tugusteno puros de 6mm. Recalibración externa."
